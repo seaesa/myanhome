@@ -51,6 +51,19 @@ build output and get overwritten. Edit `src/pages/` and `partials/` instead.
 
 After editing a page, run the build, then the verifier.
 
+## Header heights
+
+The live site runs two bar heights and the clone reproduces both:
+
+| Template | Bar | Logo | Fill at scroll 0 |
+|---|---|---|---|
+| Homepage (`header: transparent`) | 90px | 86×90 | none — fully transparent |
+| Every other page | 102px | 98×102 | `rgba(255,255,255,.3)` |
+| Stuck (any page) | 52px | 48×52 | `rgba(255,255,255,.3)` |
+
+The stuck bar is a **30% white wash, not an opaque bar** — scrolled over the
+hero you can see the photo through it, exactly as on the live site.
+
 ## How a page is defined
 
 Each file in `src/pages/` starts with a meta block, then the body markup that
@@ -64,6 +77,7 @@ body: page page-dich-vu        ← <body> classes
 nav: dich-vu                   ← which top-nav item renders as active
 css: pages dich-vu             ← extra stylesheets from assets/css/
 out: dich-vu.html              ← output path (ships as /dich-vu)
+header: transparent            ← optional; only the homepage uses it
 -->
 ```
 
@@ -77,10 +91,13 @@ replaces `{{BASE}}` with `/` and then strips the `.html` extension, so
 All interaction lives in `assets/js/main.js`:
 
 - **Sticky header** (`sticky-jump`) — past `scrollY > 0` the wrapper goes
-  `fixed` and shrinks 90px → 52px, logo and nav links shrink with it.
+  `fixed` and shrinks to 52px; logo and nav links shrink with it. `#header`
+  keeps an explicit height so the page does not jump when it detaches.
 - **Dropdowns** — hover opens (180 ms close delay standing in for hoverIntent),
   keyboard focus works, `Escape` closes.
-- **Mobile drawer** — off-canvas at ≤849px, overlay, scroll lock, collapsible sub-menus.
+- **Mobile menu** — a full-screen 86%-black overlay at ≤849px with centred
+  18px links, a search field and collapsible sub-menus (not a side drawer).
+- **Back to top** — `#top-link` fades in past 300px.
 - **Sliders** — `[data-slider]`, drag + dots + autoplay; off-screen slides load
   lazily and are promoted to eager just before they scroll in.
 - **Carousels** — `[data-carousel]` paged rails.
@@ -99,6 +116,22 @@ and `assets/` ship.
 No build step is configured, so Vercel serves the repo root as-is. Run
 `node scripts/build-pages.mjs` and commit the output before deploying.
 
+## Fidelity
+
+Measured against the live site at 1440px, `/` matches block-for-block:
+
+```
+hero      90/720    intro    810/435    values   1245/363
+grid    1684/900    partners 2689/728   gallery  3513/567
+news    4256/404    footer    ---/677   document      5337   (live: 5338)
+```
+
+The shared chrome — header, footer, grid, buttons, typography, sliders — is
+measured from the live site and therefore matches on every page. The inner
+pages reproduce the same structure and styling but have **not** been matched
+block-by-block the way the homepage has; section heights there still differ
+from the original.
+
 ## Known gaps
 
 - **Three pages are empty on the live site** and are reproduced as such, with an
@@ -111,3 +144,8 @@ No build step is configured, so Vercel serves the repo root as-is. Run
   The rest are reachable on the live site only.
 - Analytics (GTM/gtag) and the GTranslate widget are not reproduced; the language
   control is a static styled element.
+- The live site sets a **sticky-header background image hot-linked from
+  `vanchuyenthanhhung24h.com`** (a third-party domain). It fails to load there
+  too, so only the 30% white wash shows. The clone reproduces the wash and does
+  not hot-link the third-party file.
+- Inner-page section heights are not pixel-matched — see **Fidelity** above.
