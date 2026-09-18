@@ -49,6 +49,12 @@
           <ul class="header-nav header-nav-main nav-left"></ul>
         </div>
 
+        <div class="flex-col show-for-medium flex-right">
+          <div class="header-button">
+            <a href="tel:0978264334" class="button secondary is-small"><span>Gọi Ngay</span></a>
+          </div>
+        </div>
+
         <div class="flex-col hide-for-medium flex-right">
           <ul class="header-nav header-nav-main nav-right">
             <li class="menu-item" data-nav="home">
@@ -349,8 +355,17 @@
 
 </div><!-- /#wrapper -->
 
+<!-- Full-screen centred overlay, like the live site — not a side drawer. -->
 <div id="main-menu" class="mobile-sidebar no-scrollbar">
+  <button type="button" class="close-menu" aria-label="Đóng menu">&times;</button>
   <ul class="nav-sidebar">
+    <li class="menu-item search-item">
+      <form role="search" method="get" action="/" class="searchform-wrapper">
+        <label class="screen-reader-text" for="menu-search">Tìm kiếm</label>
+        <input id="menu-search" type="search" name="s" placeholder="Search…" autocomplete="off">
+        <button type="submit" class="submit-button" aria-label="Tìm kiếm"><i class="icon-search" aria-hidden="true"></i></button>
+      </form>
+    </li>
     <li><a href="/">Trang chủ</a></li>
     <li>
       <a href="/gioi-thieu">Giới thiệu</a>

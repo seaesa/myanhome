@@ -1,1005 +1,1005 @@
 [
-{
-"d": 0,
-"t": "== BANNER ==",
-"c": "",
-"b": [
-0,
-0,
-0,
-0
-],
-"y": {}
-},
-{
-"d": 0,
-"t": "div",
-"c": "col-inner",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 1,
-"t": "div",
-"c": "banner has-hover",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"backgroundColor": "rgb(249, 109, 0)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"minHeight": "30px",
-"objectFit": "cover"
-}
-},
-{
-"d": 2,
-"t": "div",
-"c": "banner-inner fill",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "banner-bg fill",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "img",
-"c": "bg attachment-original size-original lazy-load-active",
-"b": [
-149,
-1684,
-755,
-430
-],
-"s": "the-charm-1.png",
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "100%",
-"objectFit": "cover"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "banner-layers container",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "1170px",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "fill banner-link",
-"b": [
-149,
-1684,
-755,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "755.406px",
-"height": "430.406px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "text-box banner-layer x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text",
-"b": [
-186,
-2052,
-302,
-41
-],
-"y": {
-"fontSize": "12px",
-"fontWeight": "400",
-"lineHeight": "19.2px",
-"color": "rgb(10, 10, 10)",
-"width": "302.156px",
-"height": "41.1172px",
-"position": "absolute",
-"top": "367.773px",
-"left": "37.7656px",
-"right": "415.484px",
-"bottom": "21.5156px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "div",
-"c": "text-box-content text dark",
-"b": [
-186,
-2052,
-302,
-41
-],
-"y": {
-"fontSize": "12px",
-"fontWeight": "400",
-"lineHeight": "19.2px",
-"color": "rgb(241, 241, 241)",
-"width": "302.156px",
-"height": "41.1172px",
-"position": "relative",
-"border": "0px none rgb(241, 241, 241)",
-"borderTop": "0px none rgb(241, 241, 241)",
-"objectFit": "fill"
-}
-},
-{
-"d": 6,
-"t": "div",
-"c": "text-inner text-left",
-"b": [
-186,
-2052,
-302,
-41
-],
-"y": {
-"fontSize": "12px",
-"fontWeight": "400",
-"lineHeight": "19.2px",
-"color": "rgb(241, 241, 241)",
-"textAlign": "left",
-"width": "302.156px",
-"height": "41.1172px",
-"border": "0px none rgb(241, 241, 241)",
-"borderTop": "0px none rgb(241, 241, 241)",
-"objectFit": "fill"
-}
-},
-{
-"d": 0,
-"t": "== CONTACT ROW ==",
-"c": "",
-"b": [
-0,
-0,
-0,
-0
-],
-"y": {}
-},
-{
-"d": 0,
-"t": "div",
-"c": "col medium-6 small-12 large-6",
-"b": [
-135,
-2937,
-585,
-430
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"padding": "0px 15px 30px",
-"width": "585px",
-"height": "430px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "50%",
-"objectFit": "fill"
-}
-},
-{
-"d": 1,
-"t": "div",
-"c": "col-inner",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 2,
-"t": "div",
-"c": "is-border",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "absolute",
-"borderRadius": "50px",
-"border": "0px solid rgb(236, 236, 236)",
-"borderTop": "0px solid rgb(236, 236, 236)",
-"objectFit": "fill"
-}
-},
-{
-"d": 2,
-"t": "div",
-"c": "banner has-hover",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"backgroundColor": "rgb(249, 109, 0)",
-"padding": "400px 0px 0px",
-"width": "555px",
-"height": "400px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"minHeight": "30px",
-"objectFit": "fill"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "banner-inner fill",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "banner-bg fill",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "img",
-"c": "bg attachment-large size-large lazy-load-active",
-"b": [
-150,
-2937,
-555,
-400
-],
-"s": "3-1024x576.png",
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "100%",
-"objectFit": "cover"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "banner-layers container",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "1170px",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "div",
-"c": "fill banner-link",
-"b": [
-150,
-2937,
-555,
-400
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "555px",
-"height": "400px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "div",
-"c": "text-box banner-layer x50 md-x50 lg-x50 y90 md-y90 lg-y90 res-text",
-"b": [
-206,
-3189,
-444,
-107
-],
-"y": {
-"fontSize": "10px",
-"fontWeight": "400",
-"lineHeight": "16px",
-"color": "rgb(10, 10, 10)",
-"width": "444px",
-"height": "107.398px",
-"position": "absolute",
-"top": "252.602px",
-"left": "277.5px",
-"right": "-166.5px",
-"bottom": "40px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 6,
-"t": "div",
-"c": "text-box-content text dark",
-"b": [
-206,
-3198,
-444,
-88
-],
-"y": {
-"fontSize": "10px",
-"fontWeight": "400",
-"lineHeight": "16px",
-"color": "rgb(241, 241, 241)",
-"width": "444px",
-"height": "88.3984px",
-"position": "relative",
-"border": "0px none rgb(241, 241, 241)",
-"borderTop": "0px none rgb(241, 241, 241)",
-"objectFit": "fill"
-}
-},
-{
-"d": 7,
-"t": "div",
-"c": "text-inner text-center",
-"b": [
-206,
-3198,
-444,
-88
-],
-"y": {
-"fontSize": "10px",
-"fontWeight": "400",
-"lineHeight": "16px",
-"color": "rgb(241, 241, 241)",
-"textAlign": "center",
-"width": "444px",
-"height": "88.3984px",
-"border": "0px none rgb(241, 241, 241)",
-"borderTop": "0px none rgb(241, 241, 241)",
-"objectFit": "fill"
-}
-},
-{
-"d": 0,
-"t": "== NEWS CARD ==",
-"c": "",
-"b": [
-0,
-0,
-0,
-0
-],
-"y": {}
-},
-{
-"d": 0,
-"t": "div",
-"c": "col post-item is-selected",
-"b": [
-135,
-4256,
-293,
-359
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"padding": "0px 15px 30px",
-"width": "292.5px",
-"height": "359.031px",
-"position": "absolute",
-"left": "1170px",
-"right": "-292.5px",
-"bottom": "44.5625px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "25%",
-"objectFit": "fill"
-}
-},
-{
-"d": 1,
-"t": "div",
-"c": "col-inner",
-"b": [
-150,
-4256,
-263,
-329
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "262.5px",
-"height": "329.031px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 2,
-"t": "div",
-"c": "box box-bounce box-text-bottom box-blog-post has-hover",
-"b": [
-150,
-4256,
-263,
-329
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "262.5px",
-"height": "329.031px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "box-image",
-"b": [
-150,
-4256,
-263,
-197
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "262.5px",
-"height": "196.875px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "image-cover",
-"b": [
-150,
-4256,
-263,
-197
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"padding": "196.875px 0px 0px",
-"width": "262.5px",
-"height": "196.875px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "a",
-"c": "plain",
-"b": [
-150,
-4453,
-263,
-0
-],
-"h": "https://myanhome.com.vn/mau-thiet-ke-biet-thu-lang-son/",
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "262.5px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 6,
-"t": "img",
-"c": "attachment-medium size-medium wp-post-image lazy-load-active",
-"b": [
-150,
-4256,
-263,
-197
-],
-"s": "3-300x200.jpg",
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "262.5px",
-"height": "196.875px",
-"position": "absolute",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "100%",
-"objectFit": "cover"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "box-text text-center",
-"b": [
-150,
-4453,
-263,
-132
-],
-"y": {
-"fontSize": "14.4px",
-"fontWeight": "400",
-"lineHeight": "23.04px",
-"color": "rgb(10, 10, 10)",
-"textAlign": "center",
-"padding": "15px 15px 20px",
-"width": "262.5px",
-"height": "132.156px",
-"position": "relative",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "box-text-inner blog-post-inner",
-"b": [
-165,
-4470,
-233,
-94
-],
-"y": {
-"fontSize": "14.4px",
-"fontWeight": "400",
-"lineHeight": "23.04px",
-"color": "rgb(10, 10, 10)",
-"textAlign": "center",
-"width": "232.5px",
-"height": "94.0703px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "h5",
-"c": "post-title is-large ",
-"b": [
-165,
-4470,
-233,
-46
-],
-"y": {
-"fontSize": "16.56px",
-"fontWeight": "400",
-"lineHeight": "21.528px",
-"color": "rgb(249, 109, 0)",
-"textAlign": "center",
-"margin": "1.656px 0px",
-"width": "232.5px",
-"height": "46.3594px",
-"border": "0px none rgb(249, 109, 0)",
-"borderTop": "0px none rgb(249, 109, 0)",
-"objectFit": "fill"
-}
-},
-{
-"d": 6,
-"t": "a",
-"c": "plain",
-"b": [
-165,
-4472,
-233,
-43
-],
-"x": "Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng",
-"h": "https://myanhome.com.vn/mau-thiet-ke-biet-thu-lang-son/",
-"y": {
-"fontSize": "16.56px",
-"fontWeight": "400",
-"lineHeight": "21.528px",
-"color": "rgb(249, 109, 0)",
-"textAlign": "center",
-"margin": "1.656px 0px",
-"width": "232.5px",
-"height": "43.0625px",
-"display": "inline-block",
-"border": "0px none rgb(249, 109, 0)",
-"borderTop": "0px none rgb(249, 109, 0)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "div",
-"c": "is-divider",
-"b": [
-0,
-0,
-0,
-0
-],
-"y": {
-"fontSize": "14.4px",
-"fontWeight": "400",
-"lineHeight": "23.04px",
-"color": "rgb(10, 10, 10)",
-"textAlign": "center",
-"backgroundColor": "rgba(0, 0, 0, 0.1)",
-"margin": "7.2px auto",
-"width": "100%",
-"height": "2px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"maxWidth": "30px",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "p",
-"c": "from_the_blog_excerpt ",
-"b": [
-165,
-4518,
-233,
-46
-],
-"x": "1. Tổng quan dự án Tên công trình: Thiết kế nội thất Biệt thự Lạng ...",
-"y": {
-"fontSize": "14.4px",
-"fontWeight": "400",
-"lineHeight": "23.04px",
-"color": "rgb(10, 10, 10)",
-"textAlign": "center",
-"margin": "1.44px 0px",
-"width": "232.5px",
-"height": "46.0625px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 3,
-"t": "div",
-"c": "badge absolute top post-date badge-square",
-"b": [
-150,
-4280,
-45,
-45
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "400",
-"lineHeight": "25.6px",
-"color": "rgb(10, 10, 10)",
-"width": "44.7969px",
-"height": "44.7969px",
-"display": "table",
-"position": "absolute",
-"top": "23.0312px",
-"right": "217.703px",
-"bottom": "261.203px",
-"border": "0px none rgb(10, 10, 10)",
-"borderTop": "0px none rgb(10, 10, 10)",
-"objectFit": "fill"
-}
-},
-{
-"d": 4,
-"t": "div",
-"c": "badge-inner",
-"b": [
-150,
-4280,
-45,
-45
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "700",
-"lineHeight": "13.6px",
-"color": "rgb(255, 255, 255)",
-"textAlign": "center",
-"backgroundColor": "rgb(249, 109, 0)",
-"padding": "2px",
-"width": "44.7969px",
-"height": "44.7969px",
-"display": "table-cell",
-"border": "0px none rgb(255, 255, 255)",
-"borderTop": "0px none rgb(255, 255, 255)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "span",
-"c": "post-date-day",
-"b": [
-162,
-4285,
-21,
-19
-],
-"x": "09",
-"y": {
-"fontSize": "16px",
-"fontWeight": "700",
-"lineHeight": "13.6px",
-"color": "rgb(255, 255, 255)",
-"textAlign": "center",
-"display": "inline",
-"border": "0px none rgb(255, 255, 255)",
-"borderTop": "0px none rgb(255, 255, 255)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "br",
-"c": "",
-"b": [
-183,
-4285,
-0,
-19
-],
-"y": {
-"fontSize": "16px",
-"fontWeight": "700",
-"lineHeight": "13.6px",
-"color": "rgb(255, 255, 255)",
-"textAlign": "center",
-"display": "inline",
-"border": "0px none rgb(255, 255, 255)",
-"borderTop": "0px none rgb(255, 255, 255)",
-"objectFit": "fill"
-}
-},
-{
-"d": 5,
-"t": "span",
-"c": "post-date-month is-xsmall",
-"b": [
-161,
-4303,
-22,
-14
-],
-"x": "Th9",
-"y": {
-"fontSize": "11.2px",
-"fontWeight": "700",
-"lineHeight": "9.52px",
-"color": "rgb(255, 255, 255)",
-"textAlign": "center",
-"display": "inline",
-"border": "0px none rgb(255, 255, 255)",
-"borderTop": "0px none rgb(255, 255, 255)",
-"objectFit": "fill"
-}
-}
+  {
+    "d": 0,
+    "t": "== BANNER ==",
+    "c": "",
+    "b": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "y": {}
+  },
+  {
+    "d": 0,
+    "t": "div",
+    "c": "col-inner",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 1,
+    "t": "div",
+    "c": "banner has-hover",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "minHeight": "30px",
+      "objectFit": "cover"
+    }
+  },
+  {
+    "d": 2,
+    "t": "div",
+    "c": "banner-inner fill",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "banner-bg fill",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "img",
+    "c": "bg attachment-original size-original lazy-load-active",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "s": "the-charm-1.png",
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "100%",
+      "objectFit": "cover"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "banner-layers container",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "1170px",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "fill banner-link",
+    "b": [
+      149,
+      1684,
+      755,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "755.406px",
+      "height": "430.406px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "text-box banner-layer x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text",
+    "b": [
+      186,
+      2052,
+      302,
+      41
+    ],
+    "y": {
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.2px",
+      "color": "rgb(10, 10, 10)",
+      "width": "302.156px",
+      "height": "41.1172px",
+      "position": "absolute",
+      "top": "367.773px",
+      "left": "37.7656px",
+      "right": "415.484px",
+      "bottom": "21.5156px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "div",
+    "c": "text-box-content text dark",
+    "b": [
+      186,
+      2052,
+      302,
+      41
+    ],
+    "y": {
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.2px",
+      "color": "rgb(241, 241, 241)",
+      "width": "302.156px",
+      "height": "41.1172px",
+      "position": "relative",
+      "border": "0px none rgb(241, 241, 241)",
+      "borderTop": "0px none rgb(241, 241, 241)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 6,
+    "t": "div",
+    "c": "text-inner text-left",
+    "b": [
+      186,
+      2052,
+      302,
+      41
+    ],
+    "y": {
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.2px",
+      "color": "rgb(241, 241, 241)",
+      "textAlign": "left",
+      "width": "302.156px",
+      "height": "41.1172px",
+      "border": "0px none rgb(241, 241, 241)",
+      "borderTop": "0px none rgb(241, 241, 241)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 0,
+    "t": "== CONTACT ROW ==",
+    "c": "",
+    "b": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "y": {}
+  },
+  {
+    "d": 0,
+    "t": "div",
+    "c": "col medium-6 small-12 large-6",
+    "b": [
+      135,
+      2937,
+      585,
+      430
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "padding": "0px 15px 30px",
+      "width": "585px",
+      "height": "430px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "50%",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 1,
+    "t": "div",
+    "c": "col-inner",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 2,
+    "t": "div",
+    "c": "is-border",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "absolute",
+      "borderRadius": "50px",
+      "border": "0px solid rgb(236, 236, 236)",
+      "borderTop": "0px solid rgb(236, 236, 236)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 2,
+    "t": "div",
+    "c": "banner has-hover",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "400px 0px 0px",
+      "width": "555px",
+      "height": "400px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "minHeight": "30px",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "banner-inner fill",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "banner-bg fill",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "img",
+    "c": "bg attachment-large size-large lazy-load-active",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "s": "3-1024x576.png",
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "100%",
+      "objectFit": "cover"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "banner-layers container",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "1170px",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "div",
+    "c": "fill banner-link",
+    "b": [
+      150,
+      2937,
+      555,
+      400
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "555px",
+      "height": "400px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "div",
+    "c": "text-box banner-layer x50 md-x50 lg-x50 y90 md-y90 lg-y90 res-text",
+    "b": [
+      206,
+      3189,
+      444,
+      107
+    ],
+    "y": {
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(10, 10, 10)",
+      "width": "444px",
+      "height": "107.398px",
+      "position": "absolute",
+      "top": "252.602px",
+      "left": "277.5px",
+      "right": "-166.5px",
+      "bottom": "40px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 6,
+    "t": "div",
+    "c": "text-box-content text dark",
+    "b": [
+      206,
+      3198,
+      444,
+      88
+    ],
+    "y": {
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(241, 241, 241)",
+      "width": "444px",
+      "height": "88.3984px",
+      "position": "relative",
+      "border": "0px none rgb(241, 241, 241)",
+      "borderTop": "0px none rgb(241, 241, 241)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 7,
+    "t": "div",
+    "c": "text-inner text-center",
+    "b": [
+      206,
+      3198,
+      444,
+      88
+    ],
+    "y": {
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "color": "rgb(241, 241, 241)",
+      "textAlign": "center",
+      "width": "444px",
+      "height": "88.3984px",
+      "border": "0px none rgb(241, 241, 241)",
+      "borderTop": "0px none rgb(241, 241, 241)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 0,
+    "t": "== NEWS CARD ==",
+    "c": "",
+    "b": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "y": {}
+  },
+  {
+    "d": 0,
+    "t": "div",
+    "c": "col post-item is-selected",
+    "b": [
+      135,
+      4256,
+      293,
+      359
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "padding": "0px 15px 30px",
+      "width": "292.5px",
+      "height": "359.031px",
+      "position": "absolute",
+      "left": "1170px",
+      "right": "-292.5px",
+      "bottom": "44.5625px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "25%",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 1,
+    "t": "div",
+    "c": "col-inner",
+    "b": [
+      150,
+      4256,
+      263,
+      329
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "262.5px",
+      "height": "329.031px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 2,
+    "t": "div",
+    "c": "box box-bounce box-text-bottom box-blog-post has-hover",
+    "b": [
+      150,
+      4256,
+      263,
+      329
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "262.5px",
+      "height": "329.031px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "box-image",
+    "b": [
+      150,
+      4256,
+      263,
+      197
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "262.5px",
+      "height": "196.875px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "image-cover",
+    "b": [
+      150,
+      4256,
+      263,
+      197
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "padding": "196.875px 0px 0px",
+      "width": "262.5px",
+      "height": "196.875px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "a",
+    "c": "plain",
+    "b": [
+      150,
+      4453,
+      263,
+      0
+    ],
+    "h": "https://myanhome.com.vn/mau-thiet-ke-biet-thu-lang-son/",
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "262.5px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 6,
+    "t": "img",
+    "c": "attachment-medium size-medium wp-post-image lazy-load-active",
+    "b": [
+      150,
+      4256,
+      263,
+      197
+    ],
+    "s": "3-300x200.jpg",
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "262.5px",
+      "height": "196.875px",
+      "position": "absolute",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "100%",
+      "objectFit": "cover"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "box-text text-center",
+    "b": [
+      150,
+      4453,
+      263,
+      132
+    ],
+    "y": {
+      "fontSize": "14.4px",
+      "fontWeight": "400",
+      "lineHeight": "23.04px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "padding": "15px 15px 20px",
+      "width": "262.5px",
+      "height": "132.156px",
+      "position": "relative",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "box-text-inner blog-post-inner",
+    "b": [
+      165,
+      4470,
+      233,
+      94
+    ],
+    "y": {
+      "fontSize": "14.4px",
+      "fontWeight": "400",
+      "lineHeight": "23.04px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "width": "232.5px",
+      "height": "94.0703px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "h5",
+    "c": "post-title is-large ",
+    "b": [
+      165,
+      4470,
+      233,
+      46
+    ],
+    "y": {
+      "fontSize": "16.56px",
+      "fontWeight": "400",
+      "lineHeight": "21.528px",
+      "color": "rgb(249, 109, 0)",
+      "textAlign": "center",
+      "margin": "1.656px 0px",
+      "width": "232.5px",
+      "height": "46.3594px",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 6,
+    "t": "a",
+    "c": "plain",
+    "b": [
+      165,
+      4472,
+      233,
+      43
+    ],
+    "x": "Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng",
+    "h": "https://myanhome.com.vn/mau-thiet-ke-biet-thu-lang-son/",
+    "y": {
+      "fontSize": "16.56px",
+      "fontWeight": "400",
+      "lineHeight": "21.528px",
+      "color": "rgb(249, 109, 0)",
+      "textAlign": "center",
+      "margin": "1.656px 0px",
+      "width": "232.5px",
+      "height": "43.0625px",
+      "display": "inline-block",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "div",
+    "c": "is-divider",
+    "b": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "y": {
+      "fontSize": "14.4px",
+      "fontWeight": "400",
+      "lineHeight": "23.04px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.1)",
+      "margin": "7.2px auto",
+      "width": "100%",
+      "height": "2px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "maxWidth": "30px",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "p",
+    "c": "from_the_blog_excerpt ",
+    "b": [
+      165,
+      4518,
+      233,
+      46
+    ],
+    "x": "1. Tổng quan dự án Tên công trình: Thiết kế nội thất Biệt thự Lạng ...",
+    "y": {
+      "fontSize": "14.4px",
+      "fontWeight": "400",
+      "lineHeight": "23.04px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "margin": "1.44px 0px",
+      "width": "232.5px",
+      "height": "46.0625px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 3,
+    "t": "div",
+    "c": "badge absolute top post-date badge-square",
+    "b": [
+      150,
+      4280,
+      45,
+      45
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "44.7969px",
+      "height": "44.7969px",
+      "display": "table",
+      "position": "absolute",
+      "top": "23.0312px",
+      "right": "217.703px",
+      "bottom": "261.203px",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 4,
+    "t": "div",
+    "c": "badge-inner",
+    "b": [
+      150,
+      4280,
+      45,
+      45
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "13.6px",
+      "color": "rgb(255, 255, 255)",
+      "textAlign": "center",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "2px",
+      "width": "44.7969px",
+      "height": "44.7969px",
+      "display": "table-cell",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderTop": "0px none rgb(255, 255, 255)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "span",
+    "c": "post-date-day",
+    "b": [
+      162,
+      4285,
+      21,
+      19
+    ],
+    "x": "09",
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "13.6px",
+      "color": "rgb(255, 255, 255)",
+      "textAlign": "center",
+      "display": "inline",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderTop": "0px none rgb(255, 255, 255)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "br",
+    "c": "",
+    "b": [
+      183,
+      4285,
+      0,
+      19
+    ],
+    "y": {
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "lineHeight": "13.6px",
+      "color": "rgb(255, 255, 255)",
+      "textAlign": "center",
+      "display": "inline",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderTop": "0px none rgb(255, 255, 255)",
+      "objectFit": "fill"
+    }
+  },
+  {
+    "d": 5,
+    "t": "span",
+    "c": "post-date-month is-xsmall",
+    "b": [
+      161,
+      4303,
+      22,
+      14
+    ],
+    "x": "Th9",
+    "y": {
+      "fontSize": "11.2px",
+      "fontWeight": "700",
+      "lineHeight": "9.52px",
+      "color": "rgb(255, 255, 255)",
+      "textAlign": "center",
+      "display": "inline",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderTop": "0px none rgb(255, 255, 255)",
+      "objectFit": "fill"
+    }
+  }
 ]

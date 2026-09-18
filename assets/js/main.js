@@ -110,6 +110,8 @@
       on(btn, 'click', function (e) { e.preventDefault(); setOpen(true); });
     });
     on(overlay, 'click', function () { setOpen(false); });
+    /* The overlay IS the menu, so a click on its own backdrop closes it. */
+    on(sidebar, 'click', function (e) { if (e.target === sidebar) setOpen(false); });
     qsa('.mobile-sidebar .close-menu').forEach(function (b) {
       on(b, 'click', function (e) { e.preventDefault(); setOpen(false); });
     });

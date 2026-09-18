@@ -49,6 +49,12 @@
           <ul class="header-nav header-nav-main nav-left"></ul>
         </div>
 
+        <div class="flex-col show-for-medium flex-right">
+          <div class="header-button">
+            <a href="tel:0978264334" class="button secondary is-small"><span>Gọi Ngay</span></a>
+          </div>
+        </div>
+
         <div class="flex-col hide-for-medium flex-right">
           <ul class="header-nav header-nav-main nav-right">
             <li class="menu-item" data-nav="home">
@@ -155,7 +161,7 @@
         <div class="hero-inner">
           <h1><strong>myan home</strong></h1>
           <p class="lead"><strong>ĐƠN VỊ THIẾT KẾ VÀ THI CÔNG TRỌN GÓI</strong></p>
-          <a class="button is-outline is-pill" href="https://docs.google.com/forms/d/1IOZtlwErykfYkhaucdZHVpZplx-5ZwMMRMKtz1EFNQ0/viewform?hl=vi&amp;hl=vi&amp;edit_requested=true" target="_blank" rel="noopener">ĐĂNG KÝ TƯ VẤN</a>
+          <a class="button white is-outline" href="https://docs.google.com/forms/d/1IOZtlwErykfYkhaucdZHVpZplx-5ZwMMRMKtz1EFNQ0/viewform?hl=vi&amp;hl=vi&amp;edit_requested=true" target="_blank" rel="noopener">ĐĂNG KÝ TƯ VẤN</a>
         </div>
       </div>
     </section>
@@ -168,7 +174,7 @@
             <div class="service-copy">
               <h2>DỊCH VỤ THIẾT KẾ</h2>
               <p>Dịch vụ thiết kế tại Myan Home là sự kết hợp tinh tế giữa tư duy kiến trúc hiện đại và tâm huyết kiến tạo không gian sống “Đẹp từ chất – An từ tâm”. Với đội ngũ kiến trúc sư giàu kinh nghiệm, Myan Home chuyên cung cấp các giải pháp thiết kế nội thất và kiến trúc đa dạng từ chung cư, nhà phố đến biệt thự sang trọng. Mỗi bản thiết kế không chỉ đề cao tính thẩm mỹ, sự thanh lịch và tối ưu công năng sử dụng mà còn tập trung vào tính cá nhân hóa, giúp gia chủ sở hữu một không gian sống bền vững, an toàn và mang đậm dấu ấn riêng.</p>
-              <a class="button is-outline is-pill" href="/category/thiet-ke-noi-that">THIẾT KẾ NỘI THẤT</a>
+              <a class="button primary is-outline" href="/category/thiet-ke-noi-that">THIẾT KẾ NỘI THẤT</a>
             </div>
           </div>
 
@@ -197,7 +203,7 @@
             <div class="service-copy">
               <h2>DỊCH VỤ THI CÔNG HOÀN THIỆN</h2>
               <p>Dịch vụ thi công hoàn thiện tại Myan Home là giai đoạn quan trọng nhằm hiện thực hóa bản vẽ thành một không gian sống hiện đại, thanh lịch và giàu cảm xúc. Với lợi thế sở hữu hệ thống nhà máy sản xuất riêng, Myan Home chủ động kiểm soát hoàn toàn chất lượng nguyên vật liệu và độ tinh xảo của các sản phẩm nội thất từ gỗ công nghiệp đến các phụ kiện cao cấp. Quy trình thi công hoàn thiện được thực hiện bởi đội ngũ thợ lành nghề, đảm bảo sự chuẩn xác trong từng đường nét ốp lát, sơn bả và lắp đặt thiết bị. Đặc biệt, MyAn Home cam kết bàn giao công trình đúng tiến độ, tối ưu chi phí và đảm bảo tiêu chuẩn an toàn sức khỏe cho người sử dụng, mang đến sự an tâm tuyệt đối và một không gian sống trọn vẹn “đúng chất” riêng của gia chủ.</p>
-              <a class="button is-outline is-pill" href="/nha-may-san-xuat">NHÀ MÁY SẢN XUẤT</a>
+              <a class="button primary is-outline" href="/nha-may-san-xuat">NHÀ MÁY SẢN XUẤT</a>
             </div>
           </div>
 
@@ -309,8 +315,17 @@
 
 </div><!-- /#wrapper -->
 
+<!-- Full-screen centred overlay, like the live site — not a side drawer. -->
 <div id="main-menu" class="mobile-sidebar no-scrollbar">
+  <button type="button" class="close-menu" aria-label="Đóng menu">&times;</button>
   <ul class="nav-sidebar">
+    <li class="menu-item search-item">
+      <form role="search" method="get" action="/" class="searchform-wrapper">
+        <label class="screen-reader-text" for="menu-search">Tìm kiếm</label>
+        <input id="menu-search" type="search" name="s" placeholder="Search…" autocomplete="off">
+        <button type="submit" class="submit-button" aria-label="Tìm kiếm"><i class="icon-search" aria-hidden="true"></i></button>
+      </form>
+    </li>
     <li><a href="/">Trang chủ</a></li>
     <li>
       <a href="/gioi-thieu">Giới thiệu</a>

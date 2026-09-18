@@ -257,7 +257,15 @@
 }
 .mobile-nav > li > a:hover { color: var(--c-orange-nav); }
 
+/* --- mobile call-to-action ---------------------------------------------- */
+
+.header-button { display: none; }
+
 @media (max-width: 849px) {
+  /* A "Gọi Ngay" pill replaces the desktop menu on the right. */
+  .header-button { display: block; }
+  .header-button .button { margin: 0; }
+
   /* Logo centres between the hamburger (left) and any right elements. */
   .header-inner.medium-logo-center { justify-content: space-between; }
   .header-inner.medium-logo-center #logo {
@@ -266,77 +274,119 @@
     flex: 1 1 auto;
     justify-content: center;
   }
-  .header-inner.medium-logo-center .flex-left { order: 1; }
-  .header-inner.medium-logo-center .flex-right { order: 3; margin-left: 0; }
+  .header-inner.medium-logo-center .flex-left { order: 1; flex: 0 0 auto; }
+  .header-inner.medium-logo-center .flex-right { order: 3; margin-left: 0; flex: 0 0 auto; }
+  .header-inner.medium-logo-center .flex-grow { display: none; }
 }
 
-/* --- off-canvas mobile menu --------------------------------------------- */
+/* --- mobile menu (full-screen overlay) ----------------------------------- */
+/* Measured on the live site: 86%-black wash, centred 18px/28.8px uppercase
+   links in 53px rows, a search field on top and a 40px close button. */
 
 .mobile-sidebar {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  width: 260px;
-  max-width: 85vw;
-  height: 100%;
-  padding: 20px 0;
-  background: #fff;
-  overflow-y: auto;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-.mobile-sidebar.is-open { transform: translateX(0); }
-
-.mobile-sidebar.mfp-hide { display: block; }
-
-.mobile-sidebar .nav-sidebar { list-style: none; margin: 0; padding: 0; }
-.mobile-sidebar .nav-sidebar li { border-bottom: 1px solid var(--c-border); }
-.mobile-sidebar .nav-sidebar > li > a,
-.mobile-sidebar .nav-sidebar li a {
-  display: block;
-  padding: 12px 20px;
-  color: var(--c-text);
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.mobile-sidebar .nav-sidebar .sub-menu { padding-left: 0; }
-.mobile-sidebar .nav-sidebar .sub-menu li { border-bottom: 0; }
-.mobile-sidebar .nav-sidebar .sub-menu a {
-  padding: 9px 20px 9px 36px;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: none;
-  color: var(--c-text-muted);
-}
-.mobile-sidebar .nav-sidebar a:hover { color: var(--c-orange-nav); }
-
-/* collapsible sub-menus */
-.mobile-sidebar .toggle {
-  position: absolute;
-  right: 6px;
-  top: 4px;
-  width: 38px;
-  height: 38px;
-  border: 0;
-  background: transparent;
-  color: var(--c-text-muted);
-  cursor: pointer;
-  transition: transform 0.25s;
-}
-.mobile-sidebar li.has-child { position: relative; }
-.mobile-sidebar li.has-child > .sub-menu { display: none; }
-.mobile-sidebar li.has-child.is-open > .sub-menu { display: block; }
-.mobile-sidebar li.has-child.is-open > .toggle { transform: rotate(180deg); }
-
-.main-menu-overlay {
-  position: fixed;
   inset: 0;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 20px;
+  background: rgba(17, 2, 2, 0.86);
+  color: var(--c-light);
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
 }
-.main-menu-overlay.is-open { opacity: 1; visibility: visible; }
+.mobile-sidebar.is-open { opacity: 1; visibility: visible; }
+.mobile-sidebar.mfp-hide { display: flex; }
+
+.mobile-sidebar .close-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.mobile-sidebar .close-menu:hover { opacity: 1; }
+
+.mobile-sidebar .nav-sidebar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.mobile-sidebar .nav-sidebar > li { position: relative; }
+
+.mobile-sidebar .nav-sidebar > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 53px;
+  padding: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.mobile-sidebar .nav-sidebar > li > a:hover,
+.mobile-sidebar .nav-sidebar > li.active > a { color: var(--c-orange); }
+
+.mobile-sidebar .sub-menu { margin: 0; padding: 0; list-style: none; }
+.mobile-sidebar .sub-menu > li > a {
+  display: block;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 26px;
+  text-transform: none;
+}
+.mobile-sidebar .sub-menu > li > a:hover { color: var(--c-orange); }
+
+/* search row */
+.mobile-sidebar .search-item { padding: 10px; }
+.mobile-sidebar .searchform-wrapper input[type="search"] {
+  height: 39px;
+  margin: 0;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+}
+.mobile-sidebar .searchform-wrapper .submit-button {
+  height: 39px;
+  width: 44px;
+  background: var(--c-orange);
+  color: #fff;
+}
+
+/* collapsible sub-menus */
+.mobile-sidebar .toggle {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  width: 45px;
+  height: 39px;
+  border: 0;
+  background: transparent;
+  color: var(--c-light);
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.mobile-sidebar li.has-child > .sub-menu { display: none; }
+.mobile-sidebar li.has-child.is-open > .sub-menu { display: block; }
+.mobile-sidebar li.has-child.is-open > .toggle { transform: rotate(180deg); }
+
+/* The wash IS the overlay, so the separate scrim stays invisible. */
+.main-menu-overlay { display: none; }

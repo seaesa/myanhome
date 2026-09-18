@@ -221,6 +221,6 @@
 }
 
 @media (max-width: 549px) {
-  .cta-banner h2 > span { font-size: 20px; line-height: 28px; }
+  .cta-banner h2 > span { font-size: 23.04px; line-height: 29.952px; }
   .chat-widget { right: 14px; bottom: 76px; }
 }
