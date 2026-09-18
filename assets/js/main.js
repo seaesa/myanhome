@@ -240,6 +240,25 @@
     els.forEach(function (e) { io.observe(e); });
   }
 
+  /* ------------------------------------------------------------ back to top */
+  /* Flatsome reveals #top-link once the page has scrolled a screenful-ish. */
+  function initBackToTop() {
+    var btn = qs('#top-link');
+    if (!btn) return;
+    var ticking = false;
+    function apply() {
+      btn.classList.toggle('active', window.pageYOffset > 300);
+      ticking = false;
+    }
+    on(window, 'scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(apply); }
+    }, { passive: true });
+    on(btn, 'click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    apply();
+  }
+
   /* ------------------------------------------------------------ chat widget */
   function initChatWidget() {
     var root = qs('.chat-widget');
@@ -255,6 +274,7 @@
     initSliders();
     initCarousels();
     initReveal();
+    initBackToTop();
     initChatWidget();
   }
 

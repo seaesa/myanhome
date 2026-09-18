@@ -1,0 +1,507 @@
+[
+  {
+    "tag": "button",
+    "cls": "ux-search-submit submit-button secondary button icon mb-0",
+    "txt": "",
+    "rect": [
+      38,
+      37
+    ],
+    "css": {
+      "fontSize": "14.744px",
+      "fontWeight": "700",
+      "lineHeight": "35.3856px",
+      "letterSpacing": "0.44232px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "0px 8.8464px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "border": "1px solid rgba(0, 0, 0, 0.05)",
+      "minHeight": "36.86px",
+      "height": "37.3828px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "37.8203px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "button secondary is-small",
+    "txt": "Gọi Ngay",
+    "rect": [
+      0,
+      0
+    ],
+    "css": {
+      "fontSize": "10.88px",
+      "fontWeight": "700",
+      "lineHeight": "26.112px",
+      "letterSpacing": "0.3264px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "0px 13.056px",
+      "margin": "0px",
+      "borderRadius": "99px",
+      "border": "1px solid rgba(0, 0, 0, 0.05)",
+      "minHeight": "27.2px",
+      "height": "auto",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "auto",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "button primary is-outline",
+    "txt": "SHOWROOM",
+    "rect": [
+      142,
+      39
+    ],
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "33.9888px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px 18.624px",
+      "margin": "0px 0px 15.52px",
+      "borderRadius": "99px",
+      "border": "2px solid rgb(249, 109, 0)",
+      "minHeight": "38.8px",
+      "height": "38.7969px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "142.164px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "button white is-outline",
+    "txt": "BIỆT THỰ THỜI ĐẠI",
+    "rect": [
+      150,
+      29
+    ],
+    "css": {
+      "fontSize": "11.64px",
+      "fontWeight": "700",
+      "lineHeight": "25.4916px",
+      "letterSpacing": "0.3492px",
+      "color": "rgb(241, 241, 241)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px 13.968px",
+      "margin": "5.82px 11.64px 5.82px 0px",
+      "borderRadius": "0px",
+      "border": "2px solid rgb(241, 241, 241)",
+      "minHeight": "29.1px",
+      "height": "29.4922px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "150.188px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "button primary is-outline lowercase",
+    "txt": "TẤT CẢ DỰ ÁN",
+    "rect": [
+      154,
+      39
+    ],
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "33.9888px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "none",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px 18.624px",
+      "margin": "0px 0px 15.52px",
+      "borderRadius": "99px",
+      "border": "2px solid rgb(249, 109, 0)",
+      "minHeight": "38.8px",
+      "height": "38.7969px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "154.266px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "input",
+    "cls": "",
+    "txt": "6746",
+    "rect": [
+      0,
+      0
+    ],
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "textTransform": "none",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px 0px 16px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "minHeight": "0px",
+      "height": "auto",
+      "boxShadow": "none",
+      "transition": "all",
+      "opacity": "1",
+      "width": "auto",
+      "textAlign": "start",
+      "display": "none"
+    }
+  },
+  {
+    "tag": "input",
+    "cls": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+    "txt": "",
+    "rect": [
+      555,
+      38
+    ],
+    "css": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(51, 51, 51)",
+      "textTransform": "none",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "0px 11.25px",
+      "margin": "0px 0px 15px",
+      "borderRadius": "5px",
+      "border": "1px solid rgb(221, 221, 221)",
+      "minHeight": "0px",
+      "height": "37.6016px",
+      "boxShadow": "none",
+      "transition": "color 0.3s, border 0.3s, background 0.3s, opacity 0.3s",
+      "opacity": "1",
+      "width": "555px",
+      "textAlign": "start",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "input",
+    "cls": "wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel",
+    "txt": "",
+    "rect": [
+      555,
+      38
+    ],
+    "css": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(51, 51, 51)",
+      "textTransform": "none",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "0px 11.25px",
+      "margin": "0px 0px 15px",
+      "borderRadius": "5px",
+      "border": "1px solid rgb(221, 221, 221)",
+      "minHeight": "0px",
+      "height": "37.6016px",
+      "boxShadow": "none",
+      "transition": "color 0.3s, border 0.3s, background 0.3s, opacity 0.3s",
+      "opacity": "1",
+      "width": "555px",
+      "textAlign": "start",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "textarea",
+    "cls": "wpcf7-form-control wpcf7-textarea",
+    "txt": "",
+    "rect": [
+      555,
+      120
+    ],
+    "css": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "rgb(51, 51, 51)",
+      "textTransform": "none",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "10.5px 11.25px 0px",
+      "margin": "0px 0px 15px",
+      "borderRadius": "5px",
+      "border": "1px solid rgb(221, 221, 221)",
+      "minHeight": "120px",
+      "height": "120px",
+      "boxShadow": "none",
+      "transition": "color 0.3s, border 0.3s, background 0.3s, opacity 0.3s",
+      "opacity": "1",
+      "width": "555px",
+      "textAlign": "start",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "input",
+    "cls": "wpcf7-form-control wpcf7-submit has-spinner",
+    "txt": "Đăng ký tư vấn",
+    "rect": [
+      178,
+      39
+    ],
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "37.248px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "0px 18.624px",
+      "margin": "0px 15.52px 15.52px 0px",
+      "borderRadius": "0px",
+      "border": "1px solid rgba(0, 0, 0, 0.05)",
+      "minHeight": "38.8px",
+      "height": "39.25px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "178.102px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "icon primary button circle tooltip facebook",
+    "rect": [
+      33,
+      34
+    ],
+    "css": {
+      "fontSize": "13.192px",
+      "fontWeight": "700",
+      "lineHeight": "31.6608px",
+      "letterSpacing": "0.39576px",
+      "color": "rgb(58, 88, 157)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(58, 88, 157)",
+      "padding": "0px",
+      "margin": "0px 1.58304px 13.192px",
+      "borderRadius": "999px",
+      "border": "1px solid rgb(58, 88, 157)",
+      "minHeight": "32.98px",
+      "height": "33.6641px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "32.9766px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "icon primary button circle tooltip instagram",
+    "rect": [
+      33,
+      34
+    ],
+    "css": {
+      "fontSize": "13.192px",
+      "fontWeight": "700",
+      "lineHeight": "31.6608px",
+      "letterSpacing": "0.39576px",
+      "color": "rgb(59, 105, 148)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(59, 105, 148)",
+      "padding": "0px",
+      "margin": "0px 1.58304px 13.192px",
+      "borderRadius": "999px",
+      "border": "1px solid rgb(59, 105, 148)",
+      "minHeight": "32.98px",
+      "height": "33.6641px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "32.9766px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "icon primary button circle tooltip tiktok",
+    "rect": [
+      33,
+      34
+    ],
+    "css": {
+      "fontSize": "13.192px",
+      "fontWeight": "700",
+      "lineHeight": "31.6608px",
+      "letterSpacing": "0.39576px",
+      "color": "rgb(17, 17, 17)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(17, 17, 17)",
+      "padding": "0px",
+      "margin": "0px 1.58304px 13.192px",
+      "borderRadius": "999px",
+      "border": "1px solid rgb(17, 17, 17)",
+      "minHeight": "32.98px",
+      "height": "33.6641px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "32.9766px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "icon primary button circle tooltip email",
+    "rect": [
+      33,
+      34
+    ],
+    "css": {
+      "fontSize": "13.192px",
+      "fontWeight": "700",
+      "lineHeight": "31.6608px",
+      "letterSpacing": "0.39576px",
+      "color": "rgb(17, 17, 17)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(17, 17, 17)",
+      "padding": "0px",
+      "margin": "0px 1.58304px 13.192px",
+      "borderRadius": "999px",
+      "border": "1px solid rgb(17, 17, 17)",
+      "minHeight": "32.98px",
+      "height": "33.6641px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "32.9766px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "icon primary button circle tooltip phone",
+    "rect": [
+      33,
+      34
+    ],
+    "css": {
+      "fontSize": "13.192px",
+      "fontWeight": "700",
+      "lineHeight": "31.6608px",
+      "letterSpacing": "0.39576px",
+      "color": "rgb(81, 203, 90)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(81, 203, 90)",
+      "padding": "0px",
+      "margin": "0px 1.58304px 13.192px",
+      "borderRadius": "999px",
+      "border": "1px solid rgb(81, 203, 90)",
+      "minHeight": "32.98px",
+      "height": "33.6641px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "32.9766px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "a",
+    "cls": "button primary",
+    "txt": "MYAN HOME",
+    "rect": [
+      74,
+      21
+    ],
+    "css": {
+      "fontSize": "7.76px",
+      "fontWeight": "700",
+      "lineHeight": "18.624px",
+      "letterSpacing": "0.2328px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgb(249, 109, 0)",
+      "padding": "0px 9.312px",
+      "margin": "3.88px 7.76px 3.88px 0px",
+      "borderRadius": "0px",
+      "border": "1px solid rgba(0, 0, 0, 0.05)",
+      "minHeight": "19.4px",
+      "height": "20.625px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "74.2188px",
+      "textAlign": "center",
+      "display": "inline-block"
+    }
+  },
+  {
+    "tag": "button",
+    "cls": "back-to-top button icon invert plain fixed bottom z-1 is-outline circle hide-for-medium active",
+    "txt": "",
+    "rect": [
+      39,
+      39
+    ],
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "33.9888px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(192, 192, 192)",
+      "textTransform": "uppercase",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px 1.8624px",
+      "borderRadius": "999px",
+      "border": "2px solid rgb(192, 192, 192)",
+      "minHeight": "38.8px",
+      "height": "38.7969px",
+      "boxShadow": "none",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "opacity": "1",
+      "width": "38.7969px",
+      "textAlign": "center",
+      "display": "block"
+    }
+  }
+]

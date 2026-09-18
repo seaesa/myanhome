@@ -69,7 +69,14 @@ async function main() {
     const BASE = '/';
 
     const sub = s => cleanUrls(s.replaceAll('{{BASE}}', BASE));
-    const header = sub(markActive(headerTpl, meta.nav));
+
+    // Only the homepage uses Flatsome's transparent-header template, which is
+    // also 12px shorter (90px vs 102px). Everything else gets the plain bar.
+    const headerClass = meta.header === 'transparent'
+      ? 'has-transparent has-sticky sticky-jump transparent'
+      : 'has-sticky sticky-jump';
+    const header = sub(markActive(headerTpl, meta.nav))
+      .replace('{{HEADERCLASS}}', headerClass);
     const extraCss = (meta.css || '')
       .split(/\s+/).filter(Boolean)
       .map(n => `\n<link rel="stylesheet" href="${BASE}assets/css/${n}.css">`).join('');

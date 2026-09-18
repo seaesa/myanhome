@@ -1,0 +1,77 @@
+{
+  "contactBanner": "https://myanhome.com.vn/wp-content/uploads/2025/12/3-1024x576.png",
+  "partners": [
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/11-1-1536x341.png",
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/9-2-1536x341.png",
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/10-1-1536x341.png",
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/8-3-1536x341.png",
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/7-3-1536x341.png"
+  ],
+  "gallery": [
+    "https://myanhome.com.vn/wp-content/uploads/2026/01/feedback-2.png",
+    "https://myanhome.com.vn/wp-content/uploads/2026/01/20.png",
+    "https://myanhome.com.vn/wp-content/uploads/2026/01/19.png",
+    "https://myanhome.com.vn/wp-content/uploads/2026/01/18.png",
+    "https://myanhome.com.vn/wp-content/uploads/2026/01/feedback.png"
+  ],
+  "news": [
+    {
+      "href": "https://myanhome.com.vn/mau-thiet-ke-biet-thu-lang-son/",
+      "img": "https://myanhome.com.vn/wp-content/uploads/2026/09/3-300x200.jpg",
+      "title": "Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng",
+      "excerpt": "1. Tổng quan dự án Tên công trình: Thiết kế nội thất Biệt thự Lạng ...",
+      "day": "09",
+      "month": "Th9"
+    },
+    {
+      "href": "https://myanhome.com.vn/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang/",
+      "img": "https://myanhome.com.vn/wp-content/uploads/2026/07/54-300x232.jpg",
+      "title": "Thiết kế Nhà Phố hiện đại Thường Tín 3 tầng",
+      "excerpt": "Trong những năm gần đây, các mẫu nhà phố 3 tầng ngày càng được nhiều ...",
+      "day": "04",
+      "month": "Th7"
+    },
+    {
+      "href": "https://myanhome.com.vn/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine/",
+      "img": "https://myanhome.com.vn/wp-content/uploads/2026/06/139-300x232.png",
+      "title": "Thiết kế 3D căn Duplex Ecopark – Sky Forest – Phong cách Indochine",
+      "excerpt": "Dự án: Ecopark Phân khu: Sky Forest Công năng: thông tầng 2x100m2 Phong cách: Indochine",
+      "day": "10",
+      "month": "Th6"
+    },
+    {
+      "href": "https://myanhome.com.vn/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n/",
+      "img": "https://myanhome.com.vn/wp-content/uploads/2026/04/z7744707598280_7f6dc5ecee84117f41c1ffd3ea841f50-300x232.jpg",
+      "title": "Thiết kế Căn hộ The Beverly Vinhomes Ocean Park – Trục 13 tòa BE3 – 3N",
+      "excerpt": "Dự án: Căn hộ The Beverly, Vinhomes Ocean Park Trục 13 tòa BE3 Diện tích: ...",
+      "day": "20",
+      "month": "Th4"
+    }
+  ],
+  "banners": [
+    {
+      "img": "https://myanhome.com.vn/wp-content/uploads/2025/12/the-charm-1.png",
+      "href": "https://myanhome.com.vn/lien-ke-vinhomes-ocean-park-3-phan-khu-thoi-dai/",
+      "label": "BIỆT THỰ THỜI ĐẠI"
+    },
+    {
+      "img": "https://myanhome.com.vn/wp-content/uploads/2025/12/the-charm-4.png",
+      "href": "https://myanhome.com.vn/category/du-an/can-ho/",
+      "label": "GRAND SAPPHIRE"
+    },
+    {
+      "img": "https://myanhome.com.vn/wp-content/uploads/2025/12/the-charm-2.png",
+      "href": "https://myanhome.com.vn/ecopark-landmark-co-duong-duplex-73m2x2/",
+      "label": "DUPLEX LANDMARK"
+    },
+    {
+      "img": "https://myanhome.com.vn/wp-content/uploads/2025/12/z7355183785062_f0591fc8d2badec6e3c8aa0bc1148654.jpg",
+      "href": "https://myanhome.com.vn/category/du-an/penthouse-duplex/",
+      "label": "MEZZA SKY FOREST"
+    }
+  ],
+  "hero": [
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/2.png",
+    "https://myanhome.com.vn/wp-content/uploads/2025/12/3.png"
+  ]
+}

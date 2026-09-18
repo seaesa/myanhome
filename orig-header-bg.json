@@ -1,0 +1,354 @@
+{
+  "top": {
+    "bgs": [
+      {
+        "cls": "header-main ",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 90,
+        "pos": "relative",
+        "transition": "all"
+      },
+      {
+        "cls": "header-bg-container fill",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 90,
+        "pos": "absolute",
+        "transition": "all"
+      },
+      {
+        "cls": "header-bg-image fill",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 90,
+        "pos": "absolute",
+        "transition": "background 0.4s"
+      },
+      {
+        "cls": "header-bg-color fill",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 90,
+        "pos": "absolute",
+        "transition": "background 0.4s"
+      }
+    ],
+    "navs": [
+      {
+        "txt": "TRANG CHỦ",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(237, 119, 2)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px 0px 0px"
+      },
+      {
+        "txt": "GIỚI THIỆU",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "DỊCH VỤ",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "DỰ ÁN",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object-category ",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "NỘI THẤT ĐỒ RỜI",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object-category ",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "TIN TỨC",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "LIÊN HỆ",
+        "cls": "menu-item menu-item-type-custom menu-item-object-custom menu",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "",
+        "cls": "header-search header-search-dropdown has-icon has-dropdown m",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 0px 0px 9px"
+      }
+    ],
+    "rightNav": [
+      {
+        "txt": "TRANG CHỦ",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "GIỚI THIỆU\n\n\tNHÀ MÁY",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "DỊCH VỤ\n\n\tDỊCH VỤ TH",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "DỰ ÁN\n\n\tCĂN HỘ\n\tNHÀ ",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object"
+      },
+      {
+        "txt": "NỘI THẤT ĐỒ RỜI\n\n\tSO",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object"
+      },
+      {
+        "txt": "TIN TỨC\n\n\tPHONG CÁCH",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "LIÊN HỆ",
+        "cls": "menu-item menu-item-type-custom menu-item-object-c"
+      },
+      {
+        "txt": "",
+        "cls": "header-search header-search-dropdown has-icon has-"
+      },
+      {
+        "txt": "Gọi Ngay",
+        "cls": "html header-button-1"
+      }
+    ]
+  },
+  "stuck": {
+    "bgs": [
+      {
+        "cls": "header-main ",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 52,
+        "pos": "relative",
+        "transition": "all"
+      },
+      {
+        "cls": "header-bg-container fill",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 52,
+        "pos": "absolute",
+        "transition": "all"
+      },
+      {
+        "cls": "header-bg-image fill",
+        "bg": "rgba(0, 0, 0, 0)",
+        "bgImg": "url(\"https://vanchuyenthanhhung24h.com/wp-content/uploads/20",
+        "opacity": "1",
+        "h": 52,
+        "pos": "absolute",
+        "transition": "background 0.4s"
+      },
+      {
+        "cls": "header-bg-color fill",
+        "bg": "rgba(255, 255, 255, 0.3)",
+        "bgImg": "none",
+        "opacity": "1",
+        "h": 52,
+        "pos": "absolute",
+        "transition": "background 0.4s"
+      }
+    ],
+    "navs": [
+      {
+        "txt": "TRANG CHỦ",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(237, 119, 2)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px 0px 0px"
+      },
+      {
+        "txt": "GIỚI THIỆU",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "DỊCH VỤ",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "DỰ ÁN",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object-category ",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "NỘI THẤT ĐỒ RỜI",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object-category ",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "TIN TỨC",
+        "cls": "menu-item menu-item-type-post_type menu-item-object-page men",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "LIÊN HỆ",
+        "cls": "menu-item menu-item-type-custom menu-item-object-custom menu",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 9px"
+      },
+      {
+        "txt": "",
+        "cls": "header-search header-search-dropdown has-icon has-dropdown m",
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "17px",
+        "fontWeight": "700",
+        "pad": "10px 0px",
+        "ls": "normal",
+        "tt": "none",
+        "liPad": "0px",
+        "liMargin": "0px 0px 0px 9px"
+      }
+    ],
+    "rightNav": [
+      {
+        "txt": "TRANG CHỦ",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "GIỚI THIỆU\n\n\tNHÀ MÁY",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "DỊCH VỤ\n\n\tDỊCH VỤ TH",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "DỰ ÁN\n\n\tCĂN HỘ\n\tNHÀ ",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object"
+      },
+      {
+        "txt": "NỘI THẤT ĐỒ RỜI\n\n\tSO",
+        "cls": "menu-item menu-item-type-taxonomy menu-item-object"
+      },
+      {
+        "txt": "TIN TỨC\n\n\tPHONG CÁCH",
+        "cls": "menu-item menu-item-type-post_type menu-item-objec"
+      },
+      {
+        "txt": "LIÊN HỆ",
+        "cls": "menu-item menu-item-type-custom menu-item-object-c"
+      },
+      {
+        "txt": "",
+        "cls": "header-search header-search-dropdown has-icon has-"
+      },
+      {
+        "txt": "Gọi Ngay",
+        "cls": "html header-button-1"
+      }
+    ]
+  }
+}

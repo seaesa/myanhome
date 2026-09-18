@@ -135,13 +135,20 @@
         </div>
 
       </div>
+
+      <!-- The bar's fill is a separate layer (30% white wash), exactly as on
+           the live site; `#header.transparent` switches it off at scroll 0. -->
+      <div class="header-bg-container fill">
+        <div class="header-bg-image fill"></div>
+        <div class="header-bg-color fill"></div>
+      </div>
     </div>
   </div>
 </header>
 
 
   <main id="main">
-<!-- Hero slider -->
+<!-- Hero slider — full bleed, 720px, sits directly under the 90px bar. -->
     <section class="section hero-section">
       <div class="slider" data-slider data-autoplay="6000">
         <div class="slides">
@@ -157,23 +164,40 @@
       </div>
     </section>
 
-    <!-- Giới thiệu -->
+    <!-- Giới thiệu — 7/5 split; the left column is a hairline-topped panel. -->
     <section class="section intro-section">
-      <div class="container">
-        <div class="row align-middle">
-          <div class="col col-8" data-reveal>
-            <button class="lang-pill" type="button">
-              <img src="/assets/images/plugins/gtranslate/flags/svg/vi.svg" alt="" width="18" height="12">
-              <span>Vietnamese</span>
-            </button>
-            <h2>Giới thiệu về Myan Home</h2>
-            <p>Myan Home là Đơn vị Thiết kế &amp; thi công nội thất – kiến trúc trọn gói uy tín, hoạt động theo định hướng “Đẹp từ chất – An từ tâm”, chuyên kiến tạo không gian sống thẩm mỹ, chất lượng và an toàn. Cung cấp giải pháp toàn diện từ thiết kế đến hoàn thiện, Myan Home triển khai đa dạng hạng mục như chung cư, nhà phố, biệt thự, văn phòng…, đảm bảo bàn giao công trình hoàn chỉnh đúng tiêu chuẩn cam kết, với mỗi dự án mang dấu ấn riêng và giá trị bền vững theo thời gian.</p>
-            <div class="intro-actions">
-              <a href="/lien-he" class="button is-outline">Showroom</a>
-              <a href="/nha-may-san-xuat" class="button is-outline">Nhà máy sản xuất</a>
+      <div class="row row-flush">
+        <div class="col col-7">
+          <div class="col-inner">
+            <div class="intro-panel">
+              <div class="is-border"></div>
+              <div class="intro-panel-content">
+                <h2 class="section-title"><strong>Giới thiệu về Myan Home</strong></h2>
+                <div class="row row-large row-flush">
+                  <div class="col col-12">
+                    <div class="col-inner text-center">
+                      <p class="intro-copy">Myan Home là Đơn vị Thiết kế &amp; thi công nội thất – kiến trúc trọn gói uy tín, hoạt động theo định hướng “Đẹp từ chất – An từ tâm”, chuyên kiến tạo không gian sống thẩm mỹ, chất lượng và an toàn. Cung cấp giải pháp toàn diện từ thiết kế đến hoàn thiện, Myan Home triển khai đa dạng hạng mục như chung cư, nhà phố, biệt thự, văn phòng…, đảm bảo bàn giao công trình hoàn chỉnh đúng tiêu chuẩn cam kết, với mỗi dự án mang dấu ấn riêng và giá trị bền vững theo thời gian.</p>
+                      <div class="row row-flush">
+                        <div class="col col-6">
+                          <div class="col-inner">
+                            <a href="/gioi-thieu" class="button primary is-outline"><span>Showroom</span></a>
+                          </div>
+                        </div>
+                        <div class="col col-6">
+                          <div class="col-inner">
+                            <a href="/nha-may-san-xuat" class="button primary is-outline"><span>Nhà máy sản xuất</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col col-4 intro-media" data-reveal>
+        </div>
+        <div class="col col-5">
+          <div class="col-inner intro-media">
             <img src="/assets/images/uploads/2025/12/Thiet-ke-chua-co-ten-17-1024x784.png"
                  alt="Myan Home – đối tác An Cường" width="1020" height="781" loading="lazy">
           </div>
@@ -181,252 +205,394 @@
       </div>
     </section>
 
-    <!-- 4 giá trị -->
+    <!-- 4 giá trị — rounded cards, dotted orange border appears on hover. -->
     <section class="section values-section">
-      <div class="container">
-        <div class="row align-equal">
-          <div class="col col-3" data-reveal>
-            <div class="value-card">
-              <img src="/assets/images/uploads/2025/12/5-300x300.png" alt="" width="300" height="300" loading="lazy">
-              <h3>An toàn</h3>
-              <p>Vật liệu được tuyển chọn theo tiêu chuẩn an toàn và thân thiện, đảm bảo sức khỏe lâu dài cho người sử dụng.</p>
+      <div class="row align-equal">
+        <div class="col col-3">
+          <div class="col-inner value-card">
+            <div class="is-border is-dotted"></div>
+            <div class="icon-box text-center">
+              <div class="icon-box-img">
+                <img src="/assets/images/uploads/2025/12/5-300x300.png" alt="" width="300" height="300" loading="lazy">
+              </div>
+              <div class="icon-box-text">
+                <p class="uppercase"><span>An toàn</span></p>
+                <p><span>Vật liệu được tuyển chọn theo tiêu chuẩn an toàn và thân thiện, đảm bảo sức khỏe lâu dài cho người sử dụng.</span></p>
+              </div>
             </div>
           </div>
-          <div class="col col-3" data-reveal>
-            <div class="value-card">
-              <img src="/assets/images/uploads/2025/12/6-300x300.png" alt="" width="300" height="300" loading="lazy">
-              <h3>Thẩm mỹ</h3>
-              <p>Đội ngũ kiến trúc sư giàu kinh nghiệm, am hiểu chuyên môn, luôn đề cao giá trị thẩm mỹ và tính ứng dụng trong từng thiết kế.</p>
+        </div>
+        <div class="col col-3">
+          <div class="col-inner value-card">
+            <div class="is-border is-dotted"></div>
+            <div class="icon-box text-center">
+              <div class="icon-box-img">
+                <img src="/assets/images/uploads/2025/12/6-300x300.png" alt="" width="300" height="300" loading="lazy">
+              </div>
+              <div class="icon-box-text">
+                <p class="uppercase"><span>Thẩm mỹ</span></p>
+                <p><span>Đội ngũ kiến trúc sư giàu kinh nghiệm, am hiểu chuyên môn, luôn đề cao giá trị thẩm mỹ và tính ứng dụng trong từng thiết kế.</span></p>
+              </div>
             </div>
           </div>
-          <div class="col col-3" data-reveal>
-            <div class="value-card">
-              <img src="/assets/images/uploads/2025/12/7-300x300.png" alt="" width="300" height="300" loading="lazy">
-              <h3>Chất lượng</h3>
-              <p>Quy trình giám sát chặt chẽ, kiểm soát toàn diện mọi công đoạn từ thiết kế đến thi công, đảm bảo chất lượng công trình đúng cam kết.</p>
+        </div>
+        <div class="col col-3">
+          <div class="col-inner value-card">
+            <div class="is-border is-dotted"></div>
+            <div class="icon-box text-center">
+              <div class="icon-box-img">
+                <img src="/assets/images/uploads/2025/12/7-300x300.png" alt="" width="300" height="300" loading="lazy">
+              </div>
+              <div class="icon-box-text">
+                <p class="uppercase"><span>Chất lượng</span></p>
+                <p><span>Quy trình giám sát chặt chẽ, kiểm soát toàn diện mọi công đoạn từ thiết kế đến thi công, đảm bảo chất lượng công trình đúng cam kết.</span></p>
+              </div>
             </div>
           </div>
-          <div class="col col-3" data-reveal>
-            <div class="value-card">
-              <img src="/assets/images/uploads/2025/12/8-300x300.png" alt="" width="300" height="300" loading="lazy">
-              <h3>Minh bạch</h3>
-              <p>Tư vấn rõ ràng, tận tâm, giúp khách hàng đầu tư hiệu quả và xứng đáng với giá trị nhận được.</p>
+        </div>
+        <div class="col col-3">
+          <div class="col-inner value-card">
+            <div class="is-border is-dotted"></div>
+            <div class="icon-box text-center">
+              <div class="icon-box-img">
+                <img src="/assets/images/uploads/2025/12/8-300x300.png" alt="" width="300" height="300" loading="lazy">
+              </div>
+              <div class="icon-box-text">
+                <p class="uppercase"><span>Minh bạch</span></p>
+                <p><span>Tư vấn rõ ràng, tận tâm, giúp khách hàng đầu tư hiệu quả và xứng đáng với giá trị nhận được.</span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Dự án nổi bật -->
-    <section class="section projects-section">
-      <div class="container">
-        <h2 class="section-title">Dự án nổi bật</h2>
-        <div class="banner-grid" data-reveal>
-          <div class="banner">
-            <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-1.png" alt="Biệt thự Thời Đại" width="2200" height="1700" loading="lazy"></div>
-            <div class="banner-layer">
-              <a href="/category/biet-thu" class="button white is-outline"><span>Biệt thự Thời Đại</span></a>
-            </div>
-          </div>
-          <div class="banner">
-            <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-4.png" alt="Grand Sapphire" width="1920" height="1476" loading="lazy"></div>
-            <div class="banner-layer">
-              <a href="/category/can-ho" class="button white is-outline"><span>Grand Sapphire</span></a>
-            </div>
-          </div>
-          <div class="banner">
-            <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-2.png" alt="Duplex Landmark" width="1920" height="1476" loading="lazy"></div>
-            <div class="banner-layer">
-              <a href="/category/penthouse-duplex" class="button white is-outline"><span>Duplex Landmark</span></a>
-            </div>
-          </div>
-          <div class="banner">
-            <div class="banner-bg"><img src="/assets/images/uploads/2025/12/z7355183785062_f0591fc8d2badec6e3c8aa0bc1148654.jpg" alt="Mezza Sky Forest" width="1600" height="1200" loading="lazy"></div>
-            <div class="banner-layer">
-              <a href="/category/penthouse-duplex" class="button white is-outline"><span>Mezza Sky Forest</span></a>
+    <!-- Dự án nổi bật — the heading and grid are siblings at page level, so
+         the grid can run wider (1162.5px) than the 1170px content column. -->
+    <h2 class="section-title"><a href="/category/du-an"><strong>Dự án nổi bật</strong></a></h2>
+    <div class="gap-element" style="height:30px"></div>
+
+    <div class="banner-grid-wrapper">
+      <div class="banner-grid">
+        <div class="grid-col grid-a">
+          <div class="col-inner">
+            <div class="banner">
+              <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-1.png" alt="Biệt thự Thời Đại" width="2200" height="1700" loading="lazy"></div>
+              <div class="banner-layers">
+                <a class="banner-link" href="/post/lien-ke-vinhomes-ocean-park-3-phan-khu-thoi-dai" aria-label="Biệt thự Thời Đại"></a>
+                <div class="banner-layer">
+                  <a href="/post/lien-ke-vinhomes-ocean-park-3-phan-khu-thoi-dai" class="button white is-outline"><span>Biệt thự Thời Đại</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="projects-cta">
-          <a href="/category/du-an" class="button is-outline">Tất cả dự án</a>
+        <div class="grid-col grid-b">
+          <div class="col-inner">
+            <div class="banner">
+              <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-4.png" alt="Grand Sapphire" width="1920" height="1476" loading="lazy"></div>
+              <div class="banner-layers">
+                <a class="banner-link" href="/category/can-ho" aria-label="Grand Sapphire"></a>
+                <div class="banner-layer">
+                  <a href="/category/can-ho" class="button white is-outline"><span>Grand Sapphire</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col grid-c">
+          <div class="col-inner">
+            <div class="banner">
+              <div class="banner-bg"><img src="/assets/images/uploads/2025/12/the-charm-2.png" alt="Duplex Landmark" width="1920" height="1476" loading="lazy"></div>
+              <div class="banner-layers">
+                <a class="banner-link" href="/post/ecopark-landmark-co-duong-duplex-73m2x2" aria-label="Duplex Landmark"></a>
+                <div class="banner-layer">
+                  <a href="/post/ecopark-landmark-co-duong-duplex-73m2x2" class="button white is-outline"><span>Duplex Landmark</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col grid-d">
+          <div class="col-inner">
+            <div class="banner">
+              <div class="banner-bg"><img src="/assets/images/uploads/2025/12/z7355183785062_f0591fc8d2badec6e3c8aa0bc1148654.jpg" alt="Mezza Sky Forest" width="1600" height="1200" loading="lazy"></div>
+              <div class="banner-layers">
+                <a class="banner-link" href="/category/penthouse-duplex" aria-label="Mezza Sky Forest"></a>
+                <div class="banner-layer">
+                  <a href="/category/penthouse-duplex" class="button white is-outline"><span>Mezza Sky Forest</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Đối tác -->
+    <div class="row projects-cta">
+      <div class="col col-12">
+        <div class="col-inner text-center">
+          <a href="/category/du-an" class="button primary is-outline"><span>Tất cả dự án</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Đối tác + form đăng ký — one section on the live site, not two. -->
     <section class="section partners-section">
-      <div class="container">
-        <h2 class="section-title">Đối tác chiến lược</h2>
-        <div class="partner-rail" data-reveal>
-          <img src="/assets/images/uploads/2025/12/11-1-1024x228.png" alt="An Cường" width="1024" height="228" loading="lazy">
-          <img src="/assets/images/uploads/2025/12/9-2-1024x228.png" alt="Häfele" width="1024" height="228" loading="lazy">
-          <img src="/assets/images/uploads/2025/12/10-1-1024x228.png" alt="Blum" width="1024" height="228" loading="lazy">
-          <img src="/assets/images/uploads/2025/12/8-3-1024x228.png" alt="Vietceramics" width="1024" height="228" loading="lazy">
-          <img src="/assets/images/uploads/2025/12/7-3-1024x228.png" alt="Vicostone" width="1024" height="228" loading="lazy">
-        </div>
-      </div>
-    </section>
+      <div class="section-content">
+        <h2 class="section-title"><b>Đối tác chiến lược</b></h2>
+        <div class="gap-element" style="height:20px"></div>
 
-    <!-- CTA + form -->
-    <section class="section contact-section">
-      <div class="container">
-        <div class="row align-equal">
-          <div class="col col-6" data-reveal>
-            <div class="contact-panel">
-              <p class="eyebrow">Myan Home</p>
-              <h3>Thiết kế &amp; thi công trọn gói</h3>
-              <p class="phones">
-                <a href="tel:0978264334">0978 264 334</a> – <a href="tel:0942971357">0942 971 357</a>
-              </p>
+        <div class="partner-rail" data-carousel>
+          <div class="row row-collapse align-center partner-track">
+            <div class="col partner-col"><img src="/assets/images/uploads/2025/12/11-1-1024x228.png" alt="An Cường" width="1024" height="228" loading="lazy"></div>
+            <div class="col partner-col"><img src="/assets/images/uploads/2025/12/9-2-1024x228.png" alt="Häfele" width="1024" height="228" loading="lazy"></div>
+            <div class="col partner-col"><img src="/assets/images/uploads/2025/12/10-1-1024x228.png" alt="Blum" width="1024" height="228" loading="lazy"></div>
+            <div class="col partner-col"><img src="/assets/images/uploads/2025/12/8-3-1024x228.png" alt="Vietceramics" width="1024" height="228" loading="lazy"></div>
+            <div class="col partner-col"><img src="/assets/images/uploads/2025/12/7-3-1024x228.png" alt="Vicostone" width="1024" height="228" loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="gap-element" style="height:80px"></div>
+
+        <div class="row">
+          <div class="col col-6">
+            <div class="col-inner">
+              <div class="banner contact-banner">
+                <div class="banner-bg"><img src="/assets/images/uploads/2025/12/3-1024x576.png" alt="" width="1024" height="576" loading="lazy"></div>
+                <div class="banner-layers">
+                  <div class="banner-layer contact-layer">
+                    <div class="text-inner text-center">
+                      <h4 class="uppercase"><strong>Myan Home</strong></h4>
+                      <h2 class="uppercase"><span><strong>Thiết kế &amp; thi công trọn gói</strong></span></h2>
+                      <p><span><strong>0978 264 334 – 0942 971 357</strong></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col col-6" data-reveal>
-            <form class="contact-form" method="post" action="#" novalidate>
-              <div class="field">
-                <label for="cf-name">Họ và tên</label>
-                <input id="cf-name" type="text" name="name" autocomplete="name">
-              </div>
-              <div class="field">
-                <label for="cf-phone">Số điện thoại</label>
-                <input id="cf-phone" type="tel" name="phone" autocomplete="tel">
-              </div>
-              <div class="field">
-                <label for="cf-note">Ghi chú thêm</label>
-                <textarea id="cf-note" name="note" rows="4"></textarea>
-              </div>
-              <button type="submit" class="button">Đăng ký tư vấn</button>
-            </form>
+          <div class="col col-6">
+            <div class="col-inner">
+              <form class="contact-form" method="post" action="#" novalidate>
+                <p>
+                  <label for="cf-name">Họ và tên</label>
+                  <input id="cf-name" type="text" name="name" autocomplete="name">
+                  <label for="cf-phone">Số điện thoại</label>
+                  <input id="cf-phone" type="tel" name="phone" autocomplete="tel">
+                  <label for="cf-note">Ghi chú thêm</label>
+                  <textarea id="cf-note" name="note" rows="4"></textarea>
+                  <input type="submit" value="Đăng ký tư vấn">
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Phản hồi khách hàng -->
-    <section class="section testimonials-section">
-      <div class="container">
-        <h2 class="section-title">Phản hồi của khách hàng</h2>
-        <div class="slider" data-slider data-autoplay="7000" data-reveal>
-          <div class="slides">
-            <div class="testimonial-slide"><img src="/assets/images/uploads/2026/01/feedback-2.png" alt="Phản hồi của khách hàng"></div>
-            <div class="testimonial-slide"><img src="/assets/images/uploads/2026/01/20-1024x791.png" alt="Phản hồi của khách hàng"></div>
-            <div class="testimonial-slide"><img src="/assets/images/uploads/2026/01/19-1024x791.png" alt="Phản hồi của khách hàng"></div>
-            <div class="testimonial-slide"><img src="/assets/images/uploads/2026/01/18-1024x791.png" alt="Phản hồi của khách hàng"></div>
-            <div class="testimonial-slide"><img src="/assets/images/uploads/2026/01/feedback.png" alt="Phản hồi của khách hàng"></div>
+    <div class="gap-element" style="height:30px"></div>
+    <h2 class="section-title"><b>Phản hồi của khách hàng</b></h2>
+    <div class="gap-element" style="height:20px"></div>
+
+    <!-- Phản hồi — a two-up gallery rail, full bleed and collapsed gutters. -->
+    <div class="slider gallery-slider" data-slider data-autoplay="7000" data-per-view="2">
+      <div class="slides">
+        <div class="gallery-col"><img src="/assets/images/uploads/2026/01/feedback-2.png" alt="Phản hồi của khách hàng" loading="lazy"></div>
+        <div class="gallery-col"><img src="/assets/images/uploads/2026/01/20-1024x791.png" alt="Phản hồi của khách hàng" loading="lazy"></div>
+        <div class="gallery-col"><img src="/assets/images/uploads/2026/01/19-1024x791.png" alt="Phản hồi của khách hàng" loading="lazy"></div>
+        <div class="gallery-col"><img src="/assets/images/uploads/2026/01/18-1024x791.png" alt="Phản hồi của khách hàng" loading="lazy"></div>
+        <div class="gallery-col"><img src="/assets/images/uploads/2026/01/feedback.png" alt="Phản hồi của khách hàng" loading="lazy"></div>
+      </div>
+      <button class="slider-prev" type="button" aria-label="Trước"><i class="icon-angle-left" aria-hidden="true"></i></button>
+      <button class="slider-next" type="button" aria-label="Sau"><i class="icon-angle-right" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="gap-element" style="height:30px"></div>
+    <div class="gap-element" style="height:80px"></div>
+    <h2 class="section-title"><b>Tin tức</b></h2>
+    <div class="gap-element" style="height:20px"></div>
+
+    <!-- Tin tức — four post boxes on the 1170 grid. -->
+    <div class="row news-row">
+      <div class="col col-3 post-item">
+        <div class="col-inner">
+          <div class="box box-blog-post">
+            <div class="box-image">
+              <a class="plain" href="/post/mau-thiet-ke-biet-thu-lang-son">
+                <img src="/assets/images/uploads/2026/09/3-300x200.jpg" alt="" width="300" height="200" loading="lazy">
+              </a>
+            </div>
+            <div class="badge post-date">
+              <div class="badge-inner"><span class="post-date-day">09</span><br><span class="post-date-month">Th9</span></div>
+            </div>
+            <div class="box-text text-center">
+              <div class="box-text-inner">
+                <h5 class="post-title"><a class="plain" href="/post/mau-thiet-ke-biet-thu-lang-son">Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng</a></h5>
+                <p class="from_the_blog_excerpt">1. Tổng quan dự án Tên công trình: Thiết kế nội thất Biệt thự Lạng …</p>
+              </div>
+            </div>
           </div>
-          <button class="slider-prev" type="button" aria-label="Trước"><i class="icon-angle-left" aria-hidden="true"></i></button>
-          <button class="slider-next" type="button" aria-label="Sau"><i class="icon-angle-right" aria-hidden="true"></i></button>
         </div>
       </div>
-    </section>
-
-    <!-- Tin tức -->
-    <section class="section news-section">
-      <div class="container">
-        <h2 class="section-title">Tin tức</h2>
-        <div class="news-grid">
-          <article class="news-card" data-reveal>
-            <a class="news-thumb" href="/post/mau-thiet-ke-biet-thu-lang-son">
-              <img src="/assets/images/uploads/2026/09/3-300x200.jpg" alt="" width="300" height="200" loading="lazy">
-              <span class="news-date"><span class="d">09</span><span class="m">Th9</span></span>
-            </a>
-            <h3><a href="/post/mau-thiet-ke-biet-thu-lang-son">Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng</a></h3>
-            <p>1. Tổng quan dự án Tên công trình: Thiết kế nội thất Biệt thự Lạng …</p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <a class="news-thumb" href="/post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang">
-              <img src="/assets/images/uploads/2026/07/54-300x232.jpg" alt="" width="300" height="232" loading="lazy">
-              <span class="news-date"><span class="d">04</span><span class="m">Th7</span></span>
-            </a>
-            <h3><a href="/post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang">Thiết kế Nhà Phố hiện đại Thường Tín 3 tầng</a></h3>
-            <p>Trong những năm gần đây, các mẫu nhà phố 3 tầng ngày càng được nhiều …</p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <a class="news-thumb" href="/post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine">
-              <img src="/assets/images/uploads/2026/06/139-300x232.png" alt="" width="300" height="232" loading="lazy">
-              <span class="news-date"><span class="d">10</span><span class="m">Th6</span></span>
-            </a>
-            <h3><a href="/post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine">Thiết kế 3D căn Duplex Ecopark – Sky Forest – Phong cách Indochine</a></h3>
-            <p>Dự án: Ecopark Phân khu: Sky Forest Công năng: thông tầng 2x100m2 Phong cách: Indochine</p>
-          </article>
-
-          <article class="news-card" data-reveal>
-            <a class="news-thumb" href="/post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n">
-              <img src="/assets/images/uploads/2026/04/z7744707598280_7f6dc5ecee84117f41c1ffd3ea841f50-300x232.jpg" alt="" width="300" height="232" loading="lazy">
-              <span class="news-date"><span class="d">20</span><span class="m">Th4</span></span>
-            </a>
-            <h3><a href="/post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n">Thiết kế Căn hộ The Beverly Vinhomes Ocean Park – Trục 13 tòa BE3 – 3N</a></h3>
-            <p>Dự án: Căn hộ The Beverly, Vinhomes Ocean Park Trục 13 tòa BE3 Diện tích: …</p>
-          </article>
+      <div class="col col-3 post-item">
+        <div class="col-inner">
+          <div class="box box-blog-post">
+            <div class="box-image">
+              <a class="plain" href="/post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang">
+                <img src="/assets/images/uploads/2026/07/54-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+              </a>
+            </div>
+            <div class="badge post-date">
+              <div class="badge-inner"><span class="post-date-day">04</span><br><span class="post-date-month">Th7</span></div>
+            </div>
+            <div class="box-text text-center">
+              <div class="box-text-inner">
+                <h5 class="post-title"><a class="plain" href="/post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang">Thiết kế Nhà Phố hiện đại Thường Tín 3 tầng</a></h5>
+                <p class="from_the_blog_excerpt">Trong những năm gần đây, các mẫu nhà phố 3 tầng ngày càng được …</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="col col-3 post-item">
+        <div class="col-inner">
+          <div class="box box-blog-post">
+            <div class="box-image">
+              <a class="plain" href="/post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine">
+                <img src="/assets/images/uploads/2026/06/139-300x232.png" alt="" width="300" height="232" loading="lazy">
+              </a>
+            </div>
+            <div class="badge post-date">
+              <div class="badge-inner"><span class="post-date-day">10</span><br><span class="post-date-month">Th6</span></div>
+            </div>
+            <div class="box-text text-center">
+              <div class="box-text-inner">
+                <h5 class="post-title"><a class="plain" href="/post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine">Thiết kế 3D căn Duplex Ecopark – Sky Forest – Phong cách Indochine</a></h5>
+                <p class="from_the_blog_excerpt">Dự án: Ecopark Phân khu: Sky Forest Công năng: thông tầng 2x …</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3 post-item">
+        <div class="col-inner">
+          <div class="box box-blog-post">
+            <div class="box-image">
+              <a class="plain" href="/post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n">
+                <img src="/assets/images/uploads/2026/04/z7744707598280_7f6dc5ecee84117f41c1ffd3ea841f50-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+              </a>
+            </div>
+            <div class="badge post-date">
+              <div class="badge-inner"><span class="post-date-day">20</span><br><span class="post-date-month">Th4</span></div>
+            </div>
+            <div class="box-text text-center">
+              <div class="box-text-inner">
+                <h5 class="post-title"><a class="plain" href="/post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n">Thiết kế Căn hộ The Beverly Vinhomes Ocean Park – Trục 13 tòa BE3 – 3N</a></h5>
+                <p class="from_the_blog_excerpt">Dự án: Căn hộ The Beverly, Vinhomes Ocean Park Trục 13 tòa BE3 …</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
 <footer id="footer" class="footer-wrapper">
 
+  <!-- Liên hệ tư vấn — parallax photo under a 50% black wash. -->
   <section class="section cta-banner">
     <div class="section-bg">
-      <img src="/assets/images/uploads/2025/12/3-1024x576.png" alt="" width="1024" height="576" loading="lazy">
+      <img src="/assets/images/uploads/2025/12/Thiet-ke-chua-co-ten-17.png" alt="" loading="lazy">
+      <div class="section-bg-overlay"></div>
     </div>
-    <div class="section-content container">
-      <h2>Liên hệ tư vấn thiết kế và thi công trọn gói</h2>
-      <a class="phone-pill" href="tel:0978264334">0978 264 334 - 0942 971 357</a>
-    </div>
-  </section>
-
-  <div class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col col-4">
-          <h4 class="footer-title">Hệ thống showroom</h4>
-          <ul class="footer-list">
-            <li>Trụ sở chính: 01S09-S2.19, Vinhomes OceanPark, Gia Lâm, Hà Nội</li>
-            <li>Showroom: H101-S06, Haven, Ecopark, Văn Giang, Hưng Yên</li>
-            <li>Showroom: 114 Đại lộ bốn mùa, Vinhomes Ocean Park 3, Hưng Yên</li>
-            <li>Showroom: Tòa A3 Lumiere Evergreen, Vinhomes Smart City, Hà Nội</li>
-            <li>Điện thoại: <a href="tel:0978264334">0978.264.334</a> - <a href="tel:0942971357">0942.971.357</a></li>
-          </ul>
-        </div>
-
-        <div class="col col-4">
-          <h4 class="footer-title">Hệ thống nhà máy</h4>
-          <ul class="footer-list">
-            <li>Nhà máy 1: Thôn 13, Nghĩa Trụ, Hưng Yên</li>
-            <li>Nhà máy 2: KCN Thạch Thất, TP Hà Nội</li>
-          </ul>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Facebook"><i class="icon-facebook" aria-hidden="true"></i></a>
-            <a href="#" aria-label="YouTube"><i class="icon-youtube" aria-hidden="true"></i></a>
-            <a href="#" aria-label="TikTok"><i class="icon-tiktok" aria-hidden="true"></i></a>
-            <a href="tel:0978264334" aria-label="Zalo"><i class="icon-phone" aria-hidden="true"></i></a>
+    <div class="section-content">
+      <h2><span><strong><span class="on-dark">Liên hệ tư vấn thiết kế và thi công trọn gói</span></strong></span></h2>
+      <div class="row align-center row-flush">
+        <div class="col col-12">
+          <div class="col-inner text-center cta-actions">
+            <a class="button white is-outline" href="tel:0978264334"><span>0978 264 334 - 0942 971 357</span></a>
           </div>
-          <img class="footer-cert" src="/assets/images/uploads/2025/12/Screenshot-2025-12-26-155340.png" alt="Đã thông báo Bộ Công Thương" loading="lazy">
-        </div>
-
-        <div class="col col-4 footer-brand">
-          <img src="/assets/images/uploads/2025/12/LOGO-MYAN-HOME-1024x1024.png" alt="Myan Home" width="1024" height="1024" loading="lazy">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="footer-bottom">
+  <section class="section footer-main">
+    <div class="section-content">
+      <div class="row row-large align-center">
+
+        <div class="col col-3">
+          <div class="col-inner">
+            <div class="text">
+              <p>&nbsp;</p>
+              <h2><span><strong>HỆ THỐNG SHOWROOM</strong></span></h2>
+              <p class="justify"><strong>Trụ sở chính: 01S09-S2.19, Vinhomes OceanPark, Gia Lâm, Hà Nội</strong></p>
+              <p class="justify"><strong>Showroom: H101-S06, Haven, Ecopark, Văn Giang, Hưng Yên</strong></p>
+              <p class="justify"><strong>Showroom: 114 Đại lộ bốn mùa, Vinhomes Ocean Park 3, Hưng Yên</strong></p>
+              <p class="justify"><strong>Showroom: Tòa A3 Lumiere Evergreen, Vinhomes Smart City, Hà Nội</strong></p>
+              <p class="justify"><strong>Điện thoại: <a href="tel:0978264334">0978.264.334</a> - <a href="tel:0942971357">0942.971.357</a></strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-3">
+          <div class="col-inner">
+            <div class="text">
+              <p>&nbsp;</p>
+              <h2><span><strong>HỆ THỐNG NHÀ MÁY</strong></span></h2>
+              <p><strong>Nhà máy 1: Thôn 13, Nghĩa Trụ, Hưng Yên</strong></p>
+              <p><strong>Nhà máy 2: KCN Thạch Thất, TP Hà Nội</strong></p>
+            </div>
+            <div class="social-icons">
+              <a class="icon circle facebook" href="https://facebook.com/noithatmyanhome" target="_blank" rel="noopener nofollow" aria-label="Theo dõi trên Facebook"><i class="icon-facebook" aria-hidden="true"></i></a>
+              <a class="icon circle instagram" href="https://www.instagram.com/noi_that_myanhome/" target="_blank" rel="noopener nofollow" aria-label="Theo dõi trên Instagram"><i class="icon-instagram" aria-hidden="true"></i></a>
+              <a class="icon circle tiktok" href="https://www.tiktok.com/@myanhome" target="_blank" rel="noopener nofollow" aria-label="Theo dõi trên TikTok"><i class="icon-tiktok" aria-hidden="true"></i></a>
+              <a class="icon circle email" href="mailto:noithatmyanhome@gmail.com" rel="nofollow noopener" aria-label="Gửi email cho chúng tôi"><i class="icon-envelop" aria-hidden="true"></i></a>
+              <a class="icon circle phone" href="tel:0978264334" rel="nofollow noopener" aria-label="Gọi cho chúng tôi"><i class="icon-phone" aria-hidden="true"></i></a>
+            </div>
+            <div class="banner footer-cert">
+              <div class="banner-bg">
+                <img src="/assets/images/uploads/2025/12/Screenshot-2025-12-26-155340.png" alt="Đã thông báo Bộ Công Thương" width="832" height="560" loading="lazy">
+              </div>
+              <div class="banner-layers">
+                <div class="banner-layer cert-label"><span>Myan Home</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-4">
+          <div class="col-inner footer-brand">
+            <img src="/assets/images/uploads/2025/12/LOGO-MYAN-HOME-1024x1024.png" alt="Myan Home" width="1020" height="1020" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="absolute-footer dark">
     <div class="container">
-      <ul class="footer-nav">
-        <li><a href="/">Trang chủ</a></li>
-        <li><a href="/gioi-thieu">Giới thiệu</a></li>
-        <li><a href="/dich-vu">Dịch vụ</a></li>
-        <li><a href="/category/du-an">Dự án</a></li>
-        <li><a href="/category/noi-that-do-roi">Nội thất đồ rời</a></li>
-        <li><a href="/tin-tuc">Tin tức</a></li>
-        <li><a href="/lien-he">Liên hệ</a></li>
-      </ul>
-      <p class="copyright">Designed by Myan Home | All Rights Reserved.</p>
+      <div class="footer-primary">
+        <ul class="links footer-nav uppercase">
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/gioi-thieu">Giới thiệu</a></li>
+          <li><a href="/dich-vu">Dịch vụ</a></li>
+          <li><a href="/category/du-an">Dự án</a></li>
+          <li><a href="/category/noi-that-do-roi">Nội thất đồ rời</a></li>
+          <li><a href="/tin-tuc">Tin tức</a></li>
+          <li><a href="/lien-he">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="copyright-footer">Designed by Myan Home | All Rights Reserved.</div>
     </div>
   </div>
 </footer>
+
+<button type="button" id="top-link" class="back-to-top button icon circle is-outline hide-for-medium" aria-label="Lên đầu trang">
+  <i class="icon-angle-up" aria-hidden="true"></i>
+</button>
 
 </div><!-- /#wrapper -->
 
@@ -480,8 +646,16 @@
 
 <div class="chat-widget">
   <a class="chat-btn is-phone" href="tel:0978264334" aria-label="Gọi điện"><i class="icon-phone" aria-hidden="true"></i></a>
+  <a class="chat-btn is-call" href="tel:0942971357" aria-label="Gọi điện"><i class="icon-phone" aria-hidden="true"></i></a>
   <a class="chat-btn is-zalo" href="https://zalo.me/0978264334" target="_blank" rel="noopener" aria-label="Zalo"><span>Zalo</span></a>
-  <a class="chat-btn is-messenger" href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Messenger"><i class="icon-facebook" aria-hidden="true"></i></a>
+</div>
+
+<!-- Static stand-in for the GTranslate widget: the live site loads it from a
+     third-party script, which this clone deliberately does not. -->
+<div class="gt-switcher" role="button" tabindex="0" aria-label="Ngôn ngữ">
+  <img src="/assets/images/plugins/gtranslate/flags/svg/vi.svg" alt="" width="18" height="12">
+  <span>Vietnamese</span>
+  <i class="icon-angle-down caret" aria-hidden="true"></i>
 </div>
 
 <script src="/assets/js/main.js"></script>

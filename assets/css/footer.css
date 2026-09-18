@@ -1,182 +1,226 @@
 /* ==========================================================================
    Footer
+   Measured: CTA band 173px (47px padding), column band 430px (30px padding),
+   orange bar 75px (10px/15px padding). 678px total at 1440.
    ========================================================================== */
 
-.footer-wrapper { background: #fff; }
+.footer-wrapper { position: relative; background: #fff; }
 
-.footer-main {
-  padding: 40px 0 26px;
-  background: #fff;
-  border-top: 1px solid var(--c-border);
-}
-
-.footer-title {
-  margin: 0 0 14px;
-  color: var(--c-orange);
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.footer-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.footer-list li {
-  margin-bottom: 9px;
-  color: var(--c-text-muted);
-  font-size: 13px;
-  line-height: 1.6;
-}
-.footer-list a { color: var(--c-text-muted); }
-.footer-list a:hover { color: var(--c-orange); }
-
-.footer-social {
-  display: flex;
-  gap: 8px;
-  margin: 16px 0 14px;
-}
-.footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--c-orange);
-  color: #fff;
-  font-size: 15px;
-  transition: background-color 0.2s, transform 0.2s;
-}
-.footer-social a:hover {
-  background: var(--c-orange-dark);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-.footer-cert { max-width: 160px; height: auto; display: block; }
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-brand img { max-width: 240px; height: auto; }
-
-/* --- bottom bar ---------------------------------------------------------- */
-
-.footer-bottom {
-  padding: 12px 0;
-  background: var(--c-orange);
-  color: #fff;
-}
-
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 18px;
-  margin: 0 0 4px;
-  padding: 0;
-  list-style: none;
-}
-.footer-nav a {
-  color: #fff;
-  font-size: 11.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  opacity: 0.95;
-}
-.footer-nav a:hover { color: #fff; opacity: 0.75; }
-
-.copyright {
-  margin: 0;
-  color: #fff;
-  font-size: 11.5px;
-  opacity: 0.9;
-}
-
-/* --- bottom CTA banner --------------------------------------------------- */
+/* --- liên hệ tư vấn band -------------------------------------------------- */
 
 .cta-banner {
-  position: relative;
-  min-height: 173px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 47px 0;
   overflow: hidden;
   text-align: center;
 }
-.cta-banner .section-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-.cta-banner .section-content { padding: 40px 15px; }
+.cta-banner .section-bg img { width: 100%; height: 100%; object-fit: cover; }
+.cta-banner .section-bg-overlay { background: rgba(0, 0, 0, 0.5); }
+
 .cta-banner h2 {
-  margin: 0 0 16px;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 700;
+  margin: 0 0 12.8px;
+  color: var(--c-orange);
+  font-size: 25.6px;
+  font-weight: 400;
+  line-height: 1.3;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
-.cta-banner .phone-pill {
-  display: inline-block;
-  padding: 9px 26px;
-  border-radius: 99px;
+.cta-banner h2 > span { font-size: 30.72px; line-height: 39.936px; }
+.cta-banner h2 strong { font-weight: 700; }
+.cta-banner .on-dark { color: #fff; }
+
+/* The negative margin is on the live site too — it pulls the button's own
+   bottom margin back out so the band closes at 173px. */
+.cta-actions { margin-bottom: -28px; }
+.cta-actions .button { margin-bottom: 15.52px; }
+
+/* --- three-column band ---------------------------------------------------- */
+
+.footer-main {
+  padding: 30px 0;
+  background: #fff;
+}
+
+.footer-main .text {
+  font-size: 12px;
+  line-height: 19.2px;
+  text-align: left;
+}
+.footer-main .text p { margin: 0 0 15.6px; color: var(--c-text); }
+.footer-main .text p.justify { text-align: justify; }
+.footer-main .text a { color: inherit; }
+.footer-main .text a:hover { color: var(--c-orange); }
+
+.footer-main .text h2 {
+  margin: 0 0 9.6px;
+  color: var(--c-orange);
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 24.96px;
+}
+.footer-main .text h2 > span { font-size: 90%; color: #282828; }
+.footer-main .text h2 strong { font-weight: 700; }
+
+/* social icons — 33px brand-coloured circles */
+.social-icons { display: block; margin-bottom: 0; font-size: 13.6px; }
+.social-icons .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32.98px;
+  height: 33.66px;
+  margin: 0 1.583px 13.192px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 13.192px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.social-icons .icon:first-child { margin-left: 0; }
+.social-icons .icon:hover { color: #fff; opacity: 0.85; transform: translateY(-2px); }
+.social-icons .facebook  { background: #3a589d; border-color: #3a589d; }
+.social-icons .instagram { background: #3b6994; border-color: #3b6994; }
+.social-icons .tiktok    { background: #111; border-color: #111; }
+.social-icons .email     { background: #111; border-color: #111; }
+.social-icons .phone     { background: #51cb5a; border-color: #51cb5a; }
+
+.footer-cert { height: 127.5px; background-color: transparent; }
+.footer-cert .banner-bg img { object-position: top center; }
+.cert-label {
+  top: 5%;
+  bottom: auto;
+  padding: 3px 9px;
   background: var(--c-orange);
   color: #fff;
-  font-size: 16px;
+  font-size: 9px;
   font-weight: 700;
-  transition: background-color 0.2s, transform 0.2s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-.cta-banner .phone-pill:hover {
-  background: var(--c-orange-dark);
-  transform: translateY(-2px);
+
+.footer-brand img { display: block; width: 100%; height: auto; }
+
+/* --- orange bar ---------------------------------------------------------- */
+
+.absolute-footer {
+  padding: 10px 0 15px;
+  background: var(--c-orange-nav);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 13px;
+  line-height: 20.8px;
 }
+
+.footer-nav {
+  margin: 5px 0;
+  padding: 0 0 5px;
+  list-style: none;
+  font-size: 11.05px;
+  line-height: 13.26px;
+  letter-spacing: 0.5525px;
+  text-transform: uppercase;
+}
+.footer-nav li { display: inline-block; margin: 0 4.42px; }
+.footer-nav li:first-child { margin-left: 0; }
+.footer-nav li:last-child { margin-right: 0; }
+.footer-nav a { color: inherit; }
+.footer-nav a:hover { color: #fff; opacity: 0.75; }
+
+.copyright-footer { color: inherit; }
+
+/* --- back to top --------------------------------------------------------- */
+
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 40px;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38.8px;
+  height: 38.8px;
+  min-height: 38.8px;
+  min-width: 0;
+  margin: 0 1.86px;
+  padding: 0;
+  border: 2px solid #c0c0c0;
+  border-radius: 999px;
+  background: transparent;
+  color: #c0c0c0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, color 0.3s, border-color 0.3s;
+}
+.back-to-top.active { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: transparent; color: var(--c-orange); border-color: var(--c-orange); }
+.back-to-top .icon-angle-up { font-size: 18.6px; }
 
 /* --- floating contact buttons -------------------------------------------- */
 
 .chat-widget {
   position: fixed;
-  right: 14px;
-  bottom: 90px;
+  right: 30px;
+  bottom: 96px;
   z-index: 999;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 9px;
 }
 
 .chat-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   color: #fff;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   transition: transform 0.2s, filter 0.2s;
 }
 .chat-btn span { font-size: 11px; letter-spacing: 0.02em; }
 .chat-btn:hover { color: #fff; transform: scale(1.08); filter: brightness(1.05); }
 
-.chat-btn.is-phone { background: #2ecc40; }
-.chat-btn.is-zalo { background: #0068ff; }
+.chat-btn.is-phone { background: #21a53f; }
+.chat-btn.is-call { background: #34c759; }
+.chat-btn.is-zalo { background: #2196f3; }
 .chat-btn.is-messenger { background: #1877f2; }
 
-@media (max-width: 549px) {
-  .cta-banner h2 { font-size: 18px; }
+/* --- GTranslate pill ------------------------------------------------------ */
+
+.gt-switcher {
+  position: fixed;
+  left: 8%;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 173px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #444;
+  font-size: 13px;
+  cursor: pointer;
 }
+.gt-switcher img { width: 18px; height: auto; }
+.gt-switcher .caret { margin-left: auto; font-size: 11px; color: #666; }
+
+/* --- responsive ---------------------------------------------------------- */
 
 @media (max-width: 849px) {
   .footer-main .row > .col { flex-basis: 100%; max-width: 100%; }
-  .footer-brand { justify-content: flex-start; margin-top: 10px; }
-  .footer-bottom .footer-nav { justify-content: flex-start; }
+  .footer-brand { max-width: 260px; }
+  .cta-banner h2 > span { font-size: 24px; line-height: 32px; }
+  .absolute-footer { text-align: center; }
+  .back-to-top { display: none; }
+  .gt-switcher { left: 0; }
+}
+
+@media (max-width: 549px) {
+  .cta-banner h2 > span { font-size: 20px; line-height: 28px; }
+  .chat-widget { right: 14px; bottom: 76px; }
 }

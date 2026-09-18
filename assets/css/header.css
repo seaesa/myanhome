@@ -1,31 +1,32 @@
 /* ==========================================================================
    Header — transparent + sticky-jump
+   Measured on the live site: 102px tall on normal pages, 90px on the
+   transparent-header template (the homepage), 52px once stuck.
    Values mirror docs/research/BEHAVIORS.md §1.
    ========================================================================== */
 
 #header {
+  --hh: var(--header-height);
   position: relative;
   z-index: 1001;
-  height: var(--header-height);
-  background-color: transparent;
+  /* Explicit height so the bar keeps its place in the flow once .header-wrapper
+     detaches to `fixed` — without it the page jumps up by a full bar height the
+     moment you start scrolling. */
+  height: var(--hh);
   color: var(--c-text);
   transition: background-color 0.3s, opacity 0.3s;
 }
 
-/* The live site marks this template "transparent", but measured geometry shows
-   the first section starting at y=90 — i.e. the bar sits above the hero rather
-   than over it. #header therefore keeps its 90px of flow, which also gives the
-   sticky wrapper a placeholder so nothing jumps when it detaches. */
-#header.has-transparent {
-  position: relative;
-  width: 100%;
-}
+/* The transparent template runs a shorter bar. Measured geometry shows the
+   first section starting right at its bottom edge, so #header keeps its flow
+   height — that also gives the sticky wrapper a placeholder so nothing jumps
+   when it detaches. */
+#header.has-transparent { --hh: 90px; width: 100%; }
 
 .header-wrapper {
   position: relative;
   z-index: 1001;
   width: 100%;
-  background-color: transparent;
   transition: background-color 0.3s, opacity 0.3s;
 }
 
@@ -37,30 +38,36 @@
   left: 0;
   box-shadow: var(--shadow-stuck);
 }
+.header-wrapper.stuck { --hh: var(--header-height-stuck); }
 
 .header-main {
   position: relative;
   z-index: 10;
-  background-color: var(--c-white);
+  height: var(--hh);
+  background-color: transparent;
   box-shadow: var(--shadow-header);
   transition: height 0.3s;
 }
 
-/* The original keeps #masthead white with its shadow in BOTH states — the
-   `transparent` class changes the wrapper's positioning, not the bar's fill. */
+/* The fill is its own layer, exactly as on the live site: a 30% white wash,
+   not an opaque bar. Scrolled over the hero you can see the photo through it.
+   On the transparent template at scroll 0 the wash is switched off entirely. */
+.header-bg-container { position: absolute; inset: 0; z-index: -1; }
+.header-bg-image,
+.header-bg-color { position: absolute; inset: 0; transition: background 0.4s; }
+.header-bg-color { background-color: rgba(255, 255, 255, 0.3); }
+#header.transparent .header-bg-color { background-color: transparent; }
 
 .header-inner {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  height: var(--header-height);
+  justify-content: space-between;
+  height: var(--hh);
   transition: height 0.3s;
 }
 
-.header-wrapper.stuck .header-main,
-.header-wrapper.stuck .header-inner { height: var(--header-height-stuck); }
-
-.flex-col { display: flex; align-items: center; }
+.flex-col { display: flex; align-items: center; max-height: 100%; }
 .flex-left { justify-content: flex-start; }
 .flex-right { justify-content: flex-end; margin-left: auto; }
 .flex-grow { flex: 1 1 0; }
@@ -75,19 +82,21 @@
 #logo a {
   display: flex;
   align-items: center;
-  height: var(--header-height);
+  height: var(--hh);
   color: var(--c-orange);
   transition: height 0.3s;
 }
-.header-wrapper.stuck #logo a { height: var(--header-height-stuck); }
 
+/* 2px of vertical padding inside the box is what makes the square mark render
+   98px wide in a 102px bar (and 86 in 90, 48 in 52). */
 #logo img {
   display: block;
   width: auto;
-  max-height: var(--header-height);
-  transition: max-height 0.5s;
+  height: var(--hh);
+  padding: 2px 0;
+  box-sizing: border-box;
+  transition: height 0.3s;
 }
-.header-wrapper.stuck #logo img { max-height: var(--header-height-stuck); }
 
 #logo .header-logo-dark { display: none; }
 
@@ -101,14 +110,16 @@
   list-style: none;
 }
 
-.header-nav > li { position: relative; margin: 0; }
+/* The gap between items is the li's 9px margin — the link itself has no
+   horizontal padding, which is what keeps the menu 803px wide at 1440. */
+.header-nav > li { position: relative; margin: 0 9px; }
+.header-nav > li:first-child { margin-left: 0; }
+.header-nav > li:last-child { margin-right: 0; }
 
 .header-nav > li > a.nav-top-link {
   display: inline-flex;
   align-items: center;
-  height: 36px;
   padding: 10px 0;
-  margin: 0 11px;
   color: var(--c-text-nav);
   font-size: 17px;
   font-weight: 700;
@@ -116,10 +127,8 @@
   letter-spacing: 0;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: color 0.2s, height 0.3s;
+  transition: color 0.2s, font-size 0.3s;
 }
-
-.header-wrapper.stuck .header-nav > li > a.nav-top-link { height: 25px; }
 
 /* Hover and current page share the same orange — no underline on this theme. */
 .header-nav > li > a.nav-top-link:hover,
@@ -129,13 +138,15 @@
 }
 
 .nav-top-link .icon-angle-down {
-  margin-left: 4px;
-  font-size: 11px;
-  line-height: 1;
+  width: 10px;
+  margin-left: 3.2px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /* icon-only items (search, cart) */
-.header-nav > li.has-icon > a.nav-top-link { font-size: 18px; }
+.header-nav > li.has-icon > a.nav-top-link { font-size: 17px; }
+.header-nav > li.has-icon .icon-search { font-size: 20.4px; }
 
 /* --- dropdowns ---------------------------------------------------------- */
 

@@ -1,0 +1,54 @@
+[
+  {
+    "tag": "div",
+    "cls": "gsb-buttons active has-shadow cta-all_time has-no-close-butt",
+    "id": "gsb-buttons-1399",
+    "rect": [
+      1415,
+      810,
+      0,
+      0
+    ],
+    "z": "999999",
+    "html": "<div class=\"gsb-buttons active has-shadow cta-all_time has-no-close-button open-buttons right-side vertical-menu\" id=\"gsb-buttons-1399\" data-id=\"1399\" data-animation=\"ginger-btn-shockwave\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;\"><div class=\"gsb-buttons-content\"><div class=\"gsb-butt"
+  },
+  {
+    "tag": "div",
+    "cls": "header-wrapper stuck",
+    "id": "",
+    "rect": [
+      0,
+      0,
+      1440,
+      52
+    ],
+    "z": "1001",
+    "html": "<div class=\"header-wrapper stuck\"> <div id=\"masthead\" class=\"header-main \"> <div class=\"header-inner flex-row container logo-left medium-logo-center\" role=\"navigation\"> <!-- Logo --> <div id=\"logo\" class=\"flex-col logo\"> <!-- Header logo --> <a href=\"https://myanhome.com.vn/\" title=\"Myan Home\" rel=\""
+  },
+  {
+    "tag": "button",
+    "cls": "back-to-top button icon invert plain fixed bottom z-1 is-out",
+    "id": "top-link",
+    "rect": [
+      1379,
+      841,
+      39,
+      39
+    ],
+    "z": "21",
+    "html": "<button type=\"button\" id=\"top-link\" class=\"back-to-top button icon invert plain fixed bottom z-1 is-outline circle hide-for-medium active\" aria-label=\"Lên đầu trang\"><i class=\"icon-angle-up\" aria-hidden=\"true\"></i></button>"
+  },
+  {
+    "tag": "div",
+    "cls": "gt_switcher_wrapper",
+    "id": "",
+    "rect": [
+      115,
+      868,
+      173,
+      32
+    ],
+    "z": "999999",
+    "html": "<div class=\"gt_switcher_wrapper\" style=\"position:fixed;bottom:0;left:8%;z-index:999999;\"><!-- GTranslate: https://gtranslate.com --><div id=\"google_translate_element2\"></div><div class=\"gt_switcher notranslate\"><div class=\"gt_option\"><a href=\"#\" title=\"Chinese (Simplified)\" class=\"nturl\" data-gt-lan"
+  }
+]

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Giới thiệu
+   Team block measured at 1440: section 715px, slide 600px, photo 540x540
+   inside a 15px-padded shadow frame.
+   ========================================================================== */
+
+.team-section { padding: 0 0 0; }
+
+.team-slider { height: 600px; }
+.team-slider .slides > * { display: flex; flex-direction: column; }
+
+.team-slide .row { width: 100%; }
+
+/* The portrait sits in a 15px white frame with the same lifted shadow the
+   value cards use. */
+.team-photo {
+  padding: 15px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.3s;
+}
+.team-photo:hover { box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.32), 0 9px 28px 0 rgba(0, 0, 0, 0.2); }
+.team-photo .img-inner { position: relative; }
+.team-photo img { display: block; width: 100%; height: auto; }
+
+.team-body h2 {
+  margin: 0 0 12.8px;
+  font-size: 25.6px;
+  font-weight: 400;
+  line-height: 33.28px;
+  color: var(--c-text-nav);
+}
+.team-body h2 strong { font-weight: 700; }
+.team-body p { margin: 0 0 20.8px; font-size: 16px; line-height: 25.6px; }
+.team-body .team-bio { text-align: justify; }
+.team-body em { font-style: italic; }
+
+/* Arrows sit over the photo column, centred on the slide. */
+.team-slider .slider-prev,
+.team-slider .slider-next { border-color: rgba(0, 0, 0, 0.3); color: #444; }
+.team-slider .slider-prev:hover,
+.team-slider .slider-next:hover { background: rgba(0, 0, 0, 0.06); }
+
+@media (max-width: 849px) {
+  .team-slider { height: auto; }
+  .team-slide .row > .col { flex-basis: 100%; max-width: 100%; }
+  .team-body { margin-top: 16px; }
+}

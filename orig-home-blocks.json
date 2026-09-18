@@ -1,0 +1,283 @@
+{
+  "docH": 5338,
+  "items": [
+    {
+      "i": 0,
+      "tag": "div",
+      "cls": "row show-for-medium",
+      "top": 0,
+      "h": 0,
+      "pad": "0px",
+      "txt": "Myanhome Thiết kế thi công nội thất trọn gói #col-2"
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "cls": "section gioi-thieu-section",
+      "top": 0,
+      "h": 1245,
+      "pad": "0px",
+      "txt": "GIỚI THIỆU VỀ MYAN HOME Myan Home là Đơn vị Thiết kế & thi "
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "cls": "section",
+      "top": 1245,
+      "h": 363,
+      "pad": "30px 0px",
+      "txt": "AN TOÀN Vật liệu được tuyển chọn theo tiêu chuẩn an toàn và"
+    },
+    {
+      "i": 3,
+      "tag": "h2",
+      "cls": "",
+      "top": 1608,
+      "h": 33,
+      "pad": "0px",
+      "txt": "DỰ ÁN NỔI BẬT"
+    },
+    {
+      "i": 4,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 1654,
+      "h": 30,
+      "pad": "30px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 5,
+      "tag": "div",
+      "cls": "banner-grid-wrapper",
+      "top": 1684,
+      "h": 900,
+      "pad": "0px",
+      "txt": "BIỆT THỰ THỜI ĐẠI GRAND SAPPHIRE DUPLEX LANDMARK MEZZA SKY F"
+    },
+    {
+      "i": 6,
+      "tag": "div",
+      "cls": "row",
+      "top": 2614,
+      "h": 74,
+      "pad": "0px",
+      "txt": "TẤT CẢ DỰ ÁN"
+    },
+    {
+      "i": 7,
+      "tag": "section",
+      "cls": "section",
+      "top": 2689,
+      "h": 728,
+      "pad": "50px 0px",
+      "txt": "ĐỐI TÁC CHIẾN LƯỢC MYAN HOME THIẾT KẾ & THI CÔNG TRỌN GÓI 0"
+    },
+    {
+      "i": 8,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 3417,
+      "h": 30,
+      "pad": "30px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 9,
+      "tag": "h2",
+      "cls": "",
+      "top": 3447,
+      "h": 33,
+      "pad": "0px",
+      "txt": "PHẢN HỒI CỦA KHÁCH HÀNG"
+    },
+    {
+      "i": 10,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 3493,
+      "h": 20,
+      "pad": "20px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 11,
+      "tag": "div",
+      "cls": "slider slider-auto-height row-collapse slider-nav-outside slider-nav-r",
+      "top": 3513,
+      "h": 567,
+      "pad": "0px",
+      "txt": ""
+    },
+    {
+      "i": 12,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 4080,
+      "h": 30,
+      "pad": "30px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 13,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 4110,
+      "h": 80,
+      "pad": "80px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 14,
+      "tag": "h2",
+      "cls": "",
+      "top": 4190,
+      "h": 33,
+      "pad": "0px",
+      "txt": "TIN TỨC"
+    },
+    {
+      "i": 15,
+      "tag": "div",
+      "cls": "gap-element clearfix",
+      "top": 4236,
+      "h": 20,
+      "pad": "20px 0px 0px",
+      "txt": ""
+    },
+    {
+      "i": 16,
+      "tag": "div",
+      "cls": "row large-columns-4 medium-columns-3 small-columns-1 slider row-slider",
+      "top": 4256,
+      "h": 404,
+      "pad": "0px",
+      "txt": "Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng 1. Tổng qu"
+    }
+  ],
+  "partners": [
+    {
+      "cls": "slider-wrapper relative",
+      "top": 90,
+      "h": 720,
+      "n": 2,
+      "imgs": [
+        {
+          "s": "2.png",
+          "w": 1440,
+          "h": 720
+        },
+        {
+          "s": "3.png",
+          "w": 1440,
+          "h": 720
+        }
+      ]
+    },
+    {
+      "cls": "slider-wrapper relative",
+      "top": 880,
+      "h": 365,
+      "n": 0,
+      "imgs": []
+    },
+    {
+      "cls": "slider-wrapper relative",
+      "top": 2805,
+      "h": 0,
+      "n": 5,
+      "imgs": [
+        {
+          "s": "11-1-1536x341.png",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20227%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20227%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20227%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%201020%20227%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    {
+      "cls": "slider-wrapper relative hide-for-small",
+      "top": 2805,
+      "h": 52,
+      "n": 5,
+      "imgs": [
+        {
+          "s": "11-1-1536x341.png",
+          "w": 190,
+          "h": 42
+        },
+        {
+          "s": "9-2-1536x341.png",
+          "w": 190,
+          "h": 42
+        },
+        {
+          "s": "10-1-1536x341.png",
+          "w": 190,
+          "h": 42
+        },
+        {
+          "s": "8-3-1536x341.png",
+          "w": 190,
+          "h": 42
+        },
+        {
+          "s": "7-3-1536x341.png",
+          "w": 190,
+          "h": 42
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "cls": "slider slider-auto-height row-collapse slider-nav-outside slider-nav-reveal is-draggable slider-lazy-load-active flickity-enabled",
+    "top": 3513,
+    "h": 567,
+    "imgs": [
+      {
+        "s": "feedback-2-1536x1187.png",
+        "w": 734,
+        "h": 567
+      },
+      {
+        "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%2051%201700%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "w": 734,
+        "h": 567
+      },
+      {
+        "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%2051%201700%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "w": 734,
+        "h": 567
+      },
+      {
+        "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%2051%201700%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "w": 734,
+        "h": 567
+      },
+      {
+        "s": "svg+xml,%3Csvg%20viewBox%3D%220%200%2051%201700%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+        "w": 734,
+        "h": 567
+      }
+    ]
+  }
+}

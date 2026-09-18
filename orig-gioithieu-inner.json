@@ -1,0 +1,674 @@
+[
+  {
+    "d": 0,
+    "tag": "section",
+    "cls": "section",
+    "box": {
+      "w": 653,
+      "h": 365,
+      "x": 150,
+      "y": 880
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "padding": "45px 30px",
+      "width": "652.5px",
+      "height": "364.75px",
+      "display": "inline-block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all",
+      "minHeight": "300px"
+    }
+  },
+  {
+    "d": 1,
+    "tag": "div",
+    "cls": "section-bg fill",
+    "box": {
+      "w": 653,
+      "h": 365,
+      "x": 150,
+      "y": 880
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "652.5px",
+      "height": "364.75px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "absolute",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 2,
+    "tag": "div",
+    "cls": "is-border",
+    "box": {
+      "w": 653,
+      "h": 365,
+      "x": 150,
+      "y": 880
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "652.5px",
+      "height": "364.75px",
+      "display": "block",
+      "borderTop": "1px solid rgb(235, 235, 235)",
+      "borderBottom": "0px solid rgb(235, 235, 235)",
+      "position": "absolute",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 1,
+    "tag": "div",
+    "cls": "section-content relative",
+    "box": {
+      "w": 593,
+      "h": 275,
+      "x": 180,
+      "y": 925
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "width": "592.5px",
+      "height": "274.75px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 2,
+    "tag": "h2",
+    "cls": "",
+    "box": {
+      "w": 593,
+      "h": 33,
+      "x": 180,
+      "y": 925
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "25.6px",
+      "fontWeight": "400",
+      "lineHeight": "33.28px",
+      "color": "rgb(249, 109, 0)",
+      "textAlign": "center",
+      "margin": "0px 0px 12.8px",
+      "width": "592.5px",
+      "height": "33.2812px",
+      "display": "block",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "borderBottom": "0px none rgb(249, 109, 0)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 3,
+    "tag": "strong",
+    "cls": "",
+    "box": {
+      "w": 332,
+      "h": 31,
+      "x": 310,
+      "y": 926
+    },
+    "text": "GIỚI THIỆU VỀ MYAN HOME",
+    "href": null,
+    "css": {
+      "fontSize": "25.6px",
+      "fontWeight": "700",
+      "lineHeight": "33.28px",
+      "color": "rgb(249, 109, 0)",
+      "textAlign": "center",
+      "display": "inline",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "borderBottom": "0px none rgb(249, 109, 0)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 2,
+    "tag": "div",
+    "cls": "row row-large align-middle align-center",
+    "box": {
+      "w": 653,
+      "h": 229,
+      "x": 150,
+      "y": 971
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "margin": "0px -30px",
+      "width": "652.5px",
+      "height": "228.672px",
+      "display": "flex",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "1200px"
+    }
+  },
+  {
+    "d": 3,
+    "tag": "div",
+    "cls": "col small-12 large-12",
+    "box": {
+      "w": 653,
+      "h": 229,
+      "x": 150,
+      "y": 971
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "padding": "0px 30px",
+      "width": "652.5px",
+      "height": "228.672px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "100%"
+    }
+  },
+  {
+    "d": 4,
+    "tag": "div",
+    "cls": "col-inner text-center",
+    "box": {
+      "w": 593,
+      "h": 229,
+      "x": 180,
+      "y": 971
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "width": "592.5px",
+      "height": "228.672px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 5,
+    "tag": "p",
+    "cls": "",
+    "box": {
+      "w": 593,
+      "h": 154,
+      "x": 180,
+      "y": 971
+    },
+    "text": "Myan Home là Đơn vị Thiết kế & thi công nội thất – kiến trúc trọn gói uy tín, hoạt động theo định hướng “Đẹp từ chất – An từ tâm”, chuyên kiến tạo không gian sống thẩm mỹ, chất lượng và an toàn. Cung cấp giải pháp toàn diện từ thiết kế đến hoàn thiện, Myan Home triển khai đa dạng hạng mục như chung ",
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "justify",
+      "margin": "0px 0px 20.8px",
+      "width": "592.5px",
+      "height": "153.562px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 5,
+    "tag": "div",
+    "cls": "row",
+    "box": {
+      "w": 623,
+      "h": 54,
+      "x": 165,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "margin": "0px -15px",
+      "width": "622.5px",
+      "height": "54.3125px",
+      "display": "flex",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "1170px"
+    }
+  },
+  {
+    "d": 6,
+    "tag": "div",
+    "cls": "col medium-6 small-12 large-6",
+    "box": {
+      "w": 311,
+      "h": 54,
+      "x": 165,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "padding": "0px 15px",
+      "width": "311.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "50%"
+    }
+  },
+  {
+    "d": 7,
+    "tag": "div",
+    "cls": "col-inner",
+    "box": {
+      "w": 281,
+      "h": 54,
+      "x": 180,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "width": "281.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 8,
+    "tag": "a",
+    "cls": "button primary is-outline",
+    "box": {
+      "w": 142,
+      "h": 39,
+      "x": 250,
+      "y": 1145
+    },
+    "text": null,
+    "href": "https://myanhome.com.vn/gioi-thieu/",
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "33.9888px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "padding": "0px 18.624px",
+      "margin": "0px 0px 15.52px",
+      "width": "142.164px",
+      "height": "38.7969px",
+      "display": "inline-block",
+      "borderRadius": "99px",
+      "border": "2px solid rgb(249, 109, 0)",
+      "borderTop": "2px solid rgb(249, 109, 0)",
+      "borderBottom": "2px solid rgb(249, 109, 0)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "maxWidth": "100%",
+      "minHeight": "38.8px"
+    }
+  },
+  {
+    "d": 9,
+    "tag": "span",
+    "cls": "",
+    "box": {
+      "w": 101,
+      "h": 25,
+      "x": 270,
+      "y": 1152
+    },
+    "text": "SHOWROOM",
+    "href": null,
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "24.832px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "width": "100.93px",
+      "height": "24.8359px",
+      "display": "inline-block",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "borderBottom": "0px none rgb(249, 109, 0)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 6,
+    "tag": "div",
+    "cls": "col medium-6 small-12 large-6",
+    "box": {
+      "w": 311,
+      "h": 54,
+      "x": 476,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "padding": "0px 15px",
+      "width": "311.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "50%"
+    }
+  },
+  {
+    "d": 7,
+    "tag": "div",
+    "cls": "col-inner",
+    "box": {
+      "w": 281,
+      "h": 54,
+      "x": 491,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "width": "281.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 8,
+    "tag": "div",
+    "cls": "row",
+    "box": {
+      "w": 311,
+      "h": 54,
+      "x": 476,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "margin": "0px -15px",
+      "width": "311.25px",
+      "height": "54.3125px",
+      "display": "flex",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "1170px"
+    }
+  },
+  {
+    "d": 9,
+    "tag": "div",
+    "cls": "col small-12 large-12",
+    "box": {
+      "w": 311,
+      "h": 54,
+      "x": 476,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "padding": "0px 15px",
+      "width": "311.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all",
+      "maxWidth": "100%"
+    }
+  },
+  {
+    "d": 10,
+    "tag": "div",
+    "cls": "col-inner",
+    "box": {
+      "w": 281,
+      "h": 54,
+      "x": 491,
+      "y": 1145
+    },
+    "text": null,
+    "href": null,
+    "css": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "25.6px",
+      "color": "rgb(10, 10, 10)",
+      "textAlign": "center",
+      "width": "281.25px",
+      "height": "54.3125px",
+      "display": "block",
+      "border": "0px none rgb(10, 10, 10)",
+      "borderTop": "0px none rgb(10, 10, 10)",
+      "borderBottom": "0px none rgb(10, 10, 10)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 11,
+    "tag": "a",
+    "cls": "button primary is-outline",
+    "box": {
+      "w": 204,
+      "h": 39,
+      "x": 530,
+      "y": 1145
+    },
+    "text": null,
+    "href": "https://myanhome.com.vn/nhamaysanxuat/",
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "33.9888px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "padding": "0px 18.624px",
+      "margin": "0px 0px 15.52px",
+      "width": "203.992px",
+      "height": "38.7969px",
+      "display": "inline-block",
+      "borderRadius": "99px",
+      "border": "2px solid rgb(249, 109, 0)",
+      "borderTop": "2px solid rgb(249, 109, 0)",
+      "borderBottom": "2px solid rgb(249, 109, 0)",
+      "position": "relative",
+      "opacity": "1",
+      "transition": "transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s",
+      "maxWidth": "100%",
+      "minHeight": "38.8px"
+    }
+  },
+  {
+    "d": 12,
+    "tag": "span",
+    "cls": "",
+    "box": {
+      "w": 163,
+      "h": 25,
+      "x": 550,
+      "y": 1152
+    },
+    "text": "NHÀ MÁY SẢN XUẤT",
+    "href": null,
+    "css": {
+      "fontSize": "15.52px",
+      "fontWeight": "700",
+      "lineHeight": "24.832px",
+      "letterSpacing": "0.4656px",
+      "color": "rgb(249, 109, 0)",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "width": "162.758px",
+      "height": "24.8359px",
+      "display": "inline-block",
+      "border": "0px none rgb(249, 109, 0)",
+      "borderTop": "0px none rgb(249, 109, 0)",
+      "borderBottom": "0px none rgb(249, 109, 0)",
+      "position": "static",
+      "opacity": "1",
+      "transition": "all"
+    }
+  },
+  {
+    "d": 1,
+    "tag": "style",
+    "css": {},
+    "text": "#section_1674228875 {\n  padding-top: 45px;\n  padding-bottom: 45px;\n  min-height: 300px;\n}",
+    "box": null
+  }
+]

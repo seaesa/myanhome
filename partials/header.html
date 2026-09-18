@@ -1,5 +1,5 @@
 <!-- Shared header markup. Copied into each page; `is-active` marks the current item. -->
-<header id="header" class="header has-transparent has-sticky sticky-jump transparent">
+<header id="header" class="header {{HEADERCLASS}}">
   <div class="header-wrapper">
     <div id="masthead" class="header-main">
       <div class="header-inner container flex-row logo-left medium-logo-center" role="navigation">
@@ -113,6 +113,13 @@
           </ul>
         </div>
 
+      </div>
+
+      <!-- The bar's fill is a separate layer (30% white wash), exactly as on
+           the live site; `#header.transparent` switches it off at scroll 0. -->
+      <div class="header-bg-container fill">
+        <div class="header-bg-image fill"></div>
+        <div class="header-bg-color fill"></div>
       </div>
     </div>
   </div>
