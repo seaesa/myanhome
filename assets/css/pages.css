@@ -58,41 +58,7 @@
 }
 
 /* --- team ---------------------------------------------------------------- */
-
-.team-section { padding: 45px 0 20px; }
-
-.team-member {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 28px 0;
-}
-.team-member:nth-child(even) { flex-direction: row-reverse; }
-
-.team-photo {
-  flex: 0 0 320px;
-  max-width: 320px;
-}
-.team-photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-
-.team-body { flex: 1 1 auto; }
-.team-body h3 {
-  margin: 0 0 12px;
-  color: var(--c-orange);
-  font-size: 22px;
-  font-weight: 700;
-}
-.team-body p {
-  margin: 0 0 10px;
-  color: var(--c-text-muted);
-  font-size: 15px;
-  line-height: 1.75;
-}
+/* The team block is a slider; its rules live in gioi-thieu.css. */
 
 /* --- timeline (tầm nhìn) -------------------------------------------------- */
 

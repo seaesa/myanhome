@@ -303,6 +303,10 @@
   .partners-section .row > .col { flex-basis: 100%; max-width: 100%; }
   .row-flush > .col { padding-bottom: 30px; }
   .intro-panel { padding: 30px 0 0; }
+  /* The panel is full-bleed on small screens, so the nested row must not keep
+     pulling its 30px gutters out past the viewport. */
+  .intro-panel .row-large { margin-left: 0; margin-right: 0; }
+  .intro-panel .row-large > .col { padding-left: 0; padding-right: 0; }
 
   .values-section .row > .col { flex-basis: 50%; max-width: 50%; }
 
@@ -328,4 +332,6 @@
   .news-row > .col { flex-basis: 100%; max-width: 100%; }
   .partner-col { flex-basis: 50%; max-width: 50%; }
   .intro-panel .row > .col { flex-basis: 100%; max-width: 100%; }
+  /* Full-width cards would push the 1.1x hover outline past the viewport. */
+  .value-card > .is-dotted { transform: none; }
 }
