@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Tin tức — khối giới thiệu + ô tìm kiếm của trang lưu trữ bài viết
+   ========================================================================== */
+
+.news-intro { padding: 45px 0 10px; text-align: center; }
+
+.news-intro-brand {
+  margin: 0 0 6px;
+  font-size: 25.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.news-intro-tagline {
+  margin: 0 0 18px;
+  color: var(--c-text);
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.news-divider {
+  width: 100px;
+  height: 3px;
+  margin: 0 auto 22px;
+  background: var(--c-orange);
+}
+
+.news-search {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Cách đều giữa các khối bài viết */
+.archive-section .post-grid + .post-grid { margin-top: 24px; }
+
+.archive-section .post-card p { margin-top: 2px; }
+
+@media (max-width: 849px) {
+  .news-intro { padding: 30px 0 6px; }
+  .news-intro-brand { font-size: 22px; }
+  .news-intro-tagline { font-size: 15px; }
+}

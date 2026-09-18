@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMPANY PROFILE - Myan Home</title>
+<meta name="description" content="Trọn bộ Company Profile Myan Home – hồ sơ giới thiệu năng lực thiết kế và thi công nội thất.">
+<link rel="icon" href="assets/images/uploads/2024/07/logo150.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/images/uploads/2024/07/6815116.png">
+<link rel="stylesheet" href="assets/css/icons.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/company-profile.css">
+</head>
+<body class="page page-company-profile">
+
+<a class="skip-link screen-reader-text" href="#main">Chuyển tới nội dung</a>
+
+<div id="wrapper">
+
+<!-- Shared header markup. Copied into each page; `is-active` marks the current item. -->
+<header id="header" class="header has-transparent has-sticky sticky-jump transparent">
+  <div class="header-wrapper">
+    <div id="masthead" class="header-main">
+      <div class="header-inner container flex-row logo-left medium-logo-center" role="navigation">
+
+        <div id="logo" class="flex-col logo">
+          <a href="index.html" title="Myan Home" rel="home">
+            <img src="assets/images/uploads/2025/11/LOGO-MYAN-HOME-1-1-1024x1024.png"
+                 class="header-logo" width="1020" height="1020" alt="Myan Home">
+          </a>
+        </div>
+
+        <!-- mobile hamburger -->
+        <div class="flex-col show-for-medium flex-left">
+          <ul class="mobile-nav">
+            <li class="nav-icon has-icon">
+              <a href="#main-menu" data-open="#main-menu" aria-label="Menu"
+                 aria-controls="main-menu" aria-expanded="false">
+                <i class="icon-menu" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-left flex-grow">
+          <ul class="header-nav header-nav-main nav-left"></ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-right">
+          <ul class="header-nav header-nav-main nav-right">
+            <li class="menu-item" data-nav="home">
+              <a href="index.html" class="nav-top-link">Trang chủ</a>
+            </li>
+
+            <li class="menu-item has-dropdown active" data-nav="gioi-thieu">
+              <a href="gioi-thieu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Giới thiệu<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="nha-may-san-xuat.html">Nhà máy sản xuất</a></li>
+                <li><a href="company-profile.html">Company profile</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="dich-vu">
+              <a href="dich-vu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dịch vụ<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/thiet-ke-noi-that.html">Dịch vụ thiết kế</a></li>
+                <li><a href="dich-vu-thi-cong.html">Dịch vụ thi công</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="du-an">
+              <a href="category/du-an.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dự án<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/can-ho.html">Căn hộ</a></li>
+                <li><a href="category/nha-pho.html">Nhà phố</a></li>
+                <li><a href="category/penthouse-duplex.html">Penhouse – Duplex – Mezza</a></li>
+                <li><a href="category/biet-thu.html">Biệt thự</a></li>
+                <li><a href="category/hinh-anh-thuc-te.html">Hình ảnh thực tế</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="noi-that-do-roi">
+              <a href="category/noi-that-do-roi.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Nội thất đồ rời<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/sofa.html">Sofa</a></li>
+                <li><a href="category/ban-ghe-an.html">Bàn ghế ăn</a></li>
+                <li><a href="category/ban-tra.html">Bàn trà</a></li>
+                <li><a href="category/giuong.html">Giường</a></li>
+                <li><a href="category/ke-tivi.html">Kệ tivi</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="tin-tuc">
+              <a href="tin-tuc.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Tin tức<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/cac-phong-cach.html">Phong cách thiết kế</a></li>
+                <li><a href="kien-thuc-noi-that.html">Kiến thức nội thất</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item" data-nav="lien-he">
+              <a href="lien-he.html" class="nav-top-link">Liên hệ</a>
+            </li>
+
+            <li class="header-search header-search-dropdown has-icon has-dropdown">
+              <a href="#" class="nav-top-link" aria-label="Tìm kiếm"
+                 aria-haspopup="true" aria-expanded="false" aria-controls="ux-search-dropdown">
+                <i class="icon-search" aria-hidden="true"></i>
+              </a>
+              <ul id="ux-search-dropdown" class="nav-dropdown nav-dropdown-simple">
+                <li class="header-search-form">
+                  <form role="search" method="get" action="index.html" class="searchform-wrapper">
+                    <label class="screen-reader-text" for="header-search">Tìm kiếm</label>
+                    <input id="header-search" type="search" name="s" placeholder="Tìm kiếm…" autocomplete="off">
+                    <button type="submit" class="submit-button" aria-label="Tìm kiếm">
+                      <i class="icon-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main id="main">
+<!-- Company profile — bộ ảnh hồ sơ công ty (gallery slider, 47 trang) -->
+    <section class="section profile-section">
+      <div class="container">
+        <h1 class="screen-reader-text">Company profile</h1>
+
+        <div class="slider profile-slider" data-slider data-autoplay="2000">
+          <div class="slides">
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/1.png" target="_blank" rel="noopener">
+              <img src="assets/images/uploads/2026/01/1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/1-300x169.png 300w, assets/images/uploads/2026/01/1-500x281.png 500w, assets/images/uploads/2026/01/1-768x432.png 768w, assets/images/uploads/2026/01/1-800x450.png 800w, assets/images/uploads/2026/01/1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 1">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/2.png" target="_blank" rel="noopener">
+              <img src="assets/images/uploads/2026/01/2-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/2-300x169.png 300w, assets/images/uploads/2026/01/2-500x281.png 500w, assets/images/uploads/2026/01/2-768x432.png 768w, assets/images/uploads/2026/01/2-800x450.png 800w, assets/images/uploads/2026/01/2-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 2">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/3.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/3-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/3-300x169.png 300w, assets/images/uploads/2026/01/3-500x281.png 500w, assets/images/uploads/2026/01/3-768x432.png 768w, assets/images/uploads/2026/01/3-800x450.png 800w, assets/images/uploads/2026/01/3-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 3">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/4.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/4-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/4-300x169.png 300w, assets/images/uploads/2026/01/4-500x281.png 500w, assets/images/uploads/2026/01/4-768x432.png 768w, assets/images/uploads/2026/01/4-800x450.png 800w, assets/images/uploads/2026/01/4-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 4">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/5.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/5-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/5-300x169.png 300w, assets/images/uploads/2026/01/5-500x281.png 500w, assets/images/uploads/2026/01/5-768x432.png 768w, assets/images/uploads/2026/01/5-800x450.png 800w, assets/images/uploads/2026/01/5-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 5">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/6.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/6-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/6-300x169.png 300w, assets/images/uploads/2026/01/6-500x281.png 500w, assets/images/uploads/2026/01/6-768x432.png 768w, assets/images/uploads/2026/01/6-800x450.png 800w, assets/images/uploads/2026/01/6-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 6">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/7.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/7-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/7-300x169.png 300w, assets/images/uploads/2026/01/7-500x281.png 500w, assets/images/uploads/2026/01/7-768x432.png 768w, assets/images/uploads/2026/01/7-800x450.png 800w, assets/images/uploads/2026/01/7-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 7">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/8.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/8-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/8-300x169.png 300w, assets/images/uploads/2026/01/8-500x281.png 500w, assets/images/uploads/2026/01/8-768x432.png 768w, assets/images/uploads/2026/01/8-800x450.png 800w, assets/images/uploads/2026/01/8-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 8">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/08/COMPANY-PROFILE-MYAN-HOME-1.jpg" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/08/COMPANY-PROFILE-MYAN-HOME-1-1024x576.jpg"
+                   srcset="assets/images/uploads/2026/08/COMPANY-PROFILE-MYAN-HOME-1-300x169.jpg 300w, assets/images/uploads/2026/08/COMPANY-PROFILE-MYAN-HOME-1-768x432.jpg 768w, assets/images/uploads/2026/08/COMPANY-PROFILE-MYAN-HOME-1-1024x576.jpg 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 9">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-300x169.png 300w, assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-500x281.png 500w, assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-768x432.png 768w, assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-800x450.png 800w, assets/images/uploads/2026/01/COMPANY-PROFILE-MYAN-HOME-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 10">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/11.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/11-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/11-300x169.png 300w, assets/images/uploads/2026/01/11-500x281.png 500w, assets/images/uploads/2026/01/11-768x432.png 768w, assets/images/uploads/2026/01/11-800x450.png 800w, assets/images/uploads/2026/01/11-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 11">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/12.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/12-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/12-300x169.png 300w, assets/images/uploads/2026/01/12-500x281.png 500w, assets/images/uploads/2026/01/12-768x432.png 768w, assets/images/uploads/2026/01/12-800x450.png 800w, assets/images/uploads/2026/01/12-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 12">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/13.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/13-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/13-300x169.png 300w, assets/images/uploads/2026/01/13-500x281.png 500w, assets/images/uploads/2026/01/13-768x432.png 768w, assets/images/uploads/2026/01/13-800x450.png 800w, assets/images/uploads/2026/01/13-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 13">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/14.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/14-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/14-300x169.png 300w, assets/images/uploads/2026/01/14-500x281.png 500w, assets/images/uploads/2026/01/14-768x432.png 768w, assets/images/uploads/2026/01/14-800x450.png 800w, assets/images/uploads/2026/01/14-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 14">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/15.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/15-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/15-300x169.png 300w, assets/images/uploads/2026/01/15-500x281.png 500w, assets/images/uploads/2026/01/15-768x432.png 768w, assets/images/uploads/2026/01/15-800x450.png 800w, assets/images/uploads/2026/01/15-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 15">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/16.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/16-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/16-300x169.png 300w, assets/images/uploads/2026/01/16-500x281.png 500w, assets/images/uploads/2026/01/16-768x432.png 768w, assets/images/uploads/2026/01/16-800x450.png 800w, assets/images/uploads/2026/01/16-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 16">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/17-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/17-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/17-1-300x169.png 300w, assets/images/uploads/2026/01/17-1-500x281.png 500w, assets/images/uploads/2026/01/17-1-768x432.png 768w, assets/images/uploads/2026/01/17-1-800x450.png 800w, assets/images/uploads/2026/01/17-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 17">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/18-2.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/18-2-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/18-2-300x169.png 300w, assets/images/uploads/2026/01/18-2-500x281.png 500w, assets/images/uploads/2026/01/18-2-768x432.png 768w, assets/images/uploads/2026/01/18-2-800x450.png 800w, assets/images/uploads/2026/01/18-2-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 18">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/19-2.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/19-2-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/19-2-300x169.png 300w, assets/images/uploads/2026/01/19-2-500x281.png 500w, assets/images/uploads/2026/01/19-2-768x432.png 768w, assets/images/uploads/2026/01/19-2-800x450.png 800w, assets/images/uploads/2026/01/19-2-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 19">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/20-2.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/20-2-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/20-2-300x169.png 300w, assets/images/uploads/2026/01/20-2-500x281.png 500w, assets/images/uploads/2026/01/20-2-768x432.png 768w, assets/images/uploads/2026/01/20-2-800x450.png 800w, assets/images/uploads/2026/01/20-2-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 20">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/21-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/21-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/21-1-300x169.png 300w, assets/images/uploads/2026/01/21-1-500x281.png 500w, assets/images/uploads/2026/01/21-1-768x432.png 768w, assets/images/uploads/2026/01/21-1-800x450.png 800w, assets/images/uploads/2026/01/21-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 21">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/22-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/22-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/22-1-300x169.png 300w, assets/images/uploads/2026/01/22-1-500x281.png 500w, assets/images/uploads/2026/01/22-1-768x432.png 768w, assets/images/uploads/2026/01/22-1-800x450.png 800w, assets/images/uploads/2026/01/22-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 22">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/23-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/23-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/23-1-300x169.png 300w, assets/images/uploads/2026/01/23-1-500x281.png 500w, assets/images/uploads/2026/01/23-1-768x432.png 768w, assets/images/uploads/2026/01/23-1-800x450.png 800w, assets/images/uploads/2026/01/23-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 23">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/24-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/24-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/24-1-300x169.png 300w, assets/images/uploads/2026/01/24-1-500x281.png 500w, assets/images/uploads/2026/01/24-1-768x432.png 768w, assets/images/uploads/2026/01/24-1-800x450.png 800w, assets/images/uploads/2026/01/24-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 24">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/25-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/25-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/25-1-300x169.png 300w, assets/images/uploads/2026/01/25-1-500x281.png 500w, assets/images/uploads/2026/01/25-1-768x432.png 768w, assets/images/uploads/2026/01/25-1-800x450.png 800w, assets/images/uploads/2026/01/25-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 25">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/26-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/26-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/26-1-300x169.png 300w, assets/images/uploads/2026/01/26-1-500x281.png 500w, assets/images/uploads/2026/01/26-1-768x432.png 768w, assets/images/uploads/2026/01/26-1-800x450.png 800w, assets/images/uploads/2026/01/26-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 26">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/27-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/27-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/27-1-300x169.png 300w, assets/images/uploads/2026/01/27-1-500x281.png 500w, assets/images/uploads/2026/01/27-1-768x432.png 768w, assets/images/uploads/2026/01/27-1-800x450.png 800w, assets/images/uploads/2026/01/27-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 27">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/28-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/28-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/28-1-300x169.png 300w, assets/images/uploads/2026/01/28-1-500x281.png 500w, assets/images/uploads/2026/01/28-1-768x432.png 768w, assets/images/uploads/2026/01/28-1-800x450.png 800w, assets/images/uploads/2026/01/28-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 28">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/29-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/29-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/29-1-300x169.png 300w, assets/images/uploads/2026/01/29-1-500x281.png 500w, assets/images/uploads/2026/01/29-1-768x432.png 768w, assets/images/uploads/2026/01/29-1-800x450.png 800w, assets/images/uploads/2026/01/29-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 29">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/30-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/30-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/30-1-300x169.png 300w, assets/images/uploads/2026/01/30-1-500x281.png 500w, assets/images/uploads/2026/01/30-1-768x432.png 768w, assets/images/uploads/2026/01/30-1-800x450.png 800w, assets/images/uploads/2026/01/30-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 30">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/31-2.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/31-2-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/31-2-300x169.png 300w, assets/images/uploads/2026/01/31-2-500x281.png 500w, assets/images/uploads/2026/01/31-2-768x432.png 768w, assets/images/uploads/2026/01/31-2-800x450.png 800w, assets/images/uploads/2026/01/31-2-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 31">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/32-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/32-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/32-1-300x169.png 300w, assets/images/uploads/2026/01/32-1-500x281.png 500w, assets/images/uploads/2026/01/32-1-768x432.png 768w, assets/images/uploads/2026/01/32-1-800x450.png 800w, assets/images/uploads/2026/01/32-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 32">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/33-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/33-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/33-1-300x169.png 300w, assets/images/uploads/2026/01/33-1-500x281.png 500w, assets/images/uploads/2026/01/33-1-768x432.png 768w, assets/images/uploads/2026/01/33-1-800x450.png 800w, assets/images/uploads/2026/01/33-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 33">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/34-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/34-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/34-1-300x169.png 300w, assets/images/uploads/2026/01/34-1-500x281.png 500w, assets/images/uploads/2026/01/34-1-768x432.png 768w, assets/images/uploads/2026/01/34-1-800x450.png 800w, assets/images/uploads/2026/01/34-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 34">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/35-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/35-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/35-1-300x169.png 300w, assets/images/uploads/2026/01/35-1-500x281.png 500w, assets/images/uploads/2026/01/35-1-768x432.png 768w, assets/images/uploads/2026/01/35-1-800x450.png 800w, assets/images/uploads/2026/01/35-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 35">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/36-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/36-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/36-1-300x169.png 300w, assets/images/uploads/2026/01/36-1-500x281.png 500w, assets/images/uploads/2026/01/36-1-768x432.png 768w, assets/images/uploads/2026/01/36-1-800x450.png 800w, assets/images/uploads/2026/01/36-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 36">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/37-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/37-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/37-1-300x169.png 300w, assets/images/uploads/2026/01/37-1-500x281.png 500w, assets/images/uploads/2026/01/37-1-768x432.png 768w, assets/images/uploads/2026/01/37-1-800x450.png 800w, assets/images/uploads/2026/01/37-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 37">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/38-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/38-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/38-1-300x169.png 300w, assets/images/uploads/2026/01/38-1-500x281.png 500w, assets/images/uploads/2026/01/38-1-768x432.png 768w, assets/images/uploads/2026/01/38-1-800x450.png 800w, assets/images/uploads/2026/01/38-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 38">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/39-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/39-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/39-1-300x169.png 300w, assets/images/uploads/2026/01/39-1-500x281.png 500w, assets/images/uploads/2026/01/39-1-768x432.png 768w, assets/images/uploads/2026/01/39-1-800x450.png 800w, assets/images/uploads/2026/01/39-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 39">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/40-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/40-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/40-1-300x169.png 300w, assets/images/uploads/2026/01/40-1-500x281.png 500w, assets/images/uploads/2026/01/40-1-768x432.png 768w, assets/images/uploads/2026/01/40-1-800x450.png 800w, assets/images/uploads/2026/01/40-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 40">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/41-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/41-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/41-1-300x169.png 300w, assets/images/uploads/2026/01/41-1-500x281.png 500w, assets/images/uploads/2026/01/41-1-768x432.png 768w, assets/images/uploads/2026/01/41-1-800x450.png 800w, assets/images/uploads/2026/01/41-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 41">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/42-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/42-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/42-1-300x169.png 300w, assets/images/uploads/2026/01/42-1-500x281.png 500w, assets/images/uploads/2026/01/42-1-768x432.png 768w, assets/images/uploads/2026/01/42-1-800x450.png 800w, assets/images/uploads/2026/01/42-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 42">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/43-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/43-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/43-1-300x169.png 300w, assets/images/uploads/2026/01/43-1-500x281.png 500w, assets/images/uploads/2026/01/43-1-768x432.png 768w, assets/images/uploads/2026/01/43-1-800x450.png 800w, assets/images/uploads/2026/01/43-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 43">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/44-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/44-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/44-1-300x169.png 300w, assets/images/uploads/2026/01/44-1-500x281.png 500w, assets/images/uploads/2026/01/44-1-768x432.png 768w, assets/images/uploads/2026/01/44-1-800x450.png 800w, assets/images/uploads/2026/01/44-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 44">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/45-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/45-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/45-1-300x169.png 300w, assets/images/uploads/2026/01/45-1-500x281.png 500w, assets/images/uploads/2026/01/45-1-768x432.png 768w, assets/images/uploads/2026/01/45-1-800x450.png 800w, assets/images/uploads/2026/01/45-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 45">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/46-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/46-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/46-1-300x169.png 300w, assets/images/uploads/2026/01/46-1-500x281.png 500w, assets/images/uploads/2026/01/46-1-768x432.png 768w, assets/images/uploads/2026/01/46-1-800x450.png 800w, assets/images/uploads/2026/01/46-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 46">
+            </a>
+          </div>
+          <div class="profile-slide">
+            <a class="profile-slide-link" href="assets/images/uploads/2026/01/47-1.png" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/uploads/2026/01/47-1-1024x576.png"
+                   srcset="assets/images/uploads/2026/01/47-1-300x169.png 300w, assets/images/uploads/2026/01/47-1-500x281.png 500w, assets/images/uploads/2026/01/47-1-768x432.png 768w, assets/images/uploads/2026/01/47-1-800x450.png 800w, assets/images/uploads/2026/01/47-1-1024x576.png 1024w"
+                   sizes="100vw" width="1024" height="576" decoding="async"
+                   alt="Company profile Myan Home – trang 47">
+            </a>
+          </div>
+          </div>
+          <button class="slider-prev" type="button" aria-label="Trang trước"><i class="icon-angle-left" aria-hidden="true"></i></button>
+          <button class="slider-next" type="button" aria-label="Trang sau"><i class="icon-angle-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer id="footer" class="footer-wrapper">
+
+  <section class="section cta-banner">
+    <div class="section-bg">
+      <img src="assets/images/uploads/2025/12/3-1024x576.png" alt="" width="1024" height="576" loading="lazy">
+    </div>
+    <div class="section-content container">
+      <h2>Liên hệ tư vấn thiết kế và thi công trọn gói</h2>
+      <a class="phone-pill" href="tel:0978264334">0978 264 334 - 0942 971 357</a>
+    </div>
+  </section>
+
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col col-4">
+          <h4 class="footer-title">Hệ thống showroom</h4>
+          <ul class="footer-list">
+            <li>Trụ sở chính: 01S09-S2.19, Vinhomes OceanPark, Gia Lâm, Hà Nội</li>
+            <li>Showroom: H101-S06, Haven, Ecopark, Văn Giang, Hưng Yên</li>
+            <li>Showroom: 114 Đại lộ bốn mùa, Vinhomes Ocean Park 3, Hưng Yên</li>
+            <li>Showroom: Tòa A3 Lumiere Evergreen, Vinhomes Smart City, Hà Nội</li>
+            <li>Điện thoại: <a href="tel:0978264334">0978.264.334</a> - <a href="tel:0942971357">0942.971.357</a></li>
+          </ul>
+        </div>
+
+        <div class="col col-4">
+          <h4 class="footer-title">Hệ thống nhà máy</h4>
+          <ul class="footer-list">
+            <li>Nhà máy 1: Thôn 13, Nghĩa Trụ, Hưng Yên</li>
+            <li>Nhà máy 2: KCN Thạch Thất, TP Hà Nội</li>
+          </ul>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Facebook"><i class="icon-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="icon-youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="icon-tiktok" aria-hidden="true"></i></a>
+            <a href="tel:0978264334" aria-label="Zalo"><i class="icon-phone" aria-hidden="true"></i></a>
+          </div>
+          <img class="footer-cert" src="assets/images/uploads/2025/12/Screenshot-2025-12-26-155340.png" alt="Đã thông báo Bộ Công Thương" loading="lazy">
+        </div>
+
+        <div class="col col-4 footer-brand">
+          <img src="assets/images/uploads/2025/12/LOGO-MYAN-HOME-1024x1024.png" alt="Myan Home" width="1024" height="1024" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="dich-vu.html">Dịch vụ</a></li>
+        <li><a href="category/du-an.html">Dự án</a></li>
+        <li><a href="category/noi-that-do-roi.html">Nội thất đồ rời</a></li>
+        <li><a href="tin-tuc.html">Tin tức</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+      <p class="copyright">Designed by Myan Home | All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /#wrapper -->
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar">
+  <ul class="nav-sidebar">
+    <li><a href="index.html">Trang chủ</a></li>
+    <li>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <ul class="sub-menu">
+        <li><a href="nha-may-san-xuat.html">Nhà máy sản xuất</a></li>
+        <li><a href="company-profile.html">Company profile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="dich-vu.html">Dịch vụ</a>
+      <ul class="sub-menu">
+        <li><a href="category/thiet-ke-noi-that.html">Dịch vụ thiết kế</a></li>
+        <li><a href="dich-vu-thi-cong.html">Dịch vụ thi công</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="category/du-an.html">Dự án</a>
+      <ul class="sub-menu">
+        <li><a href="category/can-ho.html">Căn hộ</a></li>
+        <li><a href="category/nha-pho.html">Nhà phố</a></li>
+        <li><a href="category/penthouse-duplex.html">Penhouse – Duplex – Mezza</a></li>
+        <li><a href="category/biet-thu.html">Biệt thự</a></li>
+        <li><a href="category/hinh-anh-thuc-te.html">Hình ảnh thực tế</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="category/noi-that-do-roi.html">Nội thất đồ rời</a>
+      <ul class="sub-menu">
+        <li><a href="category/sofa.html">Sofa</a></li>
+        <li><a href="category/ban-ghe-an.html">Bàn ghế ăn</a></li>
+        <li><a href="category/ban-tra.html">Bàn trà</a></li>
+        <li><a href="category/giuong.html">Giường</a></li>
+        <li><a href="category/ke-tivi.html">Kệ tivi</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="tin-tuc.html">Tin tức</a>
+      <ul class="sub-menu">
+        <li><a href="category/cac-phong-cach.html">Phong cách thiết kế</a></li>
+        <li><a href="kien-thuc-noi-that.html">Kiến thức nội thất</a></li>
+      </ul>
+    </li>
+    <li><a href="lien-he.html">Liên hệ</a></li>
+  </ul>
+</div>
+
+<div class="chat-widget">
+  <a class="chat-btn is-phone" href="tel:0978264334" aria-label="Gọi điện"><i class="icon-phone" aria-hidden="true"></i></a>
+  <a class="chat-btn is-zalo" href="https://zalo.me/0978264334" target="_blank" rel="noopener" aria-label="Zalo"><span>Zalo</span></a>
+  <a class="chat-btn is-messenger" href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Messenger"><i class="icon-facebook" aria-hidden="true"></i></a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

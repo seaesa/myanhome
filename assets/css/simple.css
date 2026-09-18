@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Simple content pages with the theme's right sidebar
+   (Chính sách bán hàng, Kiến thức nội thất, Portfolio, Tài khoản)
+   ========================================================================== */
+
+.page-body { padding: 40px 0 55px; }
+
+.page-body .row { align-items: flex-start; }
+
+.page-main .page-title {
+  margin: 0 0 18px;
+  color: var(--c-orange);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.page-main .placeholder {
+  margin: 0;
+  padding: 22px 0;
+  color: var(--c-text-muted);
+  font-size: 15px;
+}
+
+.col-divided { border-right: 1px solid var(--c-border); padding-right: 30px; }
+
+/* --- sidebar ------------------------------------------------------------- */
+
+.widget-area { padding-left: 10px; }
+
+.widget { margin-bottom: 30px; }
+
+.widget-title {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--c-border);
+  color: var(--c-text);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.widget ul { margin: 0; padding: 0; list-style: none; }
+.widget li { margin-bottom: 7px; }
+.widget li a {
+  color: var(--c-text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.widget li a:hover { color: var(--c-orange); }
+
+.widget .searchform { position: relative; }
+.widget .searchform input[type="search"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 44px 0 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--c-text);
+}
+.widget .searchform input:focus { outline: none; border-color: var(--c-orange); }
+.widget .searchform button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: var(--c-text-muted);
+  cursor: pointer;
+}
+.widget .searchform button:hover { color: var(--c-orange); }
+
+@media (max-width: 849px) {
+  .col-divided { border-right: 0; padding-right: 15px; }
+  .page-body .row > .col { flex-basis: 100%; max-width: 100%; }
+  .widget-area { padding-left: 0; margin-top: 26px; }
+}

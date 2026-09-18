@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer-wrapper { background: #fff; }
+
+.footer-main {
+  padding: 40px 0 26px;
+  background: #fff;
+  border-top: 1px solid var(--c-border);
+}
+
+.footer-title {
+  margin: 0 0 14px;
+  color: var(--c-orange);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list li {
+  margin-bottom: 9px;
+  color: var(--c-text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.footer-list a { color: var(--c-text-muted); }
+.footer-list a:hover { color: var(--c-orange); }
+
+.footer-social {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0 14px;
+}
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--c-orange);
+  color: #fff;
+  font-size: 15px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.footer-social a:hover {
+  background: var(--c-orange-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-cert { max-width: 160px; height: auto; display: block; }
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-brand img { max-width: 240px; height: auto; }
+
+/* --- bottom bar ---------------------------------------------------------- */
+
+.footer-bottom {
+  padding: 12px 0;
+  background: var(--c-orange);
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0 0 4px;
+  padding: 0;
+  list-style: none;
+}
+.footer-nav a {
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.95;
+}
+.footer-nav a:hover { color: #fff; opacity: 0.75; }
+
+.copyright {
+  margin: 0;
+  color: #fff;
+  font-size: 11.5px;
+  opacity: 0.9;
+}
+
+/* --- bottom CTA banner --------------------------------------------------- */
+
+.cta-banner {
+  position: relative;
+  min-height: 173px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-banner .section-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.cta-banner .section-content { padding: 40px 15px; }
+.cta-banner h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.cta-banner .phone-pill {
+  display: inline-block;
+  padding: 9px 26px;
+  border-radius: 99px;
+  background: var(--c-orange);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.cta-banner .phone-pill:hover {
+  background: var(--c-orange-dark);
+  transform: translateY(-2px);
+}
+
+/* --- floating contact buttons -------------------------------------------- */
+
+.chat-widget {
+  position: fixed;
+  right: 14px;
+  bottom: 90px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  transition: transform 0.2s, filter 0.2s;
+}
+.chat-btn span { font-size: 11px; letter-spacing: 0.02em; }
+.chat-btn:hover { color: #fff; transform: scale(1.08); filter: brightness(1.05); }
+
+.chat-btn.is-phone { background: #2ecc40; }
+.chat-btn.is-zalo { background: #0068ff; }
+.chat-btn.is-messenger { background: #1877f2; }
+
+@media (max-width: 549px) {
+  .cta-banner h2 { font-size: 18px; }
+}
+
+@media (max-width: 849px) {
+  .footer-main .row > .col { flex-basis: 100%; max-width: 100%; }
+  .footer-brand { justify-content: flex-start; margin-top: 10px; }
+  .footer-bottom .footer-nav { justify-content: flex-start; }
+}

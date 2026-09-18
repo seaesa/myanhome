@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Dự án — category landing page
+   ========================================================================== */
+
+.du-an-banner {
+  padding: 46px 0;
+  background: var(--c-orange);
+  color: #fff;
+}
+.du-an-banner h2 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.du-an-banner .lead {
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.du-an-banner .button { margin: 0; }
+
+/* --- alternating content rows -------------------------------------------- */
+
+.du-an-row { padding: 47px 0; }
+.du-an-row.is-alt { background: var(--c-bg-alt); }
+
+.du-an-row .col-inner h2 {
+  margin: 0 0 12px;
+  color: var(--c-orange);
+  font-size: 19.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.du-an-row .col-inner p {
+  margin: 0 0 18px;
+  color: var(--c-text);
+  font-size: 14.4px;
+  line-height: 23.04px;
+  text-align: justify;
+}
+.du-an-row .col-inner .button { margin: 0; }
+
+.media-card {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.media-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  transform: translateY(-3px);
+}
+.media-card img { width: 100%; height: auto; display: block; }
+
+/* --- category links ------------------------------------------------------ */
+
+.du-an-cats { padding: 20px 0 55px; }
+.cat-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.cat-links .button { margin: 0; }
+
+@media (max-width: 849px) {
+  .du-an-banner .lead { font-size: 21px; }
+  .du-an-row { padding: 34px 0; }
+  .du-an-row .row > .col { flex-basis: 100%; max-width: 100%; }
+  /* Keep image below its text when the two-column layout collapses. */
+  .du-an-row.is-alt .row { flex-direction: column-reverse; }
+}

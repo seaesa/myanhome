@@ -1,0 +1,92 @@
+{
+ "body": {
+  "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+  "size": "16px",
+  "lh": "25.6px",
+  "color": "rgb(10, 10, 10)",
+  "bg": "rgba(0, 0, 0, 0)"
+ },
+ "h1": {
+  "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+  "size": "27.2px",
+  "weight": "400",
+  "lh": "35.36px",
+  "color": "rgb(249, 109, 0)",
+  "transform": "none"
+ },
+ "h2": {
+  "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+  "size": "25.6px",
+  "weight": "400",
+  "lh": "33.28px",
+  "color": "rgb(249, 109, 0)",
+  "transform": "none",
+  "text": "GIỚI THIỆU VỀ MYAN HOME"
+ },
+ "mainRect": {
+  "y": 0,
+  "h": 4660
+ },
+ "headerRect": {
+  "y": 0,
+  "h": 90
+ },
+ "firstSection": {
+  "cls": "section gioi-thieu-section",
+  "y": 0,
+  "h": 1245
+ },
+ "container": {
+  "maxWidth": "1170px",
+  "padL": "15px",
+  "padR": "15px",
+  "width": "1170px"
+ },
+ "sectionCount": 4,
+ "sections": [
+  {
+   "tag": "SECTION",
+   "id": "section_1348748944",
+   "cls": "section gioi-thieu-section",
+   "y": 0,
+   "h": 1245,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "0px",
+   "pb": "0px",
+   "text": "#gap-620543814 { padding-top: 30px; } #gap-1788089602 { padding-top: 60px; } #text-box-172"
+  },
+  {
+   "tag": "SECTION",
+   "id": "section_705105379",
+   "cls": "section is-selected",
+   "y": 880,
+   "h": 365,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "45px",
+   "pb": "45px",
+   "text": "GIỚI THIỆU VỀ MYAN HOME Myan Home là Đơn vị Thiết kế & thi công nội thất – kiến trúc trọn "
+  },
+  {
+   "tag": "SECTION",
+   "id": "section_1792273735",
+   "cls": "section",
+   "y": 1245,
+   "h": 363,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "30px",
+   "pb": "30px",
+   "text": "An toàn Vật liệu được tuyển chọn theo tiêu chuẩn an toàn và thân thiện, đảm bảo sức khỏe l"
+  },
+  {
+   "tag": "SECTION",
+   "id": "section_101107146",
+   "cls": "section",
+   "y": 2689,
+   "h": 728,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pt": "50px",
+   "pb": "50px",
+   "text": "ĐỐI TÁC CHIẾN LƯỢC #gap-926164260 { padding-top: 20px; } #image_90942513 { width: 100%; } "
+  }
+ ]
+}

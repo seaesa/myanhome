@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Dịch vụ — orange banner hero + alternating service / image card grid
+   ========================================================================== */
+
+/* --- banner hero (solid orange, no image on the original) ---------------- */
+
+.service-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 387px;
+  padding: 50px 0;
+  background: var(--c-orange);
+  text-align: center;
+}
+
+.service-hero .hero-inner {
+  max-width: 702px;
+  margin: 0 auto;
+}
+
+.service-hero h1 {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.service-hero h1 strong { font-weight: 400; }
+
+.service-hero .lead {
+  margin: 0 0 29px;
+  color: #f1f1f1;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.service-hero .lead strong { font-weight: 700; }
+
+.service-hero .button {
+  margin: 8px 0;
+  border-width: 2px;
+  border-color: #f1f1f1;
+  background: transparent;
+  color: #f1f1f1;
+  box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+}
+.service-hero .button:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--c-orange);
+}
+
+/* --- service grid -------------------------------------------------------- */
+
+.service-section {
+  padding: 59px 0 29px;
+  border-top: 1px solid #ebebeb;
+}
+
+/* the original uses Flatsome's `row-large` — 30px gutters, 1200px row */
+.service-section .row {
+  max-width: 1200px;
+  margin: 0 -30px;
+}
+.service-section .row > .col { padding: 0 30px 30px; }
+
+.service-copy h2 {
+  margin: 0 0 13px;
+  color: var(--c-orange);
+  font-size: 25.6px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-copy p {
+  margin: 0 0 21px;
+  color: var(--c-text);
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.service-copy .button {
+  margin: 0;
+  border-width: 2px;
+}
+
+.service-card {
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 19px 38px -12px rgba(0, 0, 0, 0.3), 0 15px 12px -10px rgba(0, 0, 0, 0.22);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-card.service-copy p:last-child { margin-bottom: 0; }
+
+/* --- responsive ---------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .service-hero h1 { font-size: 54px; }
+  .service-hero .lead { font-size: 25px; }
+}
+
+@media (max-width: 849px) {
+  .service-hero { min-height: 300px; padding: 40px 0; }
+  .service-hero .hero-inner { max-width: 100%; }
+  .service-hero h1 { font-size: 44px; }
+  .service-hero .lead { font-size: 21px; margin-bottom: 22px; }
+
+  .service-section { padding: 40px 0 15px; }
+  .service-section .row { margin: 0 -15px; }
+  .service-section .row > .col {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 15px 30px;
+  }
+  .service-copy h2 { font-size: 19.2px; }
+}
+
+@media (max-width: 549px) {
+  .service-hero { min-height: 260px; }
+  .service-hero h1 { font-size: 34px; }
+  .service-hero .lead { font-size: 18px; }
+  .service-copy p { text-align: left; }
+}

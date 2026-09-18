@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Liên hệ — địa chỉ, bản đồ và form đăng ký tư vấn
+   ========================================================================== */
+
+.contact-section { padding: 45px 0 50px; }
+
+.contact-brand {
+  margin: 0 0 6px;
+  font-size: 25.6px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.contact-tagline {
+  margin: 0 0 18px;
+  color: var(--c-text);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+.contact-form-title {
+  margin: 0 0 22px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.contact-intro {
+  margin: 0 0 20px;
+  color: var(--c-text);
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* --- danh sách địa chỉ ---------------------------------------------------- */
+
+.contact-address {
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+.contact-address li {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 20px;
+  color: var(--c-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.contact-address li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c-orange);
+}
+.contact-address a { color: var(--c-orange); }
+.contact-address a:hover { color: var(--c-orange-dark); }
+
+/* --- khối bản đồ / trụ sở ------------------------------------------------- */
+
+.contact-map {
+  position: relative;
+  overflow: hidden;
+}
+.contact-map img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.contact-map iframe {
+  width: 100%;
+  display: block;
+}
+.contact-map-cta {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact-map-cta .button { margin: 0; }
+
+/* --- form ---------------------------------------------------------------- */
+
+.contact-form .field { margin-bottom: 14px; }
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--c-text-muted);
+  font-size: 13.5px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+  color: var(--c-text);
+  font-family: inherit;
+  font-size: 14px;
+}
+.contact-form select { height: 40px; }
+.contact-form textarea { min-height: 120px; resize: vertical; }
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--c-orange);
+}
+.contact-form .button { margin: 6px 0 0; }
+
+/* --- responsive ---------------------------------------------------------- */
+
+@media (max-width: 849px) {
+  .contact-section .row > .col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .contact-brand { font-size: 22px; }
+  .contact-form-title { font-size: 19px; }
+}
+
+@media (max-width: 549px) {
+  .contact-map-cta {
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .contact-intro { text-align: left; }
+}

@@ -1,0 +1,119 @@
+<!-- Shared header markup. Copied into each page; `is-active` marks the current item. -->
+<header id="header" class="header has-transparent has-sticky sticky-jump transparent">
+  <div class="header-wrapper">
+    <div id="masthead" class="header-main">
+      <div class="header-inner container flex-row logo-left medium-logo-center" role="navigation">
+
+        <div id="logo" class="flex-col logo">
+          <a href="{{BASE}}index.html" title="Myan Home" rel="home">
+            <img src="{{BASE}}assets/images/uploads/2025/11/LOGO-MYAN-HOME-1-1-1024x1024.png"
+                 class="header-logo" width="1020" height="1020" alt="Myan Home">
+          </a>
+        </div>
+
+        <!-- mobile hamburger -->
+        <div class="flex-col show-for-medium flex-left">
+          <ul class="mobile-nav">
+            <li class="nav-icon has-icon">
+              <a href="#main-menu" data-open="#main-menu" aria-label="Menu"
+                 aria-controls="main-menu" aria-expanded="false">
+                <i class="icon-menu" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-left flex-grow">
+          <ul class="header-nav header-nav-main nav-left"></ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-right">
+          <ul class="header-nav header-nav-main nav-right">
+            <li class="menu-item" data-nav="home">
+              <a href="{{BASE}}index.html" class="nav-top-link">Trang chủ</a>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="gioi-thieu">
+              <a href="{{BASE}}gioi-thieu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Giới thiệu<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="{{BASE}}nha-may-san-xuat.html">Nhà máy sản xuất</a></li>
+                <li><a href="{{BASE}}company-profile.html">Company profile</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="dich-vu">
+              <a href="{{BASE}}dich-vu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dịch vụ<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="{{BASE}}category/thiet-ke-noi-that.html">Dịch vụ thiết kế</a></li>
+                <li><a href="{{BASE}}dich-vu-thi-cong.html">Dịch vụ thi công</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="du-an">
+              <a href="{{BASE}}category/du-an.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dự án<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="{{BASE}}category/can-ho.html">Căn hộ</a></li>
+                <li><a href="{{BASE}}category/nha-pho.html">Nhà phố</a></li>
+                <li><a href="{{BASE}}category/penthouse-duplex.html">Penhouse – Duplex – Mezza</a></li>
+                <li><a href="{{BASE}}category/biet-thu.html">Biệt thự</a></li>
+                <li><a href="{{BASE}}category/hinh-anh-thuc-te.html">Hình ảnh thực tế</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="noi-that-do-roi">
+              <a href="{{BASE}}category/noi-that-do-roi.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Nội thất đồ rời<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="{{BASE}}category/sofa.html">Sofa</a></li>
+                <li><a href="{{BASE}}category/ban-ghe-an.html">Bàn ghế ăn</a></li>
+                <li><a href="{{BASE}}category/ban-tra.html">Bàn trà</a></li>
+                <li><a href="{{BASE}}category/giuong.html">Giường</a></li>
+                <li><a href="{{BASE}}category/ke-tivi.html">Kệ tivi</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="tin-tuc">
+              <a href="{{BASE}}tin-tuc.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Tin tức<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="{{BASE}}category/cac-phong-cach.html">Phong cách thiết kế</a></li>
+                <li><a href="{{BASE}}kien-thuc-noi-that.html">Kiến thức nội thất</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item" data-nav="lien-he">
+              <a href="{{BASE}}lien-he.html" class="nav-top-link">Liên hệ</a>
+            </li>
+
+            <li class="header-search header-search-dropdown has-icon has-dropdown">
+              <a href="#" class="nav-top-link" aria-label="Tìm kiếm"
+                 aria-haspopup="true" aria-expanded="false" aria-controls="ux-search-dropdown">
+                <i class="icon-search" aria-hidden="true"></i>
+              </a>
+              <ul id="ux-search-dropdown" class="nav-dropdown nav-dropdown-simple">
+                <li class="header-search-form">
+                  <form role="search" method="get" action="{{BASE}}index.html" class="searchform-wrapper">
+                    <label class="screen-reader-text" for="header-search">Tìm kiếm</label>
+                    <input id="header-search" type="search" name="s" placeholder="Tìm kiếm…" autocomplete="off">
+                    <button type="submit" class="submit-button" aria-label="Tìm kiếm">
+                      <i class="icon-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>

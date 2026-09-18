@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Myan Home — foundation
+   Tokens and primitives extracted from myanhome.com.vn (Flatsome 3.20.4).
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --c-orange: #f96d00;        /* headings, accents, buttons, dropdown rule */
+  --c-orange-nav: #ed7702;    /* nav hover + current page */
+  --c-orange-dark: #d85f00;   /* button hover */
+
+  /* Text */
+  --c-text: #0a0a0a;
+  --c-text-nav: #000;
+  --c-text-muted: #424242;    /* dropdown links */
+  --c-text-soft: #777;
+  --c-white: #fff;
+
+  /* Surfaces */
+  --c-bg: #fff;
+  --c-bg-alt: #f7f7f7;
+  --c-border: #ececec;
+
+  /* Header metrics */
+  --header-height: 90px;
+  --header-height-stuck: 52px;
+
+  /* Layout */
+  --container: 1170px;
+  --gutter: 15px;
+
+  /* Type — the live site loads no webfont; it uses the system stack. */
+  --font: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", Arial, sans-serif;
+
+  --shadow-header: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  --shadow-stuck: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+  --shadow-dropdown: 1px 1px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;          /* 25.6px */
+  color: var(--c-text);
+  background: var(--c-bg);
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; border: 0; vertical-align: middle; }
+
+a { color: var(--c-orange); text-decoration: none; transition: color 0.2s; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  font-weight: 400;
+  color: var(--c-orange);
+}
+
+h1 { font-size: 27.2px; line-height: 1.3; }
+h2 { font-size: 25.6px; line-height: 1.3; }
+h3 { font-size: 22.4px; line-height: 1.3; }
+h4 { font-size: 19.2px; line-height: 1.3; }
+h5 { font-size: 16px; line-height: 1.3; }
+h6 { font-size: 12.8px; line-height: 1.3; }
+
+p { margin: 0 0 1.3em; }
+
+ul, ol { margin: 0; padding: 0; }
+
+button { font-family: inherit; }
+
+/* Accessibility ---------------------------------------------------------- */
+
+.screen-reader-text {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100000;
+  padding: 10px 16px;
+  background: #fff;
+  color: var(--c-text);
+}
+.skip-link:focus { left: 0; }
+
+/* Layout ----------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.container-full { width: 100%; padding: 0 var(--gutter); }
+
+.section { position: relative; }
+
+.section-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.section-bg img,
+.section-bg .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-content { position: relative; z-index: 1; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.row-collapse { margin: 0; }
+.row-small { margin: 0 -10px; }
+.row > .col { padding: 0 15px 30px; }
+.row-collapse > .col { padding: 0; }
+.row-small > .col { padding: 0 10px 20px; }
+
+.col { position: relative; width: 100%; flex: 0 0 100%; max-width: 100%; }
+
+.col-12 { flex-basis: 100%; max-width: 100%; }
+.col-9  { flex-basis: 75%;  max-width: 75%; }
+.col-8  { flex-basis: 66.6667%; max-width: 66.6667%; }
+.col-6  { flex-basis: 50%;  max-width: 50%; }
+.col-4  { flex-basis: 33.3333%; max-width: 33.3333%; }
+.col-3  { flex-basis: 25%;  max-width: 25%; }
+
+.align-middle { align-items: center; }
+.align-center { justify-content: center; }
+.align-equal > .col { display: flex; flex-direction: column; }
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.relative { position: relative; }
+
+/* Visibility helpers — Flatsome breakpoints ------------------------------- */
+
+.hide-for-medium { display: block; }
+.show-for-medium { display: none !important; }
+
+@media (max-width: 849px) {
+  .hide-for-medium { display: none !important; }
+  .show-for-medium { display: block !important; }
+}
+
+@media (max-width: 549px) {
+  .hide-for-small { display: none !important; }
+}
+
+/* Buttons ---------------------------------------------------------------- */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5em;
+  margin: 0 0 1em;
+  padding: 0 1.2em;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: var(--c-orange);
+  color: #fff;
+  font-size: 0.97em;
+  font-weight: bold;
+  line-height: 2.4em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.button:hover {
+  background-color: var(--c-orange-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.button.is-outline {
+  background-color: transparent;
+  border-color: var(--c-orange);
+  color: var(--c-orange);
+}
+.button.is-outline:hover {
+  background-color: var(--c-orange);
+  color: #fff;
+}
+
+.button.is-white {
+  background-color: #fff;
+  color: var(--c-orange);
+}
+.button.is-white:hover { background-color: #f3f3f3; }
+
+.button.is-pill { border-radius: 99px; }
+
+/* Section headings ------------------------------------------------------- */
+
+.section-title {
+  margin: 0 0 30px;
+  color: var(--c-orange);
+  font-size: 25.6px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Utilities -------------------------------------------------------------- */
+
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.fill { position: absolute; inset: 0; }
+
+.is-hidden { display: none !important; }

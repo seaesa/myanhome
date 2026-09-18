@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Company profile — full-width brochure gallery slider
+   The base .slider primitives live in home.css, which this page does not
+   load, so the shared rules are repeated here verbatim.
+   ========================================================================== */
+
+/* --- slider primitives (mirrors home.css) -------------------------------- */
+
+.slider { position: relative; overflow: hidden; }
+
+.slider .slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.slider .slides > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* --- page layout --------------------------------------------------------- */
+
+.profile-section { padding: 45px 0 50px; }
+
+.profile-slider {
+  background: var(--c-bg-alt);
+  /* keeps the box from collapsing before the first image decodes */
+  aspect-ratio: 1024 / 576;
+}
+
+.profile-slide { position: relative; }
+
+.profile-slide-link {
+  display: block;
+  line-height: 0;
+}
+
+.profile-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1024 / 576;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* --- arrows -------------------------------------------------------------- */
+/* The brochure pages are mostly white, so the light arrows used on the home
+   hero would disappear: invert them to a white pill with a dark glyph. */
+
+.profile-slider .slider-prev,
+.profile-slider .slider-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-top: -23px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.18);
+  color: var(--c-text);
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.2s, color 0.2s;
+}
+.profile-slider:hover .slider-prev,
+.profile-slider:hover .slider-next,
+.profile-slider .slider-prev:focus-visible,
+.profile-slider .slider-next:focus-visible { opacity: 1; }
+.profile-slider .slider-prev:hover,
+.profile-slider .slider-next:hover {
+  background: #fff;
+  color: var(--c-orange);
+}
+.profile-slider .slider-prev { left: 12px; }
+.profile-slider .slider-next { right: 12px; }
+
+/* The original gallery runs with pageDots disabled; the shared slider JS
+   always injects them, so hide them here. */
+.profile-slider .slider-dots { display: none; }
+
+/* --- responsive ---------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .profile-section { padding: 35px 0 40px; }
+}
+
+@media (max-width: 849px) {
+  .profile-section { padding: 28px 0 34px; }
+  /* no hover on touch — keep the arrows permanently visible */
+  .profile-slider .slider-prev,
+  .profile-slider .slider-next {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 549px) {
+  .profile-section { padding: 20px 0 28px; }
+  .profile-slider .slider-prev,
+  .profile-slider .slider-next {
+    width: 34px;
+    height: 34px;
+    margin-top: -17px;
+    font-size: 16px;
+  }
+  .profile-slider .slider-prev { left: 6px; }
+  .profile-slider .slider-next { right: 6px; }
+}

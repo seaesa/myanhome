@@ -1,0 +1,331 @@
+/* ==========================================================================
+   Header — transparent + sticky-jump
+   Values mirror docs/research/BEHAVIORS.md §1.
+   ========================================================================== */
+
+#header {
+  position: relative;
+  z-index: 1001;
+  height: var(--header-height);
+  background-color: transparent;
+  color: var(--c-text);
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* The live site marks this template "transparent", but measured geometry shows
+   the first section starting at y=90 — i.e. the bar sits above the hero rather
+   than over it. #header therefore keeps its 90px of flow, which also gives the
+   sticky wrapper a placeholder so nothing jumps when it detaches. */
+#header.has-transparent {
+  position: relative;
+  width: 100%;
+}
+
+.header-wrapper {
+  position: relative;
+  z-index: 1001;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* --- stuck ------------------------------------------------------------- */
+/* "sticky-jump": no slide-in animation — the wrapper snaps to fixed/compact. */
+.header-wrapper.stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: var(--shadow-stuck);
+}
+
+.header-main {
+  position: relative;
+  z-index: 10;
+  background-color: var(--c-white);
+  box-shadow: var(--shadow-header);
+  transition: height 0.3s;
+}
+
+/* The original keeps #masthead white with its shadow in BOTH states — the
+   `transparent` class changes the wrapper's positioning, not the bar's fill. */
+
+.header-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: var(--header-height);
+  transition: height 0.3s;
+}
+
+.header-wrapper.stuck .header-main,
+.header-wrapper.stuck .header-inner { height: var(--header-height-stuck); }
+
+.flex-col { display: flex; align-items: center; }
+.flex-left { justify-content: flex-start; }
+.flex-right { justify-content: flex-end; margin-left: auto; }
+.flex-grow { flex: 1 1 0; }
+
+/* --- logo --------------------------------------------------------------- */
+
+#logo {
+  margin-right: 30px;
+  flex: 0 0 auto;
+}
+
+#logo a {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  color: var(--c-orange);
+  transition: height 0.3s;
+}
+.header-wrapper.stuck #logo a { height: var(--header-height-stuck); }
+
+#logo img {
+  display: block;
+  width: auto;
+  max-height: var(--header-height);
+  transition: max-height 0.5s;
+}
+.header-wrapper.stuck #logo img { max-height: var(--header-height-stuck); }
+
+#logo .header-logo-dark { display: none; }
+
+/* --- nav ---------------------------------------------------------------- */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav > li { position: relative; margin: 0; }
+
+.header-nav > li > a.nav-top-link {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 10px 0;
+  margin: 0 11px;
+  color: var(--c-text-nav);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.2s, height 0.3s;
+}
+
+.header-wrapper.stuck .header-nav > li > a.nav-top-link { height: 25px; }
+
+/* Hover and current page share the same orange — no underline on this theme. */
+.header-nav > li > a.nav-top-link:hover,
+.header-nav > li.active > a.nav-top-link,
+.header-nav > li.current-dropdown > a.nav-top-link {
+  color: var(--c-orange-nav);
+}
+
+.nav-top-link .icon-angle-down {
+  margin-left: 4px;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* icon-only items (search, cart) */
+.header-nav > li.has-icon > a.nav-top-link { font-size: 18px; }
+
+/* --- dropdowns ---------------------------------------------------------- */
+
+.nav-dropdown {
+  position: absolute;
+  top: 39.2px;
+  left: -99999px;
+  z-index: 9;
+  display: table;
+  min-width: 260px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--c-white);
+  border-top: 4px solid var(--c-orange);
+  box-shadow: var(--shadow-dropdown);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.header-nav > li.current-dropdown > .nav-dropdown {
+  left: -15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-dropdown li { margin: 0; list-style: none; }
+
+.nav-dropdown li > a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--c-text-muted);
+  font-size: 15.2px;
+  font-weight: 400;
+  line-height: 19.76px;
+  text-transform: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-dropdown li > a:hover {
+  color: var(--c-orange-nav);
+  background-color: #f7f7f7;
+}
+
+/* Right-aligned menus must not overflow the viewport. They still hide to the
+   left (like the original) — hiding to the right would widen the document. */
+.header-nav-main.nav-right > li:nth-last-child(-n + 2).current-dropdown > .nav-dropdown {
+  left: auto;
+  right: -15px;
+}
+
+/* --- search dropdown ---------------------------------------------------- */
+
+.header-search-dropdown > .nav-dropdown { padding: 15px; min-width: 300px; }
+
+.searchform-wrapper { position: relative; display: block; }
+
+.searchform-wrapper input[type="search"],
+.searchform-wrapper input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--c-text);
+}
+.searchform-wrapper input:focus {
+  outline: none;
+  border-color: var(--c-orange);
+}
+
+.searchform-wrapper .submit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--c-text-muted);
+  cursor: pointer;
+}
+.searchform-wrapper .submit-button:hover { color: var(--c-orange); }
+
+/* --- mobile ------------------------------------------------------------- */
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav > li > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--c-text-nav);
+  font-size: 20px;
+  transition: color 0.2s;
+}
+.mobile-nav > li > a:hover { color: var(--c-orange-nav); }
+
+@media (max-width: 849px) {
+  /* Logo centres between the hamburger (left) and any right elements. */
+  .header-inner.medium-logo-center { justify-content: space-between; }
+  .header-inner.medium-logo-center #logo {
+    order: 2;
+    margin: 0;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .header-inner.medium-logo-center .flex-left { order: 1; }
+  .header-inner.medium-logo-center .flex-right { order: 3; margin-left: 0; }
+}
+
+/* --- off-canvas mobile menu --------------------------------------------- */
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 260px;
+  max-width: 85vw;
+  height: 100%;
+  padding: 20px 0;
+  background: #fff;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.mobile-sidebar.is-open { transform: translateX(0); }
+
+.mobile-sidebar.mfp-hide { display: block; }
+
+.mobile-sidebar .nav-sidebar { list-style: none; margin: 0; padding: 0; }
+.mobile-sidebar .nav-sidebar li { border-bottom: 1px solid var(--c-border); }
+.mobile-sidebar .nav-sidebar > li > a,
+.mobile-sidebar .nav-sidebar li a {
+  display: block;
+  padding: 12px 20px;
+  color: var(--c-text);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mobile-sidebar .nav-sidebar .sub-menu { padding-left: 0; }
+.mobile-sidebar .nav-sidebar .sub-menu li { border-bottom: 0; }
+.mobile-sidebar .nav-sidebar .sub-menu a {
+  padding: 9px 20px 9px 36px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--c-text-muted);
+}
+.mobile-sidebar .nav-sidebar a:hover { color: var(--c-orange-nav); }
+
+/* collapsible sub-menus */
+.mobile-sidebar .toggle {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background: transparent;
+  color: var(--c-text-muted);
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.mobile-sidebar li.has-child { position: relative; }
+.mobile-sidebar li.has-child > .sub-menu { display: none; }
+.mobile-sidebar li.has-child.is-open > .sub-menu { display: block; }
+.mobile-sidebar li.has-child.is-open > .toggle { transform: rotate(180deg); }
+
+.main-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.main-menu-overlay.is-open { opacity: 1; visibility: visible; }

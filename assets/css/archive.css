@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Category archives — 2-column blog-post boxes (Flatsome `box-blog-post`)
+   ========================================================================== */
+
+.archive-head {
+  padding: 40px 0 6px;
+  text-align: center;
+}
+.archive-head h1 {
+  margin: 0;
+  color: var(--c-orange);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.archive-body { padding: 24px 0 55px; }
+
+.post-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+.blog-post .box-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.blog-post .box-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease, opacity 0.3s;
+}
+.blog-post:hover .box-image img { transform: scale(1.05); }
+
+.blog-post .box-text { padding: 14px 2px 0; }
+
+.blog-post .post-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.blog-post .post-title a { color: var(--c-orange); }
+.blog-post .post-title a:hover { color: var(--c-orange-dark); }
+
+.archive-empty {
+  padding: 30px 0 10px;
+  color: var(--c-text-muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* --- pagination ---------------------------------------------------------- */
+
+.nav-pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 38px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-pagination li { list-style: none; }
+.nav-pagination .page-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--c-border);
+  color: var(--c-text-muted);
+  font-size: 14px;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+a.page-number:hover,
+.nav-pagination .page-number.current {
+  border-color: var(--c-orange);
+  background: var(--c-orange);
+  color: #fff;
+}
+.nav-pagination .dots { border-color: transparent; }
+
+@media (max-width: 849px) {
+  .archive-head h1 { font-size: 24px; }
+  .post-columns { gap: 22px; }
+}
+
+@media (max-width: 549px) {
+  .post-columns { grid-template-columns: 1fr; }
+}

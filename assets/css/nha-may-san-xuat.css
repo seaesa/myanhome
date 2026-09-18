@@ -1,0 +1,165 @@
+/* Nhà máy sản xuất — page-specific layout.
+   Loaded after pages.css; only adds what the shared system does not cover. */
+
+/* Small-screen counterpart to base.css `.hide-for-small`. */
+.show-for-small { display: none !important; }
+@media (max-width: 549px) {
+  .show-for-small { display: block !important; }
+}
+
+/* --- hero banner ---------------------------------------------------------- */
+
+.factory-hero {
+  position: relative;
+  overflow: hidden;
+  background: #0d0d0d;
+}
+.factory-hero img {
+  display: block;
+  width: 100%;
+}
+.factory-hero .hero-full img {
+  height: 76vh;
+  min-height: 400px;
+  max-height: 760px;
+  object-fit: cover;
+  object-position: center;
+}
+.factory-hero .hero-small img { height: auto; }
+
+@media (max-width: 849px) {
+  .factory-hero .hero-full img { height: 46vh; min-height: 280px; }
+}
+
+/* --- plain image grids ---------------------------------------------------- */
+
+.image-band { padding: 30px 0 4px; }
+
+.image-grid {
+  display: grid;
+  gap: 20px;
+}
+.image-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.image-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 549px) {
+  .image-grid-3 { grid-template-columns: 1fr; }
+  .image-grid { gap: 14px; }
+}
+
+/* --- factory content ----------------------------------------------------- */
+
+.factory-section { padding: 30px 0 50px; }
+
+.factory-section .content-body > h2 {
+  margin: 34px 0 16px;
+  font-size: 25.6px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.factory-section .content-body > h2:first-child { margin-top: 0; }
+.factory-section .content-body h4 {
+  margin: 22px 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.factory-section .content-body h5 {
+  margin: 18px 0 8px;
+  color: var(--c-text);
+  font-size: 15px;
+  font-weight: 700;
+}
+.factory-section .content-body h3.lead { margin-top: 34px; }
+
+.factory-section .content-body blockquote {
+  margin: 18px 0 22px;
+  padding: 14px 20px;
+  border-left: 3px solid var(--c-orange);
+  background: var(--c-bg-alt);
+  color: var(--c-text);
+}
+.factory-section .content-body blockquote p { margin: 0; }
+.factory-section .content-body blockquote p + p { margin-top: 10px; }
+
+.factory-section .content-body li p { margin: 0 0 4px; }
+.factory-section .content-body li p:last-child { margin-bottom: 0; }
+
+/* Full-width photo between copy blocks. */
+.content-figure {
+  margin: 26px 0 30px;
+}
+.content-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --- mixed-span photo grids (the two banner grids on the live page) ------- */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  margin: 26px 0 30px;
+}
+.photo-grid > .cell { position: relative; overflow: hidden; }
+.photo-grid > .cell img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.photo-grid .span-3 { grid-column: span 3; }
+.photo-grid .span-4 { grid-column: span 4; }
+.photo-grid .span-6 { grid-column: span 6; }
+.photo-grid .span-8 { grid-column: span 8; }
+
+@media (max-width: 849px) {
+  .photo-grid { gap: 10px; }
+  .photo-grid .span-3 { grid-column: span 6; }
+  .photo-grid .span-4 { grid-column: span 6; }
+  .photo-grid .span-6,
+  .photo-grid .span-8 { grid-column: span 12; }
+}
+
+@media (max-width: 549px) {
+  .photo-grid { grid-template-columns: 1fr; }
+  .photo-grid .span-3,
+  .photo-grid .span-4,
+  .photo-grid .span-6,
+  .photo-grid .span-8 { grid-column: span 1; }
+}
+
+/* --- completed-project gallery ------------------------------------------- */
+
+.project-gallery-section { padding: 0 0 55px; }
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.project-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.project-gallery .shot {
+  overflow: hidden;
+  background: var(--c-bg-alt);
+}
+.project-gallery .shot:hover img { transform: scale(1.04); }
+
+@media (max-width: 849px) {
+  .project-gallery { gap: 14px; }
+}
+
+@media (max-width: 549px) {
+  .project-gallery { grid-template-columns: 1fr; }
+}

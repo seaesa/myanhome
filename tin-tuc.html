@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TIN TỨC - Myan Home</title>
+<meta name="description" content="Tin tức, dự án và bài viết mới nhất về thiết kế – thi công nội thất của Myan Home.">
+<link rel="icon" href="assets/images/uploads/2024/07/logo150.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/images/uploads/2024/07/6815116.png">
+<link rel="stylesheet" href="assets/css/icons.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/tin-tuc.css">
+</head>
+<body class="page page-tin-tuc">
+
+<a class="skip-link screen-reader-text" href="#main">Chuyển tới nội dung</a>
+
+<div id="wrapper">
+
+<!-- Shared header markup. Copied into each page; `is-active` marks the current item. -->
+<header id="header" class="header has-transparent has-sticky sticky-jump transparent">
+  <div class="header-wrapper">
+    <div id="masthead" class="header-main">
+      <div class="header-inner container flex-row logo-left medium-logo-center" role="navigation">
+
+        <div id="logo" class="flex-col logo">
+          <a href="index.html" title="Myan Home" rel="home">
+            <img src="assets/images/uploads/2025/11/LOGO-MYAN-HOME-1-1-1024x1024.png"
+                 class="header-logo" width="1020" height="1020" alt="Myan Home">
+          </a>
+        </div>
+
+        <!-- mobile hamburger -->
+        <div class="flex-col show-for-medium flex-left">
+          <ul class="mobile-nav">
+            <li class="nav-icon has-icon">
+              <a href="#main-menu" data-open="#main-menu" aria-label="Menu"
+                 aria-controls="main-menu" aria-expanded="false">
+                <i class="icon-menu" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-left flex-grow">
+          <ul class="header-nav header-nav-main nav-left"></ul>
+        </div>
+
+        <div class="flex-col hide-for-medium flex-right">
+          <ul class="header-nav header-nav-main nav-right">
+            <li class="menu-item" data-nav="home">
+              <a href="index.html" class="nav-top-link">Trang chủ</a>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="gioi-thieu">
+              <a href="gioi-thieu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Giới thiệu<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="nha-may-san-xuat.html">Nhà máy sản xuất</a></li>
+                <li><a href="company-profile.html">Company profile</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="dich-vu">
+              <a href="dich-vu.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dịch vụ<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/thiet-ke-noi-that.html">Dịch vụ thiết kế</a></li>
+                <li><a href="dich-vu-thi-cong.html">Dịch vụ thi công</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="du-an">
+              <a href="category/du-an.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Dự án<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/can-ho.html">Căn hộ</a></li>
+                <li><a href="category/nha-pho.html">Nhà phố</a></li>
+                <li><a href="category/penthouse-duplex.html">Penhouse – Duplex – Mezza</a></li>
+                <li><a href="category/biet-thu.html">Biệt thự</a></li>
+                <li><a href="category/hinh-anh-thuc-te.html">Hình ảnh thực tế</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown" data-nav="noi-that-do-roi">
+              <a href="category/noi-that-do-roi.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Nội thất đồ rời<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/sofa.html">Sofa</a></li>
+                <li><a href="category/ban-ghe-an.html">Bàn ghế ăn</a></li>
+                <li><a href="category/ban-tra.html">Bàn trà</a></li>
+                <li><a href="category/giuong.html">Giường</a></li>
+                <li><a href="category/ke-tivi.html">Kệ tivi</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown active" data-nav="tin-tuc">
+              <a href="tin-tuc.html" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">
+                Tin tức<i class="icon-angle-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                <li><a href="category/cac-phong-cach.html">Phong cách thiết kế</a></li>
+                <li><a href="kien-thuc-noi-that.html">Kiến thức nội thất</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item" data-nav="lien-he">
+              <a href="lien-he.html" class="nav-top-link">Liên hệ</a>
+            </li>
+
+            <li class="header-search header-search-dropdown has-icon has-dropdown">
+              <a href="#" class="nav-top-link" aria-label="Tìm kiếm"
+                 aria-haspopup="true" aria-expanded="false" aria-controls="ux-search-dropdown">
+                <i class="icon-search" aria-hidden="true"></i>
+              </a>
+              <ul id="ux-search-dropdown" class="nav-dropdown nav-dropdown-simple">
+                <li class="header-search-form">
+                  <form role="search" method="get" action="index.html" class="searchform-wrapper">
+                    <label class="screen-reader-text" for="header-search">Tìm kiếm</label>
+                    <input id="header-search" type="search" name="s" placeholder="Tìm kiếm…" autocomplete="off">
+                    <button type="submit" class="submit-button" aria-label="Tìm kiếm">
+                      <i class="icon-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main id="main">
+<!-- Giới thiệu + tìm kiếm -->
+    <section class="section news-intro">
+      <div class="container">
+        <h1 class="news-intro-brand"><strong>MYAN HOME</strong></h1>
+        <p class="news-intro-tagline"><strong>THIẾT KẾ &amp; THI CÔNG NỘI THẤT TRỌN GÓI</strong></p>
+        <div class="news-divider"></div>
+        <div class="news-search">
+          <form role="search" method="get" action="index.html" class="searchform-wrapper">
+            <label class="screen-reader-text" for="news-search">Tìm kiếm</label>
+            <input id="news-search" type="search" name="s" placeholder="Search…" autocomplete="off">
+            <button type="submit" class="submit-button" aria-label="Gửi">
+              <i class="icon-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bài viết mới nhất -->
+    <section class="section archive-section">
+      <div class="container">
+        <h2 class="section-title">BÀI VIẾT MỚI NHẤT</h2>
+
+        <div class="post-grid">
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-can-chung-cu-toa-b-masterise-west-height-truc-30-2n.html">
+              <img src="assets/images/uploads/2026/07/26-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-can-chung-cu-toa-b-masterise-west-height-truc-30-2n.html">Thiết kế Căn chung cư Tòa B Masterise West Height – Trục 30 2N+</a></h3>
+            <p>27/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang.html">
+              <img src="assets/images/uploads/2026/07/54-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang.html">Thiết kế Nhà Phố hiện đại Thường Tín 3 tầng</a></h3>
+            <p>04/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/the-lumiere-evergreen-truc-06-toa-a3-2n-hien-dai.html">
+              <img src="assets/images/uploads/2026/06/182-300x232.png" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/the-lumiere-evergreen-truc-06-toa-a3-2n-hien-dai.html">Thiết kế nội thất căn Trục 06 tòa A3 – 2N+ | Phong cách Hiện đại</a></h3>
+            <p>10/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/the-lumiere-evergreen-truc-26-toa-a3-1n-hien-dai.html">
+              <img src="assets/images/uploads/2026/06/159-300x232.png" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/the-lumiere-evergreen-truc-26-toa-a3-1n-hien-dai.html">The LUMIÈRE Evergreen – Trục 26 tòa A3 – 1N+ – Hiện đại</a></h3>
+            <p>10/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine.html">
+              <img src="assets/images/uploads/2026/06/139-300x232.png" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-3d-can-duplex-ecopark-sky-forest-phong-cach-indochine.html">Thiết kế 3D căn Duplex Ecopark – Sky Forest – Phong cách Indochine</a></h3>
+            <p>10/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/myan-home-thong-bao-thay-doi-giam-doc-chi-nhanh-vinhomes-smart-city.html">
+              <img src="assets/images/uploads/2026/08/Brown-Beige-Modern-Home-Interior-Design-Instagram-Story-2-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/myan-home-thong-bao-thay-doi-giam-doc-chi-nhanh-vinhomes-smart-city.html">Myan Home thông báo thay đổi Giám đốc Chi nhánh Vinhomes Smart City</a></h3>
+            <p>01/05/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n.html">
+              <img src="assets/images/uploads/2026/04/z7744707598280_7f6dc5ecee84117f41c1ffd3ea841f50-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-13-toa-be3-3n.html">Thiết kế Căn hộ The Beverly Vinhomes Ocean Park – Trục 13 tòa BE3 – 3N</a></h3>
+            <p>20/04/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-chung-cu-toa-sf3-truc-05a-sky-forest-ecopark.html">
+              <img src="assets/images/uploads/2026/04/douplex-sky-forest-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-chung-cu-toa-sf3-truc-05a-sky-forest-ecopark.html">Thực tế căn chung cư tòa SF3 trục 05A, Sky Forest, Ecopark</a></h3>
+            <p>20/04/2026</p>
+          </article>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-truc-01-toa-be3-2n-the-beverly-vinhomes-ocean-park-1.html">
+              <img src="assets/images/uploads/2026/09/32-1-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-truc-01-toa-be3-2n-the-beverly-vinhomes-ocean-park-1.html">Thực tế nội thất căn 2N trục 01 Tòa BE3 – The Beverly, OCP1</a></h3>
+            <p>10/09/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/mau-thiet-ke-biet-thu-lang-son.html">
+              <img src="assets/images/uploads/2026/09/3-300x200.jpg" alt="" width="300" height="200" loading="lazy">
+            </a>
+            <h3><a href="post/mau-thiet-ke-biet-thu-lang-son.html">Mẫu thiết kế Biệt thự Lạng Sơn đẹp và sang trọng</a></h3>
+            <p>09/09/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-can-chung-cu-toa-b-masterise-west-height-truc-30-2n.html">
+              <img src="assets/images/uploads/2026/07/26-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-can-chung-cu-toa-b-masterise-west-height-truc-30-2n.html">Thiết kế Căn chung cư Tòa B Masterise West Height – Trục 30 2N+</a></h3>
+            <p>27/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-ho-cai-tao-toa-b-masterise-west-height-truc-30-2n.html">
+              <img src="assets/images/uploads/2026/07/20-300x226.jpg" alt="" width="300" height="226" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-ho-cai-tao-toa-b-masterise-west-height-truc-30-2n.html">Thực tế Căn hộ cải tạo Tòa B Masterise West Height – Trục 30 2N+</a></h3>
+            <p>27/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang.html">
+              <img src="assets/images/uploads/2026/07/54-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-nha-pho-hien-dai-thuong-tin-3-tang.html">Thiết kế Nhà Phố hiện đại Thường Tín 3 tầng</a></h3>
+            <p>04/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-06-toa-be4-3n.html">
+              <img src="assets/images/uploads/2026/07/32-300x232.jpg" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-can-ho-the-beverly-vinhomes-ocean-park-truc-06-toa-be4-3n.html">Thiết kế Căn hộ The Beverly Vinhomes Ocean Park – Trục 06 tòa BE4 – 3N+</a></h3>
+            <p>01/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-truc-26-toa-a3-1n-hien-dai-the-lumiere-evergreen.html">
+              <img src="assets/images/uploads/2026/06/HOAN-THIEN-CAN-HO-4-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-truc-26-toa-a3-1n-hien-dai-the-lumiere-evergreen.html">Thực tế căn Trục 26 tòa A3 – 1N+ – Hiện đại the LUMIÈRE Evergreen</a></h3>
+            <p>17/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thiet-ke-can-3n-truc-04-toa-gs6-vinhomes-smart-city.html">
+              <img src="assets/images/uploads/2026/06/z7939139386038_21ddbde5395cc72ab51f68b2e60a2e16-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thiet-ke-can-3n-truc-04-toa-gs6-vinhomes-smart-city.html">Thiết kế căn 3N Trục 04 tòa GS6 – Vinhomes Smart City</a></h3>
+            <p>17/06/2026</p>
+          </article>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-truc-01-toa-be3-2n-the-beverly-vinhomes-ocean-park-1.html">
+              <img src="assets/images/uploads/2026/09/32-1-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-truc-01-toa-be3-2n-the-beverly-vinhomes-ocean-park-1.html">Thực tế nội thất căn 2N trục 01 Tòa BE3 – The Beverly, OCP1</a></h3>
+            <p>10/09/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-ho-cai-tao-toa-b-masterise-west-height-truc-30-2n.html">
+              <img src="assets/images/uploads/2026/07/20-300x226.jpg" alt="" width="300" height="226" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-ho-cai-tao-toa-b-masterise-west-height-truc-30-2n.html">Thực tế Căn hộ cải tạo Tòa B Masterise West Height – Trục 30 2N+</a></h3>
+            <p>27/07/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-truc-26-toa-a3-1n-hien-dai-the-lumiere-evergreen.html">
+              <img src="assets/images/uploads/2026/06/HOAN-THIEN-CAN-HO-4-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-truc-26-toa-a3-1n-hien-dai-the-lumiere-evergreen.html">Thực tế căn Trục 26 tòa A3 – 1N+ – Hiện đại the LUMIÈRE Evergreen</a></h3>
+            <p>17/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-2n-truc-06-toa-a3-lumiere-evergreen.html">
+              <img src="assets/images/uploads/2026/06/33-1-226x300.jpg" alt="" width="226" height="300" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-2n-truc-06-toa-a3-lumiere-evergreen.html">Thực tế căn 2N+ trục 06 tòa A3, Lumiere Evergreen</a></h3>
+            <p>15/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-chung-cu-duplex-sky-forest-ecopark.html">
+              <img src="assets/images/uploads/2026/06/195-300x232.png" alt="" width="300" height="232" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-chung-cu-duplex-sky-forest-ecopark.html">Thực tế căn chung cư Duplex Sky Forest, Ecopark</a></h3>
+            <p>10/06/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-chung-cu-toa-zr2-truc-10-vinhomes-ocean-park-gia-lam.html">
+              <img src="assets/images/uploads/2026/05/188-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-chung-cu-toa-zr2-truc-10-vinhomes-ocean-park-gia-lam.html">Thực tế căn chung cư tòa ZR2 trục 10, Vinhomes Ocean Park Gia Lâm</a></h3>
+            <p>20/05/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-nha-pho-5-tang-my-dinh.html">
+              <img src="assets/images/uploads/2026/05/douplex-sky-forest-300x225.png" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-nha-pho-5-tang-my-dinh.html">Thực tế Nhà phố 4 tầng Mỹ Đình</a></h3>
+            <p>13/05/2026</p>
+          </article>
+
+          <article class="post-card" data-reveal>
+            <a class="thumb" href="post/thuc-te-can-chung-cu-toa-tc1-truc-10-vinhomes-smart-city.html">
+              <img src="assets/images/uploads/2026/05/117-300x225.jpg" alt="" width="300" height="225" loading="lazy">
+            </a>
+            <h3><a href="post/thuc-te-can-chung-cu-toa-tc1-truc-10-vinhomes-smart-city.html">Thực tế căn chung cư tòa TC1 trục 10, Vinhomes Smart City</a></h3>
+            <p>11/05/2026</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer id="footer" class="footer-wrapper">
+
+  <section class="section cta-banner">
+    <div class="section-bg">
+      <img src="assets/images/uploads/2025/12/3-1024x576.png" alt="" width="1024" height="576" loading="lazy">
+    </div>
+    <div class="section-content container">
+      <h2>Liên hệ tư vấn thiết kế và thi công trọn gói</h2>
+      <a class="phone-pill" href="tel:0978264334">0978 264 334 - 0942 971 357</a>
+    </div>
+  </section>
+
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col col-4">
+          <h4 class="footer-title">Hệ thống showroom</h4>
+          <ul class="footer-list">
+            <li>Trụ sở chính: 01S09-S2.19, Vinhomes OceanPark, Gia Lâm, Hà Nội</li>
+            <li>Showroom: H101-S06, Haven, Ecopark, Văn Giang, Hưng Yên</li>
+            <li>Showroom: 114 Đại lộ bốn mùa, Vinhomes Ocean Park 3, Hưng Yên</li>
+            <li>Showroom: Tòa A3 Lumiere Evergreen, Vinhomes Smart City, Hà Nội</li>
+            <li>Điện thoại: <a href="tel:0978264334">0978.264.334</a> - <a href="tel:0942971357">0942.971.357</a></li>
+          </ul>
+        </div>
+
+        <div class="col col-4">
+          <h4 class="footer-title">Hệ thống nhà máy</h4>
+          <ul class="footer-list">
+            <li>Nhà máy 1: Thôn 13, Nghĩa Trụ, Hưng Yên</li>
+            <li>Nhà máy 2: KCN Thạch Thất, TP Hà Nội</li>
+          </ul>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Facebook"><i class="icon-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="icon-youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="icon-tiktok" aria-hidden="true"></i></a>
+            <a href="tel:0978264334" aria-label="Zalo"><i class="icon-phone" aria-hidden="true"></i></a>
+          </div>
+          <img class="footer-cert" src="assets/images/uploads/2025/12/Screenshot-2025-12-26-155340.png" alt="Đã thông báo Bộ Công Thương" loading="lazy">
+        </div>
+
+        <div class="col col-4 footer-brand">
+          <img src="assets/images/uploads/2025/12/LOGO-MYAN-HOME-1024x1024.png" alt="Myan Home" width="1024" height="1024" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="dich-vu.html">Dịch vụ</a></li>
+        <li><a href="category/du-an.html">Dự án</a></li>
+        <li><a href="category/noi-that-do-roi.html">Nội thất đồ rời</a></li>
+        <li><a href="tin-tuc.html">Tin tức</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+      <p class="copyright">Designed by Myan Home | All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /#wrapper -->
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar">
+  <ul class="nav-sidebar">
+    <li><a href="index.html">Trang chủ</a></li>
+    <li>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <ul class="sub-menu">
+        <li><a href="nha-may-san-xuat.html">Nhà máy sản xuất</a></li>
+        <li><a href="company-profile.html">Company profile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="dich-vu.html">Dịch vụ</a>
+      <ul class="sub-menu">
+        <li><a href="category/thiet-ke-noi-that.html">Dịch vụ thiết kế</a></li>
+        <li><a href="dich-vu-thi-cong.html">Dịch vụ thi công</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="category/du-an.html">Dự án</a>
+      <ul class="sub-menu">
+        <li><a href="category/can-ho.html">Căn hộ</a></li>
+        <li><a href="category/nha-pho.html">Nhà phố</a></li>
+        <li><a href="category/penthouse-duplex.html">Penhouse – Duplex – Mezza</a></li>
+        <li><a href="category/biet-thu.html">Biệt thự</a></li>
+        <li><a href="category/hinh-anh-thuc-te.html">Hình ảnh thực tế</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="category/noi-that-do-roi.html">Nội thất đồ rời</a>
+      <ul class="sub-menu">
+        <li><a href="category/sofa.html">Sofa</a></li>
+        <li><a href="category/ban-ghe-an.html">Bàn ghế ăn</a></li>
+        <li><a href="category/ban-tra.html">Bàn trà</a></li>
+        <li><a href="category/giuong.html">Giường</a></li>
+        <li><a href="category/ke-tivi.html">Kệ tivi</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="tin-tuc.html">Tin tức</a>
+      <ul class="sub-menu">
+        <li><a href="category/cac-phong-cach.html">Phong cách thiết kế</a></li>
+        <li><a href="kien-thuc-noi-that.html">Kiến thức nội thất</a></li>
+      </ul>
+    </li>
+    <li><a href="lien-he.html">Liên hệ</a></li>
+  </ul>
+</div>
+
+<div class="chat-widget">
+  <a class="chat-btn is-phone" href="tel:0978264334" aria-label="Gọi điện"><i class="icon-phone" aria-hidden="true"></i></a>
+  <a class="chat-btn is-zalo" href="https://zalo.me/0978264334" target="_blank" rel="noopener" aria-label="Zalo"><span>Zalo</span></a>
+  <a class="chat-btn is-messenger" href="https://www.facebook.com/kientrucvanoithatmyanhome/" target="_blank" rel="noopener" aria-label="Messenger"><i class="icon-facebook" aria-hidden="true"></i></a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
