@@ -1,0 +1,6 @@
+# Build inputs and research artifacts — not part of the deployed site.
+src/
+partials/
+scripts/
+docs/
+.playwright-mcp/
