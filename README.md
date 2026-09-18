@@ -1,19 +1,22 @@
 # Myan Home — static clone
 
 A plain HTML/CSS/JS rebuild of **myanhome.com.vn** (originally WordPress 7.1.1 +
-Flatsome 3.20.4). No framework, no build tooling beyond two small Node scripts,
+Flatsome 3.20.4). No framework, no build tooling beyond a few small Node scripts,
 no external CDN or webfont — the original uses the system font stack, so this does too.
 
 ## Running it
 
-Any static server works:
+URLs are extensionless (`/gioi-thieu`, not `/gioi-thieu.html`), so the preview
+server has to resolve them the way Vercel does:
 
 ```bash
-python3 -m http.server 8899
-# then open http://localhost:8899/index.html
+node scripts/serve.mjs          # http://localhost:8899
+node scripts/serve.mjs 3000     # or pick a port
 ```
 
-Pages also open directly over `file://`, since every internal link is relative.
+`python3 -m http.server` will **not** work any more — it cannot resolve
+extensionless paths. Same reason `file://` no longer works: links are
+root-absolute (`/assets/...`, `/category/can-ho`).
 
 ## Layout
 
@@ -39,6 +42,7 @@ build output and get overwritten. Edit `src/pages/` and `partials/` instead.
 
 | Command | What it does |
 |---|---|
+| `node scripts/serve.mjs [port]` | Local preview with Vercel-style clean URLs |
 | `node scripts/build-pages.mjs` | Assembles every `src/pages/*.html` + partials into static HTML |
 | `node scripts/verify.mjs` | Checks all pages for unresolved tokens, broken local refs, dead links |
 | `node scripts/download-assets.mjs` | Re-downloads anything listed in `docs/research/assets-*.json` |
@@ -59,12 +63,14 @@ description: …
 body: page page-dich-vu        ← <body> classes
 nav: dich-vu                   ← which top-nav item renders as active
 css: pages dich-vu             ← extra stylesheets from assets/css/
-out: dich-vu.html              ← output path (depth sets {{BASE}})
+out: dich-vu.html              ← output path (ships as /dich-vu)
 -->
 ```
 
-Every internal `href`/`src` is written as `{{BASE}}…`; the build replaces it with
-`""` for root pages and `"../"` for `category/` and `post/` pages.
+Every internal `href`/`src`/`action` is written as `{{BASE}}…`. The build
+replaces `{{BASE}}` with `/` and then strips the `.html` extension, so
+`{{BASE}}category/can-ho.html` ships as `/category/can-ho` and
+`{{BASE}}index.html` as `/`. Asset paths keep their extension.
 
 ## Behaviour
 
@@ -83,10 +89,20 @@ All interaction lives in `assets/js/main.js`:
 Exact measured values for all of this are in `docs/research/BEHAVIORS.md` and
 `docs/research/components/header.spec.md`.
 
+## Deploying to Vercel
+
+`vercel.json` sets `cleanUrls: true` and `trailingSlash: false`; `404.html` is
+picked up automatically as the not-found page. `.vercelignore` keeps `src/`,
+`partials/`, `scripts/` and `docs/` out of the deployment — only the built HTML
+and `assets/` ship.
+
+No build step is configured, so Vercel serves the repo root as-is. Run
+`node scripts/build-pages.mjs` and commit the output before deploying.
+
 ## Known gaps
 
-- **Three pages are empty on the live site** and are reproduced as such:
-  `kien-thuc-noi-that.html`, `portfolio.html`, `tai-khoan.html`
+- **Three pages are empty on the live site** and are reproduced as such, with an
+  empty content container: `kien-thuc-noi-that`, `portfolio`, `tai-khoan`
   (the last renders an unexpanded `[woocommerce_my_account]` shortcode upstream).
 - **Forms are inert** — fields and labels match, but `action="#"`; no backend.
 - **Pagination is single-page** — archive page 2+ links point back at page 1,

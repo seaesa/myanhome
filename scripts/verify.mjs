@@ -2,7 +2,7 @@
 // Static QA over every built page: unresolved template tokens, broken local
 // asset/link references, and leftover absolute links to the origin site.
 import { readFile, readdir, access } from 'node:fs/promises';
-import { join, resolve, dirname, normalize } from 'node:path';
+import { join, resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const SKIP_DIRS = new Set(['assets', 'docs', 'scripts', 'src', 'partials', 'node_modules', '.git', '.playwright-mcp']);
@@ -36,15 +36,25 @@ for (const page of pages) {
     note(rel, 'absolute-origin-url', m[1]);
   }
 
-  // Local references must resolve on disk.
-  for (const m of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
+  // Local references must resolve on disk. Page links are root-absolute and
+  // extensionless (Vercel `cleanUrls`), so map them back to their .html file.
+  for (const m of html.matchAll(/(?:src|href|action)="([^"#][^"]*)"/g)) {
     const url = m[1];
     if (/^(https?:|mailto:|tel:|data:|javascript:|#)/.test(url)) continue;
     refCount++;
-    const target = normalize(join(dirname(page), url.split('?')[0].split('#')[0]));
-    if (!(await exists(target))) {
-      note(rel, url.endsWith('.html') ? 'dead-link' : 'missing-asset', url);
-    }
+
+    const clean = url.split('?')[0].split('#')[0];
+    if (!clean.startsWith('/')) { note(rel, 'relative-url', url); continue; }
+
+    const candidates = clean === '/'
+      ? ['index.html']
+      : clean.startsWith('/assets/')
+        ? [clean.slice(1)]
+        : [clean.slice(1) + '.html', clean.slice(1)];
+
+    let ok = false;
+    for (const c of candidates) if (await exists(join(ROOT, c))) { ok = true; break; }
+    if (!ok) note(rel, clean.startsWith('/assets/') ? 'missing-asset' : 'dead-link', url);
   }
 }
 
